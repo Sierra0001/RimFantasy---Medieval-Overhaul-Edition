@@ -10,7 +10,7 @@
         <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_EmeraldRing</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
-        <drawSize>1.25</drawSize>
+        <drawSize>0.75</drawSize>
       </graphicData>
       <costList>
           <DankPyon_Emerald>55</DankPyon_Emerald>
@@ -73,7 +73,7 @@
         <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_SapphireRing</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
-        <drawSize>1.25</drawSize>
+        <drawSize>0.75</drawSize>
       </graphicData>
       <costList>
           <DankPyon_Sapphire>55</DankPyon_Sapphire>
@@ -136,7 +136,7 @@
         <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_RubyRing</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
-        <drawSize>1.25</drawSize>
+        <drawSize>0.75</drawSize>
       </graphicData>
       <costList>
         <DankPyon_Ruby>55</DankPyon_Ruby>

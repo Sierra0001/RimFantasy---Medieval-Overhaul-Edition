@@ -14,8 +14,8 @@
   </ThingCategoryDef>
 
   <ThingCategoryDef>
-    <defName>RF_ArcaneStaves</defName>
-    <label>arcane staves</label>
+    <defName>RF_ArcaneStaffs</defName>
+    <label>arcane staffs</label>
     <parent>RF_ArcaneWeapons</parent>
   </ThingCategoryDef>
 

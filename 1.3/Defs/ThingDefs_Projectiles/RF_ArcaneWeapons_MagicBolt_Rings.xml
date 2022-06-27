@@ -17,14 +17,15 @@
     </graphicData>
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
-      <damageDef>RF_MagicBolt</damageDef>
+      <damageDef>RF_MagicBolt_EmeraldRing</damageDef>
       <damageAmountBase>15</damageAmountBase>
       <stoppingPower>1</stoppingPower>
       <armorPenetrationBase>0.15</armorPenetrationBase>
       <speed>40</speed>
       <explosionRadius>2</explosionRadius>
       <preExplosionSpawnThingDef>RF_RubbleShardsRF_Emerald</preExplosionSpawnThingDef>
-      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+      <preExplosionSpawnChance>0.2</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
     </projectile>
   </ThingDef>
 
@@ -41,14 +42,15 @@
     </graphicData>
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
-      <damageDef>RF_MagicBolt</damageDef>
+      <damageDef>RF_MagicBolt_SapphireRing</damageDef>
       <damageAmountBase>15</damageAmountBase>
       <stoppingPower>1</stoppingPower>
       <armorPenetrationBase>0.15</armorPenetrationBase>
       <speed>40</speed>
       <explosionRadius>2</explosionRadius>
       <preExplosionSpawnThingDef>RF_RubbleShardsRF_Sapphire</preExplosionSpawnThingDef>
-      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+      <preExplosionSpawnChance>0.2</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
     </projectile>
   </ThingDef>
 
@@ -65,14 +67,15 @@
     </graphicData>
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
-      <damageDef>RF_MagicBolt</damageDef>
+      <damageDef>RF_MagicBolt_RubyRing</damageDef>
       <damageAmountBase>15</damageAmountBase>
       <stoppingPower>1</stoppingPower>
       <armorPenetrationBase>0.15</armorPenetrationBase>
       <speed>40</speed>
       <explosionRadius>2</explosionRadius>
       <preExplosionSpawnThingDef>RF_RubbleShardsRF_Ruby</preExplosionSpawnThingDef>
-      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+      <preExplosionSpawnChance>0.2</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
     </projectile>
   </ThingDef>
 

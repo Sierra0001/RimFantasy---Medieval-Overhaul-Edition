@@ -27,15 +27,14 @@
 				<AccuracyLong>0.40</AccuracyLong>
 				<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
 		</statBases>
-		<equippedAngleOffset>15</equippedAngleOffset>
+		<equippedAngleOffset>0</equippedAngleOffset>
 		<soundInteract>Interact_BladelinkMonoSword</soundInteract>
 		<meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
     <tools>
       <li>
-        <label>limb</label>
+        <label>band</label>
         <capacities>
           <li>Blunt</li>
-          <li>Poke</li>
         </capacities>
         <power>9</power>
         <cooldownTime>2</cooldownTime>

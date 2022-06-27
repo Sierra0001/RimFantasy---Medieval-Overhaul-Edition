@@ -35,23 +35,23 @@
           <postExplosionSpawnThingDef>RF_RubbleShardsRF_Emerald</postExplosionSpawnThingDef>
           <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
         </li>
+        <li Class="RimFantasy.CompProperties_ArcaneWeapon">
+          <weaponTraitsPool>
+    				<li>RF_MinorBane</li>
+    				<li>RF_Bane</li>
+    				<li>RF_MajorBane</li>
+          </weaponTraitsPool>
+        </li>
       </comps>
       <verbs>
-          <li>
-            <verbClass>Verb_Shoot</verbClass>
-            <hasStandardCommand>true</hasStandardCommand>
-            <defaultProjectile>RF_MagicArrow_Emerald</defaultProjectile>
-            <warmupTime>2.0</warmupTime>
-            <range>32</range>
-            <soundCast>ChargeLance_Fire</soundCast>
-          </li>
-          <li Class="RimFantasy.CompProperties_ArcaneWeapon">
-            <weaponTraitsPool>
-    					<li>RF_MinorBane</li>
-    					<li>RF_Bane</li>
-    					<li>RF_MajorBane</li>
-            </weaponTraitsPool>
-          </li>
+        <li>
+          <verbClass>Verb_Shoot</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>RF_MagicArrow_Emerald</defaultProjectile>
+          <warmupTime>2.0</warmupTime>
+          <range>32</range>
+          <soundCast>ChargeLance_Fire</soundCast>
+        </li>
       </verbs>
       <modExtensions>
         <li Class="RimFantasy.RimFantasyExtension">
@@ -94,23 +94,23 @@
           <postExplosionSpawnThingDef>RF_RubbleShardsRF_Sapphire</postExplosionSpawnThingDef>
           <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
         </li>
+        <li Class="RimFantasy.CompProperties_ArcaneWeapon">
+          <weaponTraitsPool>
+    				<li>RF_MinorFreeze</li>
+    				<li>RF_Freeze</li>
+    				<li>RF_MajorFreeze</li>
+          </weaponTraitsPool>
+        </li>
       </comps>
       <verbs>
-          <li>
-            <verbClass>Verb_Shoot</verbClass>
-            <hasStandardCommand>true</hasStandardCommand>
-            <defaultProjectile>RF_MagicArrow_Sapphire</defaultProjectile>
-            <warmupTime>2.0</warmupTime>
-            <range>32</range>
-            <soundCast>ChargeLance_Fire</soundCast>
-          </li>
-          <li Class="RimFantasy.CompProperties_ArcaneWeapon">
-            <weaponTraitsPool>
-    					<li>RF_MinorFreeze</li>
-    					<li>RF_Freeze</li>
-    					<li>RF_MajorFreeze</li>
-            </weaponTraitsPool>
-          </li>
+        <li>
+          <verbClass>Verb_Shoot</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>RF_MagicArrow_Sapphire</defaultProjectile>
+          <warmupTime>2.0</warmupTime>
+          <range>32</range>
+          <soundCast>ChargeLance_Fire</soundCast>
+        </li>
       </verbs>
       <modExtensions>
         <li Class="RimFantasy.RimFantasyExtension">
@@ -153,23 +153,23 @@
           <postExplosionSpawnThingDef>RF_RubbleShardsRF_Ruby</postExplosionSpawnThingDef>
           <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
         </li>
+        <li Class="RimFantasy.CompProperties_ArcaneWeapon">
+          <weaponTraitsPool>
+    				<li>RF_MinorScorch</li>
+    				<li>RF_Scorch</li>
+    				<li>RF_MajorScorch</li>
+          </weaponTraitsPool>
+        </li>
       </comps>
       <verbs>
-          <li>
-            <verbClass>Verb_Shoot</verbClass>
-            <hasStandardCommand>true</hasStandardCommand>
-            <defaultProjectile>RF_MagicArrow_Ruby</defaultProjectile>
-            <warmupTime>2.0</warmupTime>
-            <range>32</range>
-            <soundCast>ChargeLance_Fire</soundCast>
-          </li>
-          <li Class="RimFantasy.CompProperties_ArcaneWeapon">
-            <weaponTraitsPool>
-    					<li>RF_MinorScorch</li>
-    					<li>RF_Scorch</li>
-    					<li>RF_MajorScorch</li>
-            </weaponTraitsPool>
-          </li>
+        <li>
+          <verbClass>Verb_Shoot</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>RF_MagicArrow_Ruby</defaultProjectile>
+          <warmupTime>2.0</warmupTime>
+          <range>32</range>
+          <soundCast>ChargeLance_Fire</soundCast>
+        </li>
       </verbs>
       <modExtensions>
         <li Class="RimFantasy.RimFantasyExtension">
