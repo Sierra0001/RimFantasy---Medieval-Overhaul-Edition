@@ -27,7 +27,7 @@
 				<AccuracyLong>0.40</AccuracyLong>
 				<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
 		</statBases>
-		<equippedAngleOffset>0</equippedAngleOffset>
+		<equippedAngleOffset>15</equippedAngleOffset>
 		<soundInteract>Interact_BladelinkMonoSword</soundInteract>
 		<meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
     <tools>
@@ -41,6 +41,7 @@
       </li>
     </tools>
 		<comps>
+			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon" />
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
