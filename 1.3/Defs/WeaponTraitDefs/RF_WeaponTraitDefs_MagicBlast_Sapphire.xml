@@ -18,7 +18,7 @@
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect">
-				<effectChance>0.25</effectChance>
+				<effectChance>0.75</effectChance>
 				<effectDamage>Burn</effectDamage>
 				<baseDamageValue>2</baseDamageValue>
 				<fleckDefOnTarget>RF_Fleck_BlastSapphire_Round</fleckDefOnTarget>
@@ -45,7 +45,7 @@
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect">
-				<effectChance>0.25</effectChance>
+				<effectChance>0.75</effectChance>
 				<effectDamage>Burn</effectDamage>
 				<baseDamageValue>4</baseDamageValue>
 				<fleckDefOnTarget>RF_Fleck_BlastSapphire_Round</fleckDefOnTarget>
@@ -72,7 +72,7 @@
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect">
-				<effectChance>0.25</effectChance>
+				<effectChance>0.75</effectChance>
 				<effectDamage>Burn</effectDamage>
 				<baseDamageValue>8</baseDamageValue>
 				<fleckDefOnTarget>RF_Fleck_BlastSapphire_Round</fleckDefOnTarget>

@@ -67,8 +67,8 @@
 					<li>RF_MagiciansShield</li>
 					<li>RF_MajorMagiciansShield</li>
 				</weaponTraitsPool>
-				<minWeaponTraits>1</minWeaponTraits>
-				<maxWeaponTraits>2</maxWeaponTraits>
+				<minWeaponTraits>2</minWeaponTraits>
+				<maxWeaponTraits>3</maxWeaponTraits>
 			</li>
 			<li Class="CompProperties_GeneratedName">
 				<nameMaker>RF_Namer_ArcaneWeapons</nameMaker>

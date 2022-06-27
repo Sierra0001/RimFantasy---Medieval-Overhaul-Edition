@@ -13,7 +13,7 @@
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Multiple">
-				<effectChance>0.25</effectChance>
+				<effectChance>0.75</effectChance>
 				<weaponEffects>
 					<li Class="RimFantasy.WeaponEffect">
 						<effectDamage>Frostbite</effectDamage>
@@ -43,7 +43,7 @@
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Multiple">
-				<effectChance>0.25</effectChance>
+				<effectChance>0.75</effectChance>
 				<weaponEffects>
 					<li Class="RimFantasy.WeaponEffect">
 						<effectDamage>Frostbite</effectDamage>
@@ -73,7 +73,7 @@
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Multiple">
-				<effectChance>0.20</effectChance>
+				<effectChance>0.75</effectChance>
 				<weaponEffects>
 					<li Class="RimFantasy.WeaponEffect">
 						<effectDamage>Frostbite</effectDamage>

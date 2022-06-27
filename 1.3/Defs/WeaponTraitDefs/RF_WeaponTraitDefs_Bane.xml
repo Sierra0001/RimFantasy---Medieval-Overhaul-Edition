@@ -6,14 +6,13 @@
 		<label>minor bane</label>
 		<description>Enchanted with lower nature magic, this weapon can sometimes unleash a weak wave of magical energy and may cause toxic buildup.</description>
     <exclusionTags>
-			<li>RF_MinorBane</li>
 			<li>RF_Bane</li>
 			<li>RF_MajorBane</li>
     </exclusionTags>
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Multiple">
-				<effectChance>0.20</effectChance>
+				<effectChance>0.75</effectChance>
 				<weaponEffects>
 					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
 						<hediffDef>ChemicalBurn</hediffDef>
@@ -38,13 +37,12 @@
 		<description>Enchanted with nature magic, this weapon can sometimes unleash a wave of magical energy and may cause toxic buildup.</description>
     <exclusionTags>
 			<li>RF_MinorBane</li>
-			<li>RF_Bane</li>
 			<li>RF_MajorBane</li>
     </exclusionTags>
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Multiple">
-				<effectChance>0.22</effectChance>
+				<effectChance>0.75</effectChance>
 				<weaponEffects>
 					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
 						<hediffDef>ChemicalBurn</hediffDef>
@@ -70,12 +68,11 @@
     <exclusionTags>
 			<li>RF_MinorBane</li>
 			<li>RF_Bane</li>
-			<li>RF_MajorBane</li>
     </exclusionTags>
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Multiple">
-				<effectChance>0.25</effectChance>
+				<effectChance>0.75</effectChance>
 				<weaponEffects>
 					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
 						<hediffDef>ChemicalBurn</hediffDef>
