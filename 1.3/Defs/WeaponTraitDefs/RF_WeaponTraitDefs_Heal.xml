@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MinorHeal</defName>
+		<label>minor heal</label>
+		<description>Enchanted with lower healing magic, this weapon can sometimes release a weak wave of restorative energy upon the wielder.</description>
+    <exclusionTags>
+			<li>RF_MinorHeal</li>
+			<li>RF_Heal</li>
+			<li>RF_MajorHeal</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Heal">
+				<effectChance>0.20</effectChance>
+				<hpToHeal>1~2</hpToHeal>
+				<fleckDefOnSelf>RF_Fleck_BlastPeridot_Round</fleckDefOnSelf>
+			</li>
+		</weaponEffects>
+		<commonality>1.25</commonality>
+		<marketValueOffset>200</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_Heal</defName>
+		<label>heal</label>
+		<description>Enchanted with healing magic, this weapon can sometimes release a wave of restorative energy upon the wielder.</description>
+    <exclusionTags>
+			<li>RF_MinorHeal</li>
+			<li>RF_Heal</li>
+			<li>RF_MajorHeal</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Heal">
+				<effectChance>0.22</effectChance>
+				<hpToHeal>3~4</hpToHeal>
+				<fleckDefOnSelf>RF_Fleck_BlastPeridot_Round</fleckDefOnSelf>
+			</li>
+		</weaponEffects>
+		<commonality>1</commonality>
+		<marketValueOffset>400</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MajorHeal</defName>
+		<label>major heal</label>
+		<description>Enchanted with higher healing magic, this weapon can sometimes release a powerful wave of restorative energy upon the wielder.</description>
+    <exclusionTags>
+			<li>RF_MinorHeal</li>
+			<li>RF_Heal</li>
+			<li>RF_MajorHeal</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Heal">
+				<effectChance>0.25</effectChance>
+				<hpToHeal>5~6</hpToHeal>
+				<fleckDefOnSelf>RF_Fleck_BlastPeridot_Round</fleckDefOnSelf>
+			</li>
+		</weaponEffects>
+		<commonality>0.25</commonality>
+		<marketValueOffset>600</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+</Defs>

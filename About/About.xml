@@ -2,7 +2,7 @@
 <ModMetaData>
 	<name>RimFantasy - Medieval Overhaul Edition</name>
 	<author>Sierra</author>
-	<packageId>Sierra.RF.MOE</packageId>
+	<packageId>Sierra.RF.MedievalOverhaul</packageId>
 	<url></url>
 	<supportedVersions>
 		<li>1.3</li>
@@ -13,29 +13,49 @@
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+      <displayName>Vanilla Expanded Framework</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>DankPyon.Medieval.Overhaul</packageId>
+      <displayName>Medieval Overhaul</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+	<incompatibleWith>
+		<li>Sierra.RF.Gemstones</li>
+	</incompatibleWith>
 	<description>
 [h1]Mod Version: v1.0[/h1]
+[i]This version of RimFantasy has been reworked and rebalanced to adhere to Medieval Overhaul standards. It is no longer modular and contains new/altered/removed content.[/i]
 
 
-This mod adds 11 new minable gemstones, as well as the worktables (requires research) needed to craft the uncut gems into cut gems.
+Magic exists in many forms.
 
-Gemstones can be used to craft structures, furniture and even weapons. Cut gemstones are worth more than their uncut variants and can even be used to earn royal favor.
+For the longest time, civilisations dismissed it as wild fantasy and superstitious tribal beliefs. That is until one day, an incident occurred in a gemstone mine, which led to the discovery that gemstones have a natural affinity with magic and could be imbued with magical energies to produce spectacular effects.
 
 
 [b]Features:[/b]
 [list]
-[*]11 Gemstones (x11 Rough/x11 Cut)
-[*]1 Workbench (Medieval)
-[*]1 Research (Unlocks Workbench)
+[*]Magical weapons with powers.
+[*]Magical furniture for lighting areas.
+[*]Magical furniture for regulating temperature.
+[*]Magical defenses for protecting colonies.
 [/list]
 
 
 [b]Recommended Mods:[/b]
 [list]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067]Medieval Overhaul[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2632845986]RimFantasy - Crystallic Lighting[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2634323159]RimFantasy - Arcane Batons[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2651522590]RimFantasy - Arcane Weapons[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1916352291]RimTraits - Medieval Talent[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2206957172]RimTraits - General Traits[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2244594116]RimTraits - Vanilla Trait Colors[/url]
@@ -46,16 +66,11 @@ Gemstones can be used to craft structures, furniture and even weapons. Cut gemst
 [b]Compatibility:[/b]
 [list]
 [*]Save Game Compatible
-[*]Will not play nice with other gemstone mods without a patch.
-[*][b][Major Incompatibility - Simple Sidearms][/b] Overrides the way bladelink weapons work and breaks the no-bond mechanics of arcane weapons. <biocodeOnEquip> can be turned on in settings as a workaround, but will re-introduce the bonding mechanic.
+[*][b][Major Incompatibility - Simple Sidearms][/b] Overrides the way bladelink weapons work and breaks the no-bond mechanics of arcane weapons. &lt;biocodeOnEquip&gt; can be turned on in settings as a workaround, but will re-introduce the bonding mechanic.
 [/list]
-[i]Dr Zhivago's [b]DocUniversalResources[/b] (DUR) will address resource overlaps for mod compatibility when it is finished.[/i]
 
 
-
-[b]Balance & Bug Reports:[/b]
-Gems are intentionally sparse and not easy to obtain through natural means, but they can also be purchased from traders or obtained from salvaging certain objects.
-
+[b]Balance 	&#38; Bug Reports:[/b]
 Balance feedbacks are welcomed, please provide context when doing so.
 Bug reports must come with HugsLogs, join the Discord if you don't know how to generate one.
 
@@ -68,6 +83,9 @@ Bug reports must come with HugsLogs, join the Discord if you don't know how to g
 [list]
 [*]SirLalaPyon for his amazing, high quality vanilla styled art.
 [*]Taranchuk for his C# code magic that allows for various fancy features.
+[*]Brrainz for his contributions to the modding community.
+[*]Oskar/Vanilla Expanded team for the framework.
+[*]Steve for his contributions that helped to shape RimFantasy the mod it is today.
 [/list]
 
 
@@ -77,8 +95,7 @@ Bug reports must come with HugsLogs, join the Discord if you don't know how to g
 [h1]Latest Changes:[/h1]
 [b]v1.0[/b]
 [list]
-[*][Fix] Fixed an issue related to RimFantasy.CompGlowerStuffable that could cause infinite log spam.
-[*][Fix] Fixed an issue related to RimFantasy.CompAura that could interfere with pawn spawning with Hospitality.
+[*][Release] Initial release.
 [/list]
 	</description>
 </ModMetaData>

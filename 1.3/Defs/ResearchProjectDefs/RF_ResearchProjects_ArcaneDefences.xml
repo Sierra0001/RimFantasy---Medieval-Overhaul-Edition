@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>RF_ArcaneDefences</defName>
+    <label>arcane defences</label>
+    <tab>RF_RimFantasy</tab>
+    <description>Construct magical defences with magic infused gemstones.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>RF_ArcaneCrafting</li>
+    </prerequisites>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

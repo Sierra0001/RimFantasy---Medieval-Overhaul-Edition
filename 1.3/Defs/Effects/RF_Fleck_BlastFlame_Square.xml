@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>RF_Fleck_BlastDiamond_Square</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_Fleck_BlastDiamond_Square</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.4</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>RF_Fleck_BlastRuby_Square</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_Fleck_BlastRuby_Square</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.4</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>RF_Fleck_BlastCarnelian_Square</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_Fleck_BlastCarnelian_Square</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.4</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>RF_Fleck_BlastCitrine_Square</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_Fleck_BlastCitrine_Square</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.4</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>RF_Fleck_BlastPeridot_Square</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_Fleck_BlastPeridot_Square</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.4</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>RF_Fleck_BlastEmerald_Square</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_Fleck_BlastEmerald_Square</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.4</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>RF_Fleck_BlastAquamarine_Square</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_Fleck_BlastAquamarine_Square</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.4</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>RF_Fleck_BlastSapphire_Square</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_Fleck_BlastSapphire_Square</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.4</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>RF_Fleck_BlastAmethyst_Square</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_Fleck_BlastAmethyst_Square</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.4</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>RF_Fleck_BlastKunzite_Square</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_Fleck_BlastKunzite_Square</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.4</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>RF_Fleck_BlastOnyx_Square</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_Fleck_BlastOnyx_Square</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.4</fadeOutTime>
+  </FleckDef>
+
+</Defs>

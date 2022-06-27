@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="RF_PeripheralMineBase" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building_TrapExplosive</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.5,1.5)</drawSize>
+      <damageData>
+        <rect>(0.1,0,0.8,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <uiIconOffset>(0,0)</uiIconOffset>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <statBases>
+      <Mass>2</Mass>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>1</Beauty>
+      <TrapSpringChance>1.0</TrapSpringChance>
+    </statBases>
+    <designationCategory>Security</designationCategory>
+    <building>
+      <isTrap>true</isTrap>
+      <trapPeacefulWildAnimalsSpringChanceFactor>0.25</trapPeacefulWildAnimalsSpringChanceFactor>
+      <expandHomeArea>false</expandHomeArea>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>RF_ArcaneDefences</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="RF_PeripheralMineBase">
+    <defName>RF_PeripheralMine</defName>
+    <label>peripheral mine</label>
+    <description>A carefully crafted mine that discharges destructive magical energy upon contact.\n\nThis variant causes less damage, but has a larger explosion radius.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/RF_PeripheralMine</texPath>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>25</costStuffCount>
+    <costList>
+      <DankPyon_Onyx>5</DankPyon_Onyx>
+      <DankPyon_Sapphire>5</DankPyon_Sapphire>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>1</glowRadius>
+        <glowColor>(115,64,166)</glowColor>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>150</wickTicks>
+        <explosiveRadius>5</explosiveRadius>
+        <explosiveDamageType>RF_Bomb_MediumSquareRF_Amethyst</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+        <postExplosionSpawnChance>0.05</postExplosionSpawnChance>
+        <postExplosionSpawnThingDef>RF_RubbleShardsRF_Amethyst</postExplosionSpawnThingDef>
+        <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+      </li>
+      <!--<li Class="CompProperties_Explosive">
+        <explosiveRadius>4</explosiveRadius>
+        <explosiveDamageType>RF_Flame_MediumSquareRF_Carnelian</explosiveDamageType>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <postExplosionSpawnChance>0.1</postExplosionSpawnChance>
+        <postExplosionSpawnThingDef>RF_RubbleShardsRF_Carnelian</postExplosionSpawnThingDef>
+        <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+        <wickTicks>15</wickTicks>
+        <startWickOnDamageTaken>
+          <li>Bullet</li>
+          <li>Arrow</li>
+          <li>ArrowHighVelocity</li>
+        </startWickOnDamageTaken>
+      </li>-->
+    </comps>
+    <specialDisplayRadius>5</specialDisplayRadius>
+  </ThingDef>
+
+</Defs>
