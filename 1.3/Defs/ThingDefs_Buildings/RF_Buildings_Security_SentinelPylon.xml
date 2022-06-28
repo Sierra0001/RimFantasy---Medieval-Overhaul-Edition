@@ -58,7 +58,7 @@
         <fuelGizmoLabel>Energy reserves</fuelGizmoLabel>
         <outOfFuelMessage>Cannot fire: Insufficient energy</outOfFuelMessage>
         <fuelFilter><thingDefs><li>DankPyon_Onyx</li></thingDefs></fuelFilter>
-        <fuelCapacity>100</fuelCapacity>       <!-- 20 bursts -->
+        <fuelCapacity>120</fuelCapacity>       <!-- 24 bursts -->
         <fuelMultiplier>10</fuelMultiplier> <!-- 1 rough kunzite per burst, 20 per full rearm -->
         <initialFuelPercent>1</initialFuelPercent>
         <autoRefuelPercent>0.5</autoRefuelPercent>
