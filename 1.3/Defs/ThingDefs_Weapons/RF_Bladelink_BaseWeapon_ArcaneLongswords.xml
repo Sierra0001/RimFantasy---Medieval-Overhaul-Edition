@@ -54,25 +54,6 @@
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
-			<li Class="RimFantasy.CompProperties_ArcaneWeapon">
-				<biocodeOnEquip>false</biocodeOnEquip>
-				<weaponTraitsPool>
-					<li>RF_MinorBlaze</li>
-					<li>RF_Blaze</li>
-					<li>RF_MajorBlaze</li>
-					<li>RF_MinorShock</li>
-					<li>RF_Shock</li>
-					<li>RF_MajorShock</li>
-					<li>RF_MinorSlash_Longsword</li>
-					<li>RF_Slash_Longsword</li>
-					<li>RF_MajorSlash_Longsword</li>
-					<li>RF_MinorWarriorsShield</li>
-					<li>RF_WarriorsShield</li>
-					<li>RF_MajorWarriorsShield</li>
-				</weaponTraitsPool>
-				<minWeaponTraits>1</minWeaponTraits>
-				<maxWeaponTraits>2</maxWeaponTraits>
-			</li>
 			<li Class="CompProperties_GeneratedName">
 				<nameMaker>RF_Namer_ArcaneWeapons</nameMaker>
 			</li>
