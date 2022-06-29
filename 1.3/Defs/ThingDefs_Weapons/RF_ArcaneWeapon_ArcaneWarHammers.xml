@@ -40,24 +40,24 @@
 				<maxWeaponTraits>2</maxWeaponTraits>
 				<biocodeOnEquip>false</biocodeOnEquip>
           <weaponTraitsPool>
-					<li>RF_MinorShock</li>
-					<li>RF_Shock</li>
-					<li>RF_MajorShock</li>
-					<li>RF_MinorSlash</li>
-					<li>RF_Slash</li>
-					<li>RF_MajorSlash</li>
-					<li>RF_MinorSlam</li>
-					<li>RF_Slam</li>
-					<li>RF_MajorSlam</li>
-					<li>RF_MinorWarriorsShield</li>
-					<li>RF_WarriorsShield</li>
-					<li>RF_MajorWarriorsShield</li>
+					  <li>RF_MinorShock_Emerald</li>
+            <li>RF_Shock_Emerald</li>
+					  <li>RF_MajorShock_Emerald</li>
+					  <li>RF_MinorSlash_Emerald</li>
+			      <li>RF_Slash_Emerald</li>
+	          <li>RF_MajorSlash_Emerald</li>
+					  <li>RF_MinorSlam_Emerald</li>
+		        <li>RF_Slam_Emerald</li>
+            <li>RF_MajorSlam_Emerald</li>
+			      <li>RF_MinorWarriorsShield</li>
+		        <li>RF_WarriorsShield</li>
+				    <li>RF_MajorWarriorsShield</li>
             <li>RF_MinorMagicBlast_Emerald</li>
             <li>RF_MagicBlast_Emerald</li>
             <li>RF_MajorMagicBlast_Emerald</li>
-  					<li>RF_MinorBane</li>
-  					<li>RF_Bane</li>
-  					<li>RF_MajorBane</li>
+  			    <li>RF_MinorBane</li>
+  				  <li>RF_Bane</li>
+  			    <li>RF_MajorBane</li>
           </weaponTraitsPool>
         </li>
       </comps>
@@ -107,15 +107,15 @@
 				<maxWeaponTraits>2</maxWeaponTraits>
 				<biocodeOnEquip>false</biocodeOnEquip>
           <weaponTraitsPool>
-					<li>RF_MinorShock</li>
-					<li>RF_Shock</li>
-					<li>RF_MajorShock</li>
-					<li>RF_MinorSlash</li>
-					<li>RF_Slash</li>
-					<li>RF_MajorSlash</li>
-					<li>RF_MinorSlam</li>
-					<li>RF_Slam</li>
-					<li>RF_MajorSlam</li>
+					<li>RF_MinorShock_Sapphire</li>
+					<li>RF_Shock_Sapphire</li>
+					<li>RF_MajorShock_Sapphire</li>
+					<li>RF_MinorSlash_Sapphire</li>
+					<li>RF_Slash_Sapphire</li>
+					<li>RF_MajorSlash_Sapphire</li>
+					<li>RF_MinorSlam_Sapphire</li>
+					<li>RF_Slam_Sapphire</li>
+					<li>RF_MajorSlam_Sapphire</li>
 					<li>RF_MinorWarriorsShield</li>
 					<li>RF_WarriorsShield</li>
 					<li>RF_MajorWarriorsShield</li>
@@ -174,15 +174,15 @@
 				<maxWeaponTraits>2</maxWeaponTraits>
 				<biocodeOnEquip>false</biocodeOnEquip>
           <weaponTraitsPool>
-					<li>RF_MinorShock</li>
-					<li>RF_Shock</li>
-					<li>RF_MajorShock</li>
-					<li>RF_MinorSlash</li>
-					<li>RF_Slash</li>
-					<li>RF_MajorSlash</li>
-					<li>RF_MinorSlam</li>
-					<li>RF_Slam</li>
-					<li>RF_MajorSlam</li>
+					<li>RF_MinorShock_Ruby</li>
+					<li>RF_Shock_Ruby</li>
+					<li>RF_MajorShock_Ruby</li>
+					<li>RF_MinorSlash_Ruby</li>
+					<li>RF_Slash_Ruby</li>
+					<li>RF_MajorSlash_Ruby</li>
+					<li>RF_MinorSlam_Ruby</li>
+					<li>RF_Slam_Ruby</li>
+					<li>RF_MajorSlam_Ruby</li>
 					<li>RF_MinorWarriorsShield</li>
 					<li>RF_WarriorsShield</li>
 					<li>RF_MajorWarriorsShield</li>
