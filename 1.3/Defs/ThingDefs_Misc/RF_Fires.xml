@@ -59,6 +59,17 @@
     <useHitPoints>false</useHitPoints>
   </ThingDef>
 
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>RF_EmeraldFireGlow</defName>
+    <graphicData>
+      <texPath>Things/Mote/FeedbackGoto</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.75</fadeInTime>
+    <solidTime>1.08</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+  </FleckDef>
 
   <ThingDef>
     <defName>RF_SapphireFire</defName>
@@ -74,6 +85,18 @@
     <altitudeLayer>PawnState</altitudeLayer>
     <useHitPoints>false</useHitPoints>
   </ThingDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>RF_SapphireFireGlow</defName>
+    <graphicData>
+      <texPath>Things/Mote/FeedbackGoto</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.75</fadeInTime>
+    <solidTime>1.08</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+  </FleckDef>
   
   <ThingDef>
     <defName>RF_RubyFire</defName>
@@ -89,4 +112,17 @@
     <altitudeLayer>PawnState</altitudeLayer>
     <useHitPoints>false</useHitPoints>
   </ThingDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>RF_RubyFireGlow</defName>
+    <graphicData>
+      <texPath>Things/Mote/FeedbackGoto</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.75</fadeInTime>
+    <solidTime>1.08</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+  </FleckDef>
+  
 </Defs>
