@@ -46,17 +46,6 @@
   </FleckDef>
 
   <FleckDef ParentName="FleckBase">
-    <defName>RF_Fleck_BlastPeridot_Round</defName>
-    <graphicData>
-      <texPath>Things/Mote/RF_Fleck_BlastPeridot_Round</texPath>
-      <shaderType>TransparentPostLight</shaderType>
-    </graphicData>
-    <altitudeLayer>MoteOverhead</altitudeLayer>
-    <solidTime>0.2</solidTime>
-    <fadeOutTime>0.8</fadeOutTime>
-  </FleckDef>
-
-  <FleckDef ParentName="FleckBase">
     <defName>RF_Fleck_BlastEmerald_Round</defName>
     <graphicData>
       <texPath>Things/Mote/RF_Fleck_BlastEmerald_Round</texPath>
@@ -82,39 +71,6 @@
     <defName>RF_Fleck_BlastSapphire_Round</defName>
     <graphicData>
       <texPath>Things/Mote/RF_Fleck_BlastSapphire_Round</texPath>
-      <shaderType>TransparentPostLight</shaderType>
-    </graphicData>
-    <altitudeLayer>MoteOverhead</altitudeLayer>
-    <solidTime>0.2</solidTime>
-    <fadeOutTime>0.8</fadeOutTime>
-  </FleckDef>
-
-  <FleckDef ParentName="FleckBase">
-    <defName>RF_Fleck_BlastAmethyst_Round</defName>
-    <graphicData>
-      <texPath>Things/Mote/RF_Fleck_BlastAmethyst_Round</texPath>
-      <shaderType>TransparentPostLight</shaderType>
-    </graphicData>
-    <altitudeLayer>MoteOverhead</altitudeLayer>
-    <solidTime>0.2</solidTime>
-    <fadeOutTime>0.8</fadeOutTime>
-  </FleckDef>
-
-  <FleckDef ParentName="FleckBase">
-    <defName>RF_Fleck_BlastKunzite_Round</defName>
-    <graphicData>
-      <texPath>Things/Mote/RF_Fleck_BlastKunzite_Round</texPath>
-      <shaderType>TransparentPostLight</shaderType>
-    </graphicData>
-    <altitudeLayer>MoteOverhead</altitudeLayer>
-    <solidTime>0.2</solidTime>
-    <fadeOutTime>0.8</fadeOutTime>
-  </FleckDef>
-
-  <FleckDef ParentName="FleckBase">
-    <defName>RF_Fleck_BlastOnyx_Round</defName>
-    <graphicData>
-      <texPath>Things/Mote/RF_Fleck_BlastOnyx_Round</texPath>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
     <altitudeLayer>MoteOverhead</altitudeLayer>

@@ -10,12 +10,20 @@
         <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_EmeraldRing</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
-        <drawSize>0.35</drawSize>
+        <drawSize>0.25</drawSize>
       </graphicData>
       <costList>
           <DankPyon_Emerald>55</DankPyon_Emerald>
       </costList>
       <comps>
+  			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+          <groundGraphic>
+            <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_EmeraldRing</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+  		      <drawSize>1</drawSize>
+          </groundGraphic>
+  			</li>
         <li Class="RimFantasy.CompProperties_GlowerStuffable">
           <glowRadius>1</glowRadius>
           <glowColor>(50,150,50)</glowColor>
@@ -97,12 +105,20 @@
         <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_SapphireRing</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
-        <drawSize>0.35</drawSize>
+        <drawSize>0.25</drawSize>
       </graphicData>
       <costList>
           <DankPyon_Sapphire>55</DankPyon_Sapphire>
       </costList>
       <comps>
+  			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+          <groundGraphic>
+            <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_SapphireRing</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+  		      <drawSize>1</drawSize>
+          </groundGraphic>
+  			</li>
         <li Class="RimFantasy.CompProperties_GlowerStuffable">
           <glowRadius>1</glowRadius>
           <glowColor>(0,125,225)</glowColor>
@@ -185,12 +201,20 @@
         <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_RubyRing</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
-        <drawSize>0.35</drawSize>
+        <drawSize>0.25</drawSize>
       </graphicData>
       <costList>
         <DankPyon_Ruby>55</DankPyon_Ruby>
       </costList>
       <comps>
+  			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+          <groundGraphic>
+            <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_RubyRing</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+  		      <drawSize>1</drawSize>
+          </groundGraphic>
+  			</li>
         <li Class="RimFantasy.CompProperties_GlowerStuffable">
           <glowRadius>1</glowRadius>
           <glowColor>(189,25,60)</glowColor>

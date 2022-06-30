@@ -127,40 +127,4 @@
     </filth>
   </ThingDef>
 
-  <ThingDef ParentName="BaseFilth">
-    <defName>RF_RubbleShardsRF_Amethyst</defName>
-    <label>amethyst shards</label>
-    <statBases>
-      <Beauty>-3</Beauty>
-      <Cleanliness>-5</Cleanliness>
-    </statBases>
-    <graphicData>
-      <texPath>Things/Filth/RF_RubbleAmethystShards</texPath>
-      <!--<color>(0,0,0,0)</color>-->
-    </graphicData>
-    <filth>
-      <disappearsInDays>45~50</disappearsInDays>
-      <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
-      <cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
-    </filth>
-  </ThingDef>
-
-  <ThingDef ParentName="BaseFilth">
-    <defName>RF_RubbleShardsRF_Kunzite</defName>
-    <label>kunzite shards</label>
-    <statBases>
-      <Beauty>-3</Beauty>
-      <Cleanliness>-5</Cleanliness>
-    </statBases>
-    <graphicData>
-      <texPath>Things/Filth/RF_RubbleKunziteShards</texPath>
-      <!--<color>(0,0,0,0)</color>-->
-    </graphicData>
-    <filth>
-      <disappearsInDays>45~50</disappearsInDays>
-      <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
-      <cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
-    </filth>
-  </ThingDef>
-
 </Defs>
