@@ -68,7 +68,7 @@
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>RF_MagicBolt_RubyRing</damageDef>
-      <damageAmountBase>15</damageAmountBase>
+      <damageAmountBase>16</damageAmountBase>
       <stoppingPower>1</stoppingPower>
       <armorPenetrationBase>0.15</armorPenetrationBase>
       <speed>40</speed>

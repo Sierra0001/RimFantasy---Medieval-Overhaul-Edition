@@ -8,17 +8,11 @@
     <exclusionTags>
 			<li>RF_MagicBlast_Ruby</li>
 			<li>RF_MajorMagicBlast_Ruby</li>
-			<li>RF_MinorMagicBlast_Emerald</li>
-			<li>RF_MagicBlast_Emerald</li>
-			<li>RF_MajorMagicBlast_Emerald</li>
-			<li>RF_MinorMagicBlast_Sapphire</li>
-			<li>RF_MagicBlast_Sapphire</li>
-			<li>RF_MajorMagicBlast_Sapphire</li>
     </exclusionTags>
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect">
-				<effectChance>0.75</effectChance>
+				<effectChance>0.60</effectChance>
 				<effectDamage>Burn</effectDamage>
 				<baseDamageValue>2</baseDamageValue>
 				<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
@@ -35,17 +29,11 @@
     <exclusionTags>
 			<li>RF_MinorMagicBlast_Ruby</li>
 			<li>RF_MajorMagicBlast_Ruby</li>
-			<li>RF_MinorMagicBlast_Emerald</li>
-			<li>RF_MagicBlast_Emerald</li>
-			<li>RF_MajorMagicBlast_Emerald</li>
-			<li>RF_MinorMagicBlast_Sapphire</li>
-			<li>RF_MagicBlast_Sapphire</li>
-			<li>RF_MajorMagicBlast_Sapphire</li>
     </exclusionTags>
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect">
-				<effectChance>0.75</effectChance>
+				<effectChance>0.60</effectChance>
 				<effectDamage>Burn</effectDamage>
 				<baseDamageValue>4</baseDamageValue>
 				<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
@@ -62,17 +50,11 @@
     <exclusionTags>
 			<li>RF_MinorMagicBlast_Ruby</li>
 			<li>RF_MagicBlast_Ruby</li>
-			<li>RF_MinorMagicBlast_Emerald</li>
-			<li>RF_MagicBlast_Emerald</li>
-			<li>RF_MajorMagicBlast_Emerald</li>
-			<li>RF_MinorMagicBlast_Sapphire</li>
-			<li>RF_MagicBlast_Sapphire</li>
-			<li>RF_MajorMagicBlast_Sapphire</li>
     </exclusionTags>
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect">
-				<effectChance>0.75</effectChance>
+				<effectChance>0.60</effectChance>
 				<effectDamage>Burn</effectDamage>
 				<baseDamageValue>8</baseDamageValue>
 				<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>

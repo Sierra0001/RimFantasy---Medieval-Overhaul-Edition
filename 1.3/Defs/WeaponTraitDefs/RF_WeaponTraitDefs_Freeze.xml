@@ -13,12 +13,12 @@
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Multiple">
-				<effectChance>0.75</effectChance>
+				<effectChance>0.60</effectChance>
 				<weaponEffects>
 					<li Class="RimFantasy.WeaponEffect">
 						<effectDamage>Frostbite</effectDamage>
 						<baseDamageValue>2</baseDamageValue>
-						<fleckDefOnTarget>RF_Fleck_BlastAquamarine_Round</fleckDefOnTarget>
+						<fleckDefOnTarget>RF_Fleck_BlastSapphire_Round</fleckDefOnTarget>
 					</li>
 					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
 						<hediffDef>Hypothermia</hediffDef>
@@ -43,12 +43,12 @@
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Multiple">
-				<effectChance>0.75</effectChance>
+				<effectChance>0.60</effectChance>
 				<weaponEffects>
 					<li Class="RimFantasy.WeaponEffect">
 						<effectDamage>Frostbite</effectDamage>
 						<baseDamageValue>4</baseDamageValue>
-						<fleckDefOnTarget>RF_Fleck_BlastAquamarine_Round</fleckDefOnTarget>
+						<fleckDefOnTarget>RF_Fleck_BlastSapphire_Round</fleckDefOnTarget>
 					</li>
 					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
 						<hediffDef>Hypothermia</hediffDef>
@@ -73,12 +73,12 @@
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Multiple">
-				<effectChance>0.75</effectChance>
+				<effectChance>0.60</effectChance>
 				<weaponEffects>
 					<li Class="RimFantasy.WeaponEffect">
 						<effectDamage>Frostbite</effectDamage>
 						<baseDamageValue>6</baseDamageValue>
-						<fleckDefOnTarget>RF_Fleck_BlastAquamarine_Round</fleckDefOnTarget>
+						<fleckDefOnTarget>RF_Fleck_BlastSapphire_Round</fleckDefOnTarget>
 					</li>
 					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
 						<hediffDef>Hypothermia</hediffDef>

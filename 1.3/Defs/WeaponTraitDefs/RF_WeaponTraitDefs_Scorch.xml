@@ -6,19 +6,18 @@
 		<label>minor scorch</label>
 		<description>Enchanted with lower fire magic, this weapon can sometimes unleash a weak wave of magical energy and may cause heatstrokes.</description>
     <exclusionTags>
-			<li>RF_MinorScorch</li>
 			<li>RF_Scorch</li>
 			<li>RF_MajorScorch</li>
     </exclusionTags>
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Multiple">
-				<effectChance>0.75</effectChance>
+				<effectChance>0.60</effectChance>
 				<weaponEffects>
 					<li Class="RimFantasy.WeaponEffect">
 						<effectDamage>Burn</effectDamage>
 						<baseDamageValue>2</baseDamageValue>
-						<fleckDefOnTarget>RF_Fleck_BlastCarnelian_Round</fleckDefOnTarget>
+						<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
 					</li>
 					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
 						<hediffDef>Heatstroke</hediffDef>
@@ -37,18 +36,17 @@
 		<description>Enchanted with fire magic, this weapon can sometimes unleash a wave of magical energy and may cause heatstrokes.</description>
     <exclusionTags>
 			<li>RF_MinorScorch</li>
-			<li>RF_Scorch</li>
 			<li>RF_MajorScorch</li>
     </exclusionTags>
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Multiple">
-				<effectChance>0.75</effectChance>
+				<effectChance>0.60</effectChance>
 				<weaponEffects>
 					<li Class="RimFantasy.WeaponEffect">
 						<effectDamage>Burn</effectDamage>
 						<baseDamageValue>4</baseDamageValue>
-						<fleckDefOnTarget>RF_Fleck_BlastCarnelian_Round</fleckDefOnTarget>
+						<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
 					</li>
 					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
 						<hediffDef>Heatstroke</hediffDef>
@@ -68,17 +66,16 @@
     <exclusionTags>
 			<li>RF_MinorScorch</li>
 			<li>RF_Scorch</li>
-			<li>RF_MajorScorch</li>
     </exclusionTags>
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Multiple">
-				<effectChance>0.75</effectChance>
+				<effectChance>0.60</effectChance>
 				<weaponEffects>
 					<li Class="RimFantasy.WeaponEffect">
 						<effectDamage>Burn</effectDamage>
 						<baseDamageValue>6</baseDamageValue>
-						<fleckDefOnTarget>RF_Fleck_BlastCarnelian_Round</fleckDefOnTarget>
+						<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
 					</li>
 					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
 						<hediffDef>Heatstroke</hediffDef>

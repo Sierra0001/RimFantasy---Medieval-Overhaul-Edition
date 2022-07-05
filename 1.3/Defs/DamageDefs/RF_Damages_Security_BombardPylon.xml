@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef>
+    <defName>RF_BombardPylon_MagicBolt</defName>
+    <label>magic bolt</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been blasted to death by magical energy.</deathMessage>
+    <hediff>Burn</hediff>
+    <explosionCellFleck>RF_Fleck_BlastRuby_Square</explosionCellFleck>
+    <soundExplosion>Explosion_Flame</soundExplosion>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Electric</impactSoundType>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+
+</Defs>

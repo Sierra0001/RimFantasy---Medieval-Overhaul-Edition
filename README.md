@@ -1,37 +1,44 @@
-# RimFantasy - Gemstones
+# RimFantasy - Medieval Overhaul Edition
+This version of RimFantasy has been reworked and rebalanced to adhere to Medieval Overhaul standards. It is no longer modular and contains new/altered/removed content.
 
-This mod adds 11 new minable gemstones, as well as the worktables (requires research) needed to craft the uncut gems into cut gems.
 
-Gemstones can be used to craft structures, furniture and even weapons. Cut gemstones are worth more than their uncut variants and can even be used to earn royal favor.
+For the longest time, civilizations dismissed magic as wild fantasies and superstitious tribal beliefs. That is until one day, an incident occurred in a gemstone mine, which led to the discovery that gemstones have a natural affinity with magic, and could be imbued with magical energies to produce spectacular effects.
+
+Since then, the value of gemstones reached unimaginable heights and can be commonly found in the most prosperous cities and in the hands of the most skilled warriors.
 
 ### Features
 
-- 11 Gemstones (x11 Rough/x11 Cut)
-- 1 Workbench (Medieval)
-- 1 Research (Unlocks Workbench)
+- Magical weapons with powers.
+- Magical furniture for lighting areas.
+- Magical furniture for regulating temperature.
+- Magical defences for protecting colonies.
 
 ### Balance
 
-Gems are intentionally sparse and not easy to obtain through natural means, but they can also be purchased from traders or obtained from salvaging certain objects.
-
 Balance feedbacks are welcomed, please provide context when doing so.
+
+Bug reports must come with HugsLogs, join the Discord if you don't know how to generate one.
 
 ### Compatibility
 
 - Save Game Compatible
-- Will not play nice with other gemstone mods without a patch.
+- [Incompatible - RimFantasy - Gemstones]
+- [Major Incompatibility - Simple Sidearms] Overrides the way bladelink weapons work and breaks the no-bond mechanics of arcane weapons. biocodeOnEquip can be turned on in settings as a workaround, but will re-introduce the bonding mechanic.
 
 ### Links
 
-- [Current Version](https://github.com/Sierra0001/RimFantasy---Gemstones/releases/tag/v1.1.1)
+- [Current Version](https://github.com/Sierra0001/RimFantasy---Medieval-Overhaul-Edition/releases/tag/v1.0)
 - [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2630669656)
-- [GitHub](https://github.com/Sierra0001/RimFantasy---Gemstones)
+- [GitHub](https://github.com/Sierra0001/RimFantasy---Medieval-Overhaul-Edition)
 
 ### Credits
 
 SirLalaPyon for his amazing, high-quality vanilla styled art.
 Taranchuk for his C# code magic that allows for various fancy features.
+Brrainz for his contributions to the modding community.
+Oskar/Vanilla Expanded team for the framework.
+Steve for his contributions that helped to shape RimFantasy the mod it is today.
 
 ### Latest Changes
 
-- [Change] Changed bulk cutting recipes from x10 to x5.
+- [Release] Initial release.

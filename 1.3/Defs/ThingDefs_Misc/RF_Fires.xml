@@ -23,7 +23,7 @@
     <combatLogRules>Damage_Flame</combatLogRules>
     <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
   </DamageDef>
-  
+
   <ThingDef>
     <defName>RF_SparkCustom</defName>
     <label>spark</label>
@@ -43,7 +43,7 @@
       <speed>1.5</speed>
     </projectile>
   </ThingDef>
-  
+
   <ThingDef>
     <defName>RF_EmeraldFire</defName>
     <label>emerald fire</label>
@@ -51,10 +51,10 @@
     <category>Attachment</category>
     <tickerType>Normal</tickerType>
     <graphicData>
-      <texPath>Things/Special/Darklight</texPath>
+      <texPath>Things/Special/RF_EmeraldFire</texPath>
       <graphicClass>Graphic_Flicker</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
-    </graphicData> 
+    </graphicData>
     <altitudeLayer>PawnState</altitudeLayer>
     <useHitPoints>false</useHitPoints>
   </ThingDef>
@@ -62,7 +62,7 @@
   <FleckDef ParentName="FleckBase_Thrown">
     <defName>RF_EmeraldFireGlow</defName>
     <graphicData>
-      <texPath>Things/Mote/FeedbackGoto</texPath>
+      <texPath>Things/Mote/RF_FireGlow_Emerald</texPath>
       <shaderType>MoteGlow</shaderType>
     </graphicData>
     <altitudeLayer>MoteOverhead</altitudeLayer>
@@ -78,10 +78,10 @@
     <category>Attachment</category>
     <tickerType>Normal</tickerType>
     <graphicData>
-      <texPath>Things/Special/Darklight</texPath>
+      <texPath>Things/Special/RF_SapphireFire</texPath>
       <graphicClass>Graphic_Flicker</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
-    </graphicData> 
+    </graphicData>
     <altitudeLayer>PawnState</altitudeLayer>
     <useHitPoints>false</useHitPoints>
   </ThingDef>
@@ -89,7 +89,7 @@
   <FleckDef ParentName="FleckBase_Thrown">
     <defName>RF_SapphireFireGlow</defName>
     <graphicData>
-      <texPath>Things/Mote/FeedbackGoto</texPath>
+      <texPath>Things/Mote/RF_FireGlow_Sapphire</texPath>
       <shaderType>MoteGlow</shaderType>
     </graphicData>
     <altitudeLayer>MoteOverhead</altitudeLayer>
@@ -97,7 +97,7 @@
     <solidTime>1.08</solidTime>
     <fadeOutTime>0.8</fadeOutTime>
   </FleckDef>
-  
+
   <ThingDef>
     <defName>RF_RubyFire</defName>
     <label>ruby fire</label>
@@ -105,10 +105,10 @@
     <category>Attachment</category>
     <tickerType>Normal</tickerType>
     <graphicData>
-      <texPath>Things/Special/Darklight</texPath>
+      <texPath>Things/Special/RF_RubyFire</texPath>
       <graphicClass>Graphic_Flicker</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
-    </graphicData> 
+    </graphicData>
     <altitudeLayer>PawnState</altitudeLayer>
     <useHitPoints>false</useHitPoints>
   </ThingDef>
@@ -116,7 +116,7 @@
   <FleckDef ParentName="FleckBase_Thrown">
     <defName>RF_RubyFireGlow</defName>
     <graphicData>
-      <texPath>Things/Mote/FeedbackGoto</texPath>
+      <texPath>Things/Mote/RF_FireGlow_Ruby</texPath>
       <shaderType>MoteGlow</shaderType>
     </graphicData>
     <altitudeLayer>MoteOverhead</altitudeLayer>
@@ -124,5 +124,5 @@
     <solidTime>1.08</solidTime>
     <fadeOutTime>0.8</fadeOutTime>
   </FleckDef>
-  
+
 </Defs>
