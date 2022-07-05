@@ -71,6 +71,12 @@
 				<Crafting>8</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<modExtensions>
+			<li Class="RimFantasy.WeaponDropExtension">
+				<preventDroppingWhenDowned>true</preventDroppingWhenDowned>
+				<preventDroppingWhenDead>true</preventDroppingWhenDead>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 </Defs>
