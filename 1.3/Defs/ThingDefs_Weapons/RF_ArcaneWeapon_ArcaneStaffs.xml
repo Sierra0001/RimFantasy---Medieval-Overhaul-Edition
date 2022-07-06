@@ -5,7 +5,7 @@
 
   <ThingDef ParentName="RF_BaseWeapon_ArcaneStaffs">
       <defName>RF_EmeraldStaff</defName>
-      <label>emerald stave</label>
+      <label>emerald staff</label>
       <graphicData>
         <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneStaffs/RF_EmeraldStaff</texPath>
         <graphicClass>Graphic_Single</graphicClass>
@@ -90,7 +90,7 @@
 
   <ThingDef ParentName="RF_BaseWeapon_ArcaneStaffs">
       <defName>RF_SapphireStaff</defName>
-      <label>sapphire stave</label>
+      <label>sapphire staff</label>
       <graphicData>
         <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneStaffs/RF_SapphireStaff</texPath>
         <graphicClass>Graphic_Single</graphicClass>
@@ -175,7 +175,7 @@
 
   <ThingDef ParentName="RF_BaseWeapon_ArcaneStaffs">
       <defName>RF_RubyStaff</defName>
-      <label>ruby stave</label>
+      <label>ruby staff</label>
       <graphicData>
         <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneStaffs/RF_RubyStaff</texPath>
         <graphicClass>Graphic_Single</graphicClass>
