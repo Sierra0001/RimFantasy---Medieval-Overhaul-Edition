@@ -4,7 +4,7 @@
   <!--========== Ref: Gun_LMG ==========-->
 
 	<ThingDef Name="RF_BaseWeapon_ArcaneStaffs" ParentName="BaseWeapon" Abstract="True">
-		<description>Beautiful as it is deadly, this staff is charged with magical energy and can be used to launch a barrage of magic bolts upon enemies.\n\nPhysical shields cannot be used along with this weapon as they interfere with the flow of magical energies around the caster.</description>
+		<description>Beautiful as it is deadly, this staff is charged with magical energy and can be used to launch a barrage of magic bolts upon enemies.\n\nShields cannot be used along with this weapon as they interfere with the flow of magical energies around the caster.</description>
 		<techLevel>Medieval</techLevel>
 		<weaponTags>
 			<li>Bladelink</li>

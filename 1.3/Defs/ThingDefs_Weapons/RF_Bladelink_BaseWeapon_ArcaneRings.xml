@@ -4,7 +4,7 @@
 	<!--========== Ref: Gun_IncendiaryLauncher ==========-->
 
 	<ThingDef Name="RF_BaseWeapon_ArcaneRings" ParentName="BaseWeapon" Abstract="True">
-		<description>An alluring glow gives away the fact that this is a magical ring. This ring allow its wearer to release destructive bolts of energy around their target.\n\nPhysical shields cannot be used along with this weapon as they interfere with the flow of magical energies around the caster.</description>
+		<description>An alluring glow gives away the fact that this is a magical ring. This ring allow its wearer to release destructive bolts of energy around their target.\n\nShields cannot be used along with this weapon as they interfere with the flow of magical energies around the caster.\n\nDoes not drop on down or death.</description>
 		<techLevel>Medieval</techLevel>
 		<weaponTags>
 			<li>Bladelink</li>

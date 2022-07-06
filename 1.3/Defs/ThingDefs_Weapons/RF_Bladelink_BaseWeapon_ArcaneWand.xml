@@ -4,7 +4,7 @@
 	<!--========== Ref: Bullet_Revolver ==========-->
 
 	<ThingDef Name="RF_BaseWeapon_ArcaneWands" ParentName="BaseWeapon" Abstract="True">
-		<description>Beautiful as it is deadly, this wand is charged with magical energy and is a choice weapon for its remarkable effectiveness in duels.</description>
+		<description>Beautiful as it is deadly, this wand is charged with magical energy and is a choice weapon for its remarkable effectiveness in duels.\n\nShields cannot be used along with this weapon as they interfere with the flow of magical energies around the caster.</description>
 		<techLevel>Medieval</techLevel>
 		<weaponTags>
 			<li>Bladelink</li>
@@ -71,11 +71,6 @@
 				<Crafting>8</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
-				<usableWithShields>true</usableWithShields>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 </Defs>
