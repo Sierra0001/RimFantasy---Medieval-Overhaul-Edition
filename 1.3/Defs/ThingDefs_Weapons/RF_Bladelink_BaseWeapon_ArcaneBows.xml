@@ -27,7 +27,7 @@
 				<AccuracyLong>0.50</AccuracyLong>
 				<RangedWeapon_Cooldown>1.45</RangedWeapon_Cooldown>
 		</statBases>
-		<equippedAngleOffset>-40</equippedAngleOffset>
+		<equippedAngleOffset>-45</equippedAngleOffset>
 		<soundInteract>Interact_BladelinkMonoSword</soundInteract>
 		<meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
     <tools>
