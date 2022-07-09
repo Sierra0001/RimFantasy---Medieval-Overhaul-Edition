@@ -21,7 +21,7 @@
 				<WorkToMake>18000</WorkToMake>
 				<Mass>3</Mass>
 		</statBases>
-		<equippedAngleOffset>-25</equippedAngleOffset>
+		<equippedAngleOffset>-20</equippedAngleOffset>
 		<soundInteract>Interact_BladelinkMonoSword</soundInteract>
 		<meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
     <tools>
