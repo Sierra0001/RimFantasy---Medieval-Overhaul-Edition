@@ -4,7 +4,7 @@
   <!--========== Ref: VWE_MeleeWeapon_BattleAxe ==========-->
 
 	<ThingDef Name="RF_BaseWeapon_ArcaneBattleAxes" ParentName="BaseWeapon" Abstract="True">
-		<description>Magical gemstone blades attached to shaft, capable of cutting through armored enemies with ease.</description>
+		<description>Magical gemstone blades attached to shaft, capable of cutting through armored enemies with ease.\n\nUsable with shields.</description>
 		<techLevel>Medieval</techLevel>
 		<weaponTags>
 			<li>Bladelink</li>
@@ -21,7 +21,7 @@
 				<WorkToMake>18000</WorkToMake>
 				<Mass>3</Mass>
 		</statBases>
-		<equippedAngleOffset>-20</equippedAngleOffset>
+		<equippedAngleOffset>-65</equippedAngleOffset>
 		<soundInteract>Interact_BladelinkMonoSword</soundInteract>
 		<meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
     <tools>

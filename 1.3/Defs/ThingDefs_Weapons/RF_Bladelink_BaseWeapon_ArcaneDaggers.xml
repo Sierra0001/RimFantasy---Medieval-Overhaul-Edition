@@ -4,7 +4,7 @@
   <!--========== Ref: MeleeWeapon_Ikwa ==========-->
 
 	<ThingDef Name="RF_BaseWeapon_ArcaneDaggers" ParentName="BaseWeapon" Abstract="True">
-		<description>Exotic dagger with a razor-sharp edge, enchanted with magic to increase its lethality.</description>
+		<description>Exotic dagger with a razor-sharp edge, enchanted with magic to increase its lethality.\n\nUsable with shields.</description>
 		<techLevel>Medieval</techLevel>
 		<weaponTags>
 			<li>Bladelink</li>
@@ -21,7 +21,7 @@
 				<WorkToMake>18000</WorkToMake>
 				<Mass>2</Mass>
 		</statBases>
-		<equippedAngleOffset>-25</equippedAngleOffset>
+		<equippedAngleOffset>-55</equippedAngleOffset>
 		<soundInteract>Interact_BladelinkMonoSword</soundInteract>
 		<meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
     <tools>

@@ -12,7 +12,7 @@
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Heal">
-				<effectChance>0.25</effectChance>
+				<effectChance>0.15</effectChance>
 				<hpToHeal>1~2</hpToHeal>
 				<fleckDefOnSelf>RF_Fleck_BlastSapphire_Round</fleckDefOnSelf>
 			</li>
@@ -32,7 +32,7 @@
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Heal">
-				<effectChance>0.35</effectChance>
+				<effectChance>0.20</effectChance>
 				<hpToHeal>3~4</hpToHeal>
 				<fleckDefOnSelf>RF_Fleck_BlastSapphire_Round</fleckDefOnSelf>
 			</li>
@@ -52,7 +52,7 @@
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Heal">
-				<effectChance>0.45</effectChance>
+				<effectChance>0.25</effectChance>
 				<hpToHeal>5~6</hpToHeal>
 				<fleckDefOnSelf>RF_Fleck_BlastSapphire_Round</fleckDefOnSelf>
 			</li>

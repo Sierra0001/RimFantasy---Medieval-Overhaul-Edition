@@ -18,7 +18,7 @@
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>RF_MagicBolt_EmeraldRing</damageDef>
-      <damageAmountBase>15</damageAmountBase>
+      <damageAmountBase>18</damageAmountBase>
       <stoppingPower>1</stoppingPower>
       <armorPenetrationBase>0.15</armorPenetrationBase>
       <speed>40</speed>
@@ -43,7 +43,7 @@
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>RF_MagicBolt_SapphireRing</damageDef>
-      <damageAmountBase>15</damageAmountBase>
+      <damageAmountBase>18</damageAmountBase>
       <stoppingPower>1</stoppingPower>
       <armorPenetrationBase>0.15</armorPenetrationBase>
       <speed>40</speed>
@@ -68,7 +68,7 @@
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>RF_MagicBolt_RubyRing</damageDef>
-      <damageAmountBase>16</damageAmountBase>
+      <damageAmountBase>18</damageAmountBase>
       <stoppingPower>1</stoppingPower>
       <armorPenetrationBase>0.15</armorPenetrationBase>
       <speed>40</speed>

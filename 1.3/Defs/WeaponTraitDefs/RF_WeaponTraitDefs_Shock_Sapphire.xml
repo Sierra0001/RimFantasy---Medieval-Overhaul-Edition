@@ -12,7 +12,7 @@
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Stun">
-				<effectChance>0.25</effectChance>
+				<effectChance>0.15</effectChance>
 				<stunDuration>45~60</stunDuration>
 				<effectDamage>Burn</effectDamage>
 				<baseDamageValue>2</baseDamageValue>
@@ -34,7 +34,7 @@
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Stun">
-				<effectChance>0.35</effectChance>
+				<effectChance>0.20</effectChance>
 				<stunDuration>60~75</stunDuration>
 				<effectDamage>Burn</effectDamage>
 				<baseDamageValue>4</baseDamageValue>
@@ -56,7 +56,7 @@
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Stun">
-				<effectChance>0.45</effectChance>
+				<effectChance>0.25</effectChance>
 				<stunDuration>75~90</stunDuration>
 				<effectDamage>Burn</effectDamage>
 				<baseDamageValue>6</baseDamageValue>

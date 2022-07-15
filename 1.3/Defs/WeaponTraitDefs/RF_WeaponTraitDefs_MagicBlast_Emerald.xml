@@ -12,7 +12,7 @@
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect">
-				<effectChance>0.60</effectChance>
+				<effectChance>0.25</effectChance>
 				<effectDamage>Burn</effectDamage>
 				<baseDamageValue>2</baseDamageValue>
 				<fleckDefOnTarget>RF_Fleck_BlastEmerald_Round</fleckDefOnTarget>
@@ -33,7 +33,7 @@
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect">
-				<effectChance>0.60</effectChance>
+				<effectChance>0.30</effectChance>
 				<effectDamage>Burn</effectDamage>
 				<baseDamageValue>4</baseDamageValue>
 				<fleckDefOnTarget>RF_Fleck_BlastEmerald_Round</fleckDefOnTarget>
@@ -54,7 +54,7 @@
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect">
-				<effectChance>0.60</effectChance>
+				<effectChance>0.35</effectChance>
 				<effectDamage>Burn</effectDamage>
 				<baseDamageValue>8</baseDamageValue>
 				<fleckDefOnTarget>RF_Fleck_BlastEmerald_Round</fleckDefOnTarget>

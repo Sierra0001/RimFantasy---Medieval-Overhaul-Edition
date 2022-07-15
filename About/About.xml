@@ -66,6 +66,7 @@ Since then, the value of gemstones reached unimaginable heights and can be commo
 [b]Compatibility:[/b]
 [list]
 [*]Save Game Compatible
+[*][b][Incompatible - RimFantasy - Gemstones][/b] The Medieval Overhaul Edition supersedes the original series for usage with Medieval Overhaul. Will cause game breaking issues if used together.
 [*][b][Major Incompatibility - Simple Sidearms][/b] Overrides the way bladelink weapons work and breaks the no-bond mechanics of arcane weapons. &lt;biocodeOnEquip&gt; can be turned on in settings as a workaround, but will re-introduce the bonding mechanic.
 [/list]
 
