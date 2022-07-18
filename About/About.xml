@@ -36,7 +36,7 @@
 	</incompatibleWith>
 	<description>
 [h1]Mod Version: v1.0[/h1]
-[i]This version of RimFantasy has been reworked and rebalanced to adhere to Medieval Overhaul standards. It is no longer modular and contains new/altered/removed content.[/i]
+[h1][i]This version of RimFantasy has been reworked and rebalanced to adhere to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067]Medieval Overhaul[/url] standards. It is no longer modular and contains new/altered/removed content.[/i][/h1]
 
 
 For the longest time, civilizations dismissed magic as wild fantasies and superstitious tribal beliefs. That is until one day, an incident occurred in a gemstone mine, which led to the discovery that gemstones have a natural affinity with magic, and could be imbued with magical energies to produce spectacular effects.
@@ -67,11 +67,11 @@ Since then, the value of gemstones reached unimaginable heights and can be commo
 [list]
 [*]Save Game Compatible
 [*][b][Incompatible - RimFantasy - Gemstones][/b] The Medieval Overhaul Edition supersedes the original series for usage with Medieval Overhaul. Will cause game breaking issues if used together.
-[*][b][Major Incompatibility - Simple Sidearms][/b] Overrides the way bladelink weapons work and breaks the no-bond mechanics of arcane weapons. &lt;biocodeOnEquip&gt; can be turned on in settings as a workaround, but will re-introduce the bonding mechanic.
+[*][b][Moderate Incompatibility - Simple Sidearms][/b] Overrides the way bladelink weapons work and breaks the no-bond mechanics of arcane weapons. "Allow use of blocked weapons" can be turned on in settings as a workaround.
 [/list]
 
 
-[b]Balance 	&#38; Bug Reports:[/b]
+[b]Balance &#38; Bug Reports:[/b]
 Balance feedbacks are welcomed, please provide context when doing so.
 Bug reports must come with HugsLogs, join the Discord if you don't know how to generate one.
 

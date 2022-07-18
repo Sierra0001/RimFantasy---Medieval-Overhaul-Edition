@@ -23,7 +23,7 @@ Bug reports must come with HugsLogs, join the Discord if you don't know how to g
 
 - Save Game Compatible
 - [Incompatible - RimFantasy - Gemstones] The Medieval Overhaul Edition supersedes the original series for usage with Medieval Overhaul. Will cause game breaking issues if used together.
-- [Major Incompatibility - Simple Sidearms] Overrides the way bladelink weapons work and breaks the no-bond mechanics of arcane weapons. biocodeOnEquip can be turned on in settings as a workaround, but will re-introduce the bonding mechanic.
+- [Moderate Incompatibility - Simple Sidearms] Overrides the way bladelink weapons work and breaks the no-bond mechanics of arcane weapons. "Allow use of blocked weapons" can be turned on in settings as a workaround.
 
 ### Links
 
