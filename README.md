@@ -28,16 +28,16 @@ Bug reports must come with HugsLogs, join the Discord if you don't know how to g
 ### Links
 
 - [Current Version](https://github.com/Sierra0001/RimFantasy---Medieval-Overhaul-Edition/releases/tag/v1.0)
-- [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2630669656)
+- [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2836791007)
 - [GitHub](https://github.com/Sierra0001/RimFantasy---Medieval-Overhaul-Edition)
 
 ### Credits
 
-SirLalaPyon for his amazing, high-quality vanilla styled art.
-Taranchuk for his C# code magic that allows for various fancy features.
-Brrainz for his contributions to the modding community.
+SirLalaPyon for their amazing, high-quality vanilla styled art.
+Taranchuk for their C# code magic that allows for various fancy features.
+Brrainz for their contributions to the modding community.
 Oskar/Vanilla Expanded team for the framework.
-Steve for his contributions that helped to shape RimFantasy the mod it is today.
+Steve for their contributions that helped to shape RimFantasy the mod it is today.
 
 ### Latest Changes
 

@@ -12,7 +12,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawRotated>false</drawRotated>
-      <drawSize>(1,1)</drawSize>
+      <drawSize>(0.95,0.95)</drawSize>
       <drawOffset>(0,0,0.10)</drawOffset>
       <allowFlip>true</allowFlip>
       <shadowData>
@@ -102,7 +102,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawRotated>false</drawRotated>
-      <drawSize>(1,1)</drawSize>
+      <drawSize>(0.95,0.95)</drawSize>
       <drawOffset>(0,0,0.10)</drawOffset>
       <allowFlip>true</allowFlip>
       <shadowData>
