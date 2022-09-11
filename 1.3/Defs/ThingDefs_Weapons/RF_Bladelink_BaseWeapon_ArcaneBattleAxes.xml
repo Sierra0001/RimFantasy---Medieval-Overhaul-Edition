@@ -39,7 +39,7 @@
           <li>Cut</li>
         </capacities>
         <power>22</power>
-				<armorPenetration>0.10</armorPenetration>
+				<armorPenetration>0.175</armorPenetration> <!-- Increased by 0.05 because it was shit -->
         <cooldownTime>2.55</cooldownTime>
       </li>
     </tools>

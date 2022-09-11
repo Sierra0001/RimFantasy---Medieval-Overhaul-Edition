@@ -35,7 +35,7 @@
 		<li>Sierra.RF.Gemstones</li>
 	</incompatibleWith>
 	<description>
-[h1]Mod Version: v1.0[/h1]
+[h1]Mod Version: v1.0.1[/h1]
 [h1][i]This version of RimFantasy has been reworked and rebalanced to adhere to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067]Medieval Overhaul[/url] standards. It is no longer modular and contains new/altered/removed content.[/i][/h1]
 
 
@@ -94,9 +94,10 @@ Bug reports must come with HugsLogs, join the Discord if you don't know how to g
 
 
 [h1]Latest Changes:[/h1]
-[b]v1.0[/b]
+[b]v1.0.1[/b]
 [list]
-[*][Release] Initial release.
+[*][Fix] Fixed an issue where magical fire cannot be extinguished by pawns.
+[*][Buff] Armor Penentration for Battle Axes increased from 10% to 17.5%.
 [/list]
 	</description>
 </ModMetaData>
