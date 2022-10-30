@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>RF_Fleck_BlastDiamond_Round</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_Fleck_BlastDiamond_Round</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.2</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>RF_Fleck_BlastRuby_Round</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_Fleck_BlastRuby_Round</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.2</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>RF_Fleck_BlastCarnelian_Round</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_Fleck_BlastCarnelian_Round</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.2</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>RF_Fleck_BlastCitrine_Round</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_Fleck_BlastCitrine_Round</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.2</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>RF_Fleck_BlastEmerald_Round</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_Fleck_BlastEmerald_Round</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.2</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>RF_Fleck_BlastAquamarine_Round</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_Fleck_BlastAquamarine_Round</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.2</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase">
+    <defName>RF_Fleck_BlastSapphire_Round</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_Fleck_BlastSapphire_Round</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.2</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+  </FleckDef>
+
+</Defs>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MinorShock_Ruby</defName>
+		<label>minor shock</label>
+		<description>Enchanted with lower lightning magic, this weapon can sometimes unleash a weak wave of magical energy and may briefly stun the target.</description>
+    <exclusionTags>
+			<li>RF_Shock_Ruby</li>
+			<li>RF_MajorShock_Ruby</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Stun">
+				<effectChance>0.15</effectChance>
+				<stunDuration>45~60</stunDuration>
+				<effectDamage>Burn</effectDamage>
+				<baseDamageValue>2</baseDamageValue>
+				<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
+			</li>
+		</weaponEffects>
+		<commonality>1.00</commonality>
+		<marketValueOffset>200</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_Shock_Ruby</defName>
+		<label>shock</label>
+		<description>Enchanted with lightning magic, this weapon can sometimes unleash a wave of magical energy and may stun the target.</description>
+    <exclusionTags>
+			<li>RF_MinorShock_Ruby</li>
+			<li>RF_MajorShock_Ruby</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Stun">
+				<effectChance>0.20</effectChance>
+				<stunDuration>60~75</stunDuration>
+				<effectDamage>Burn</effectDamage>
+				<baseDamageValue>4</baseDamageValue>
+				<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
+			</li>
+		</weaponEffects>
+		<commonality>0.75</commonality>
+		<marketValueOffset>400</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MajorShock_Ruby</defName>
+		<label>major shock</label>
+		<description>Enchanted with higher lightning magic, this weapon can sometimes unleash a powerful wave of magical energy and may momentarily stun the target.</description>
+    <exclusionTags>
+			<li>RF_MinorShock_Ruby</li>
+			<li>RF_Shock_Ruby</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Stun">
+				<effectChance>0.25</effectChance>
+				<stunDuration>75~90</stunDuration>
+				<effectDamage>Burn</effectDamage>
+				<baseDamageValue>6</baseDamageValue>
+				<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
+			</li>
+		</weaponEffects>
+		<commonality>0.25</commonality>
+		<marketValueOffset>600</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+</Defs>

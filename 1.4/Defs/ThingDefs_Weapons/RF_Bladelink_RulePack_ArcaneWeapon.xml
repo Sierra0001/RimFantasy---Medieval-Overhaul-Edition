@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>RF_Namer_ArcaneWeapons</defName>
+    <rulePack>
+      <include>
+        <li>NamerAnimalUtility</li>
+      </include>
+      <rulesStrings>
+        <!--<li>r_weapon_name(p=1)->[beginSyl][endSyl][the]&#160;[noun][verber]</li>-->
+        <!--<li>r_weapon_name(p=1)->[beginSyl][middleSyl][endSyl][the]&#160;[noun][verber]</li>-->
+        <!--Name a hammer after Brrainz. Brrain-I-nator, the Wrath of Brrainz.-->
+        <li>r_weapon_name(p=1)->[beginSyl][endSyl]</li>
+        <li>r_weapon_name(p=1)->[beginSyl][middleSyl]</li>
+        <li>r_weapon_name(p=1)->[middleSyl][endSyl]</li>
+        <li>r_weapon_name(p=1)->[noun][verber]</li>
+
+        <li>beginSyl->alu</li>
+        <li>beginSyl->ar</li>
+        <li>beginSyl->bri</li>
+        <li>beginSyl->dauth</li>
+        <li>beginSyl->nae</li>
+        <li>beginSyl->ni</li>
+        <li>beginSyl->o</li>
+        <li>beginSyl->ra</li>
+        <li>beginSyl->sha</li>
+        <li>beginSyl->ta</li>
+        <li>beginSyl->tu</li>
+        <li>beginSyl->und</li>
+        <li>beginSyl->vol</li>
+        <li>beginSyl->vr</li>
+        <li>beginSyl->xal</li>
+        <li>beginSyl->zar</li>
+
+        <li>middleSyl->an</li>
+        <li>middleSyl->er</li>
+        <li>middleSyl->mer</li>
+        <li>middleSyl->ras</li>
+        <li>middleSyl->sin</li>
+        <li>middleSyl->vin</li>
+
+        <li>endSyl->atath</li>
+        <li>endSyl->bitr</li>
+        <li>endSyl->daert</li>
+        <li>endSyl->dal</li>
+        <li>endSyl->den</li>
+        <li>endSyl->dr</li>
+        <li>endSyl->dyn</li>
+        <li>endSyl->gling</li>
+        <li>endSyl->gr</li>
+        <li>endSyl->lein</li>
+        <li>endSyl->nen</li>
+        <li>endSyl->neth</li>
+        <li>endSyl->roc</li>
+        <li>endSyl->ure</li>
+        <li>endSyl->und</li>
+
+        <li>the->,&#160;the</li>
+
+        <li>noun->blood</li>
+        <li>noun->chaos</li>
+        <li>noun->dark</li>
+        <li>noun->death</li>
+        <li>noun->debt</li>
+        <li>noun->dream</li>
+        <li>noun->doom</li>
+        <li>noun->faith</li>
+        <li>noun->fate</li>
+        <li>noun->fear</li>
+        <li>noun->guilt</li>
+        <li>noun->hate</li>
+        <li>noun->hope</li>
+        <li>noun->justice</li>
+        <li>noun->time</li>
+        <li>noun->oath</li>
+        <li>noun->order</li>
+        <li>noun->pain</li>
+        <li>noun->promise</li>
+        <li>noun->silence</li>
+        <li>noun->terror</li>
+        <li>noun->time</li>
+        <li>noun->war</li>
+        <li>noun->void</li>
+
+        <li>verber->bender</li>
+        <li>verber->breaker</li>
+        <li>verber->bringer</li>
+        <li>verber->crusher</li>
+        <li>verber->giver</li>
+        <li>verber->keeper</li>
+        <li>verber->knower</li>
+        <li>verber->leaver</li>
+        <li>verber->maker</li>
+        <li>verber->sender</li>
+        <li>verber->smasher</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

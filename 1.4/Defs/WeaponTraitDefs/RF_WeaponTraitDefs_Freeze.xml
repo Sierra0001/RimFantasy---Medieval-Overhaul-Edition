@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MinorFreeze</defName>
+		<label>minor freeze</label>
+		<description>Enchanted with lower ice magic, this weapon can sometimes unleash a weak wave of magical energy and may cause hypothermia.</description>
+    <exclusionTags>
+			<li>RF_MinorFreeze</li>
+			<li>RF_Freeze</li>
+			<li>RF_MajorFreeze</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.25</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect">
+						<effectDamage>Frostbite</effectDamage>
+						<baseDamageValue>2</baseDamageValue>
+						<fleckDefOnTarget>RF_Fleck_BlastSapphire_Round</fleckDefOnTarget>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
+						<hediffDef>Hypothermia</hediffDef>
+						<severityOffset>-0.25</severityOffset> <!--5% above Minor -->
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>4</commonality>
+		<marketValueOffset>200</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_Freeze</defName>
+		<label>freeze</label>
+		<description>Enchanted with ice magic, this weapon can sometimes unleash a wave of magical energy and may cause hypothermia.</description>
+    <exclusionTags>
+			<li>RF_MinorFreeze</li>
+			<li>RF_Freeze</li>
+			<li>RF_MajorFreeze</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.30</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect">
+						<effectDamage>Frostbite</effectDamage>
+						<baseDamageValue>4</baseDamageValue>
+						<fleckDefOnTarget>RF_Fleck_BlastSapphire_Round</fleckDefOnTarget>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
+						<hediffDef>Hypothermia</hediffDef>
+						<severityOffset>-0.10</severityOffset> <!--5% above Serious -->
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>2</commonality>
+		<marketValueOffset>400</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MajorFreeze</defName>
+		<label>major freeze</label>
+		<description>Enchanted with higher ice magic, this weapon can sometimes unleash a powerful wave of magical energy and may cause hypothermia.</description>
+    <exclusionTags>
+			<li>RF_MinorFreeze</li>
+			<li>RF_Freeze</li>
+			<li>RF_MajorFreeze</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.35</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect">
+						<effectDamage>Frostbite</effectDamage>
+						<baseDamageValue>6</baseDamageValue>
+						<fleckDefOnTarget>RF_Fleck_BlastSapphire_Round</fleckDefOnTarget>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
+						<hediffDef>Hypothermia</hediffDef>
+						<severityOffset>0.15</severityOffset> <!--3% above Extreme -->
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>1</commonality>
+		<marketValueOffset>600</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+</Defs>

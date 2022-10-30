@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--========== Magic Arrows ==========-->
+  <!--========== Used for all bows. ==========-->
+
+  <!--========== Emerald Arcane Arrow ==========-->
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>RF_MagicArrow_Emerald</defName>
+    <label>emerald arcane arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/RF_MagicArrow_Emerald</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Arrow</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>46</speed>
+    </projectile>
+  </ThingDef>
+
+  <!--========== Sapphire Arcane Arrow ==========-->
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>RF_MagicArrow_Sapphire</defName>
+    <label>sapphire arcane arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/RF_MagicArrow_Sapphire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Arrow</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>46</speed>
+    </projectile>
+  </ThingDef>
+
+  <!--========== Ruby Arcane Arrow ==========-->
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>RF_MagicArrow_Ruby</defName>
+    <label>ruby arcane arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/RF_MagicArrow_Ruby</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Arrow</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>46</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>
