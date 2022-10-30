@@ -56,6 +56,9 @@ Since then, the value of gemstones reached unimaginable heights and can be commo
 [b]Recommended Mods:[/b]
 [list]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067]Medieval Overhaul[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2646321064]Medieval Empire Overhaul[/url]
+- [i]Requires Medieval Overhaul. Changes Empire faction from Spacer to Medieval.[/i]
+
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1916352291]RimTraits - Medieval Talent[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2206957172]RimTraits - General Traits[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2244594116]RimTraits - Vanilla Trait Colors[/url]
@@ -66,17 +69,11 @@ Since then, the value of gemstones reached unimaginable heights and can be commo
 [b]Compatibility:[/b]
 [list]
 [*]Save Game Compatible
-[*][b][Incompatible - RimFantasy - Gemstones][/b] The Medieval Overhaul Edition supersedes the original series for usage with Medieval Overhaul. Will cause game breaking issues if used together.
+[*][b][Incompatible - RimFantasy (Original Series)][/b] The Medieval Overhaul Edition supersedes the original series for usage with Medieval Overhaul. Will cause game breaking issues if used together.
 [*][b][Moderate Incompatibility - Simple Sidearms][/b] Overrides the way bladelink weapons work and breaks the no-bond mechanics of arcane weapons. "Allow use of blocked weapons" can be turned on in settings as a workaround.
 [/list]
 
 
-[b]Balance &#38; Bug Reports:[/b]
-Balance feedbacks are welcomed, please provide context when doing so.
-Bug reports must come with HugsLogs, join the Discord if you don't know how to generate one.
-
-
-[h1][url=https://discord.gg/rimworld]Click here to join us on the Community Discord![/url][/h1]
 [url=https://ko-fi.com/sierra0001][img]https://i.imgur.com/SBiUpbW.png[/img][/url]
 
 
@@ -93,10 +90,16 @@ Bug reports must come with HugsLogs, join the Discord if you don't know how to g
 (CC BY-NC-ND 4.0)
 
 
+[h1]Troubleshooting &#38; Bug Reports:[/h1]
+Join the Discord (link below) for troubleshooting and bug reports. Steam is a terrible platform for support and I will not be using it to deal with anything longer than a simple answer.
+[h1][url=https://discord.gg/rimworld][img]https://i.imgur.com/Y2Bdoia.gif[/img][/url][/h1]
+
+
 [h1]Latest Changes:[/h1]
 [b]v1.0.1[/b]
 [list]
 [*][Fix] Fixed an issue where magical fire cannot be extinguished by pawns.
+[*][Fix] Fixed an issue where magic fire is turned into normal fire if triggered on killing blow.
 [*][Buff] Armor Penentration for Battle Axes increased from 10% to 17.5%.
 [/list]
 	</description>

@@ -27,7 +27,7 @@ Bug reports must come with HugsLogs, join the Discord if you don't know how to g
 
 ### Links
 
-- [Current Version](https://github.com/Sierra0001/RimFantasy---Medieval-Overhaul-Edition/releases/tag/v1.0)
+- [Current Version](https://github.com/Sierra0001/RimFantasy---Medieval-Overhaul-Edition/releases/tag/v1.0.1)
 - [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2836791007)
 - [GitHub](https://github.com/Sierra0001/RimFantasy---Medieval-Overhaul-Edition)
 
@@ -41,4 +41,6 @@ Steve for their contributions that helped to shape RimFantasy the mod it is toda
 
 ### Latest Changes
 
-- [Release] Initial release.
+- [Fix] Fixed an issue where fire cannot be extinguished.
+- [Fix] Fixed an issue where magic fire is turned into normal fire if triggered on killing blow.
+- [Buff] Armor Penentration for Battle Axes increased from 10% to 17.5%.
