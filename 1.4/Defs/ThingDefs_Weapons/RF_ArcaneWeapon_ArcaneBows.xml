@@ -72,6 +72,10 @@
         <li Class="RimFantasy.RimFantasyExtension">
           <stuffKey>Emerald</stuffKey>
         </li>
+        <li Class="RimFantasy.WeaponDropExtension">
+          <preventDroppingWhenDowned>true</preventDroppingWhenDowned>
+          <preventDroppingWhenDead>true</preventDroppingWhenDead>
+        </li>
       </modExtensions>
   </ThingDef>
 
@@ -146,6 +150,10 @@
         <li Class="RimFantasy.RimFantasyExtension">
           <stuffKey>Sapphire</stuffKey>
         </li>
+        <li Class="RimFantasy.WeaponDropExtension">
+          <preventDroppingWhenDowned>true</preventDroppingWhenDowned>
+          <preventDroppingWhenDead>true</preventDroppingWhenDead>
+        </li>
       </modExtensions>
   </ThingDef>
 
@@ -219,6 +227,10 @@
       <modExtensions>
         <li Class="RimFantasy.RimFantasyExtension">
           <stuffKey>Ruby</stuffKey>
+        </li>
+        <li Class="RimFantasy.WeaponDropExtension">
+          <preventDroppingWhenDowned>true</preventDroppingWhenDowned>
+          <preventDroppingWhenDead>true</preventDroppingWhenDead>
         </li>
       </modExtensions>
   </ThingDef>

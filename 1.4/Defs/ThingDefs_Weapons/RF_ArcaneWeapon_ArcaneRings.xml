@@ -6,24 +6,17 @@
   <ThingDef ParentName="RF_BaseWeapon_ArcaneRings">
       <defName>RF_EmeraldRing</defName>
       <label>enchanted emerald ring</label>
+      <thingClass>VFECore.ThingWithFloorGraphic</thingClass>
       <graphicData>
         <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_EmeraldRing</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
-        <drawSize>0.25</drawSize>
+        <drawSize>0.40</drawSize>
       </graphicData>
       <costList>
           <DankPyon_Emerald>55</DankPyon_Emerald>
       </costList>
       <comps>
-  			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-          <groundGraphic>
-            <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_EmeraldRing</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>TransparentPostLight</shaderType>
-  		      <drawSize>1</drawSize>
-          </groundGraphic>
-  			</li>
         <li Class="RimFantasy.CompProperties_GlowerStuffable">
           <glowRadius>1</glowRadius>
           <glowColor>(50,150,50)</glowColor>
@@ -93,6 +86,19 @@
         <li Class="RimFantasy.RimFantasyExtension">
           <stuffKey>Emerald</stuffKey>
         </li>
+        <li Class="RimFantasy.WeaponDropExtension">
+          <preventDroppingWhenDowned>true</preventDroppingWhenDowned>
+          <preventDroppingWhenDead>true</preventDroppingWhenDead>
+        </li>
+        <li Class="VFECore.FloorGraphicExtension">
+          <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+            <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_EmeraldRing</texPath>
+            <onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+            <drawSize>0.55</drawSize>
+          </graphicData>
+        </li>
       </modExtensions>
   </ThingDef>
 
@@ -101,24 +107,17 @@
   <ThingDef ParentName="RF_BaseWeapon_ArcaneRings">
       <defName>RF_SapphireRing</defName>
       <label>enchanted sapphire ring</label>
+      <thingClass>VFECore.ThingWithFloorGraphic</thingClass>
       <graphicData>
         <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_SapphireRing</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
-        <drawSize>0.25</drawSize>
+        <drawSize>0.40</drawSize>
       </graphicData>
       <costList>
           <DankPyon_Sapphire>55</DankPyon_Sapphire>
       </costList>
       <comps>
-  			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-          <groundGraphic>
-            <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_SapphireRing</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>TransparentPostLight</shaderType>
-  		      <drawSize>1</drawSize>
-          </groundGraphic>
-  			</li>
         <li Class="RimFantasy.CompProperties_GlowerStuffable">
           <glowRadius>1</glowRadius>
           <glowColor>(0,125,225)</glowColor>
@@ -140,7 +139,6 @@
         </li>
         <li Class="RimFantasy.CompProperties_ArcaneWeapon">
 				<biocodeOnEquip>false</biocodeOnEquip>
-
           <weaponTraitsPool>
 					<li>RF_MinorBlaze_Sapphire</li>
 					<li>RF_Blaze_Sapphire</li>
@@ -189,6 +187,19 @@
         <li Class="RimFantasy.RimFantasyExtension">
           <stuffKey>Sapphire</stuffKey>
         </li>
+        <li Class="RimFantasy.WeaponDropExtension">
+          <preventDroppingWhenDowned>true</preventDroppingWhenDowned>
+          <preventDroppingWhenDead>true</preventDroppingWhenDead>
+        </li>
+        <li Class="VFECore.FloorGraphicExtension">
+          <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+            <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_SapphireRing</texPath>
+            <onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+            <drawSize>0.55</drawSize>
+          </graphicData>
+        </li>
       </modExtensions>
   </ThingDef>
 
@@ -197,24 +208,17 @@
   <ThingDef ParentName="RF_BaseWeapon_ArcaneRings">
       <defName>RF_RubyRing</defName>
       <label>enchanted ruby ring</label>
+      <thingClass>VFECore.ThingWithFloorGraphic</thingClass>
       <graphicData>
         <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_RubyRing</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
-        <drawSize>0.25</drawSize>
+        <drawSize>0.40</drawSize>
       </graphicData>
       <costList>
         <DankPyon_Ruby>55</DankPyon_Ruby>
       </costList>
       <comps>
-  			<li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-          <groundGraphic>
-            <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_RubyRing</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>TransparentPostLight</shaderType>
-  		      <drawSize>1</drawSize>
-          </groundGraphic>
-  			</li>
         <li Class="RimFantasy.CompProperties_GlowerStuffable">
           <glowRadius>1</glowRadius>
           <glowColor>(189,25,60)</glowColor>
@@ -283,6 +287,19 @@
       <modExtensions>
         <li Class="RimFantasy.RimFantasyExtension">
           <stuffKey>Ruby</stuffKey>
+        </li>
+        <li Class="RimFantasy.WeaponDropExtension">
+          <preventDroppingWhenDowned>true</preventDroppingWhenDowned>
+          <preventDroppingWhenDead>true</preventDroppingWhenDead>
+        </li>
+        <li Class="VFECore.FloorGraphicExtension">
+          <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+            <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_RubyRing</texPath>
+            <onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+            <drawSize>0.55</drawSize>
+          </graphicData>
         </li>
       </modExtensions>
   </ThingDef>

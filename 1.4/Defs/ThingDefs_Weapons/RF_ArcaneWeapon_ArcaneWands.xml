@@ -58,12 +58,12 @@
 					<li>RF_MinorMagiciansShield</li>
 					<li>RF_MagiciansShield</li>
 					<li>RF_MajorMagiciansShield</li>
-            <li>RF_MinorMagicBlast_Emerald</li>
-            <li>RF_MagicBlast_Emerald</li>
-            <li>RF_MajorMagicBlast_Emerald</li>
-  					<li>RF_MinorBane</li>
-  					<li>RF_Bane</li>
-  					<li>RF_MajorBane</li>
+          <li>RF_MinorMagicBlast_Emerald</li>
+          <li>RF_MagicBlast_Emerald</li>
+          <li>RF_MajorMagicBlast_Emerald</li>
+  				<li>RF_MinorBane</li>
+  				<li>RF_Bane</li>
+  				<li>RF_MajorBane</li>
           </weaponTraitsPool>
         </li>
       </comps>
@@ -80,6 +80,10 @@
       <modExtensions>
         <li Class="RimFantasy.RimFantasyExtension">
           <stuffKey>Emerald</stuffKey>
+        </li>
+        <li Class="RimFantasy.WeaponDropExtension">
+          <preventDroppingWhenDowned>true</preventDroppingWhenDowned>
+          <preventDroppingWhenDead>true</preventDroppingWhenDead>
         </li>
       </modExtensions>
   </ThingDef>
@@ -141,12 +145,12 @@
 					<li>RF_MinorMagiciansShield</li>
 					<li>RF_MagiciansShield</li>
 					<li>RF_MajorMagiciansShield</li>
-            <li>RF_MinorMagicBlast_Sapphire</li>
-            <li>RF_MagicBlast_Sapphire</li>
-            <li>RF_MajorMagicBlast_Sapphire</li>
-  					<li>RF_MinorFreeze</li>
-  					<li>RF_Freeze</li>
-  					<li>RF_MajorFreeze</li>
+          <li>RF_MinorMagicBlast_Sapphire</li>
+          <li>RF_MagicBlast_Sapphire</li>
+          <li>RF_MajorMagicBlast_Sapphire</li>
+  				<li>RF_MinorFreeze</li>
+  				<li>RF_Freeze</li>
+  				<li>RF_MajorFreeze</li>
           </weaponTraitsPool>
         </li>
       </comps>
@@ -163,6 +167,10 @@
       <modExtensions>
         <li Class="RimFantasy.RimFantasyExtension">
           <stuffKey>Sapphire</stuffKey>
+        </li>
+        <li Class="RimFantasy.WeaponDropExtension">
+          <preventDroppingWhenDowned>true</preventDroppingWhenDowned>
+          <preventDroppingWhenDead>true</preventDroppingWhenDead>
         </li>
       </modExtensions>
   </ThingDef>
@@ -224,12 +232,12 @@
 					<li>RF_MinorMagiciansShield</li>
 					<li>RF_MagiciansShield</li>
 					<li>RF_MajorMagiciansShield</li>
-            <li>RF_MinorMagicBlast_Ruby</li>
-            <li>RF_MagicBlast_Ruby</li>
-            <li>RF_MajorMagicBlast_Ruby</li>
-  					<li>RF_MinorScorch</li>
-  					<li>RF_Scorch</li>
-  					<li>RF_MajorScorch</li>
+          <li>RF_MinorMagicBlast_Ruby</li>
+          <li>RF_MagicBlast_Ruby</li>
+          <li>RF_MajorMagicBlast_Ruby</li>
+  				<li>RF_MinorScorch</li>
+  				<li>RF_Scorch</li>
+  				<li>RF_MajorScorch</li>
           </weaponTraitsPool>
         </li>
       </comps>
@@ -246,6 +254,10 @@
       <modExtensions>
         <li Class="RimFantasy.RimFantasyExtension">
           <stuffKey>Ruby</stuffKey>
+        </li>
+        <li Class="RimFantasy.WeaponDropExtension">
+          <preventDroppingWhenDowned>true</preventDroppingWhenDowned>
+          <preventDroppingWhenDead>true</preventDroppingWhenDead>
         </li>
       </modExtensions>
   </ThingDef>
