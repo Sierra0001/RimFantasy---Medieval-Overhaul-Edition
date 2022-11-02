@@ -35,7 +35,7 @@
 		<li>Sierra.RF.Gemstones</li>
 	</incompatibleWith>
 	<description>
-[h1]Mod Version: v1.0.1[/h1]
+[h1]Mod Version: v1.1[/h1]
 [h1][i]This version of RimFantasy has been reworked and rebalanced to adhere to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067]Medieval Overhaul[/url] standards. It is no longer modular and contains new/altered/removed content.[/i][/h1]
 
 
@@ -96,11 +96,11 @@ Join the Discord (link below) for troubleshooting and bug reports. Steam is a te
 
 
 [h1]Latest Changes:[/h1]
-[b]v1.0.1[/b]
+[b]v1.1[/b]
 [list]
-[*][Fix] Fixed an issue where magical fire cannot be extinguished by pawns.
-[*][Fix] Fixed an issue where magic fire is turned into normal fire if triggered on killing blow.
-[*][Buff] Armor Penentration for Battle Axes increased from 10% to 17.5%.
+[*][RimWorld 1.4] RimWorld 1.4 Ready.
+[*][Change] Arcane weapons will no longer automatically drop on the ground when pawns are downed or killed.
+[*][New] Added new lines for weapon name diversification.
 [/list]
 	</description>
 </ModMetaData>
