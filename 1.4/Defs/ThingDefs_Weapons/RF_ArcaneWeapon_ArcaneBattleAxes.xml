@@ -7,7 +7,7 @@
       <defName>RF_EmeraldBattleAxe</defName>
       <label>emerald battle axe</label>
       <graphicData>
-        <texPath>Things/Item/Equipment/WeaponMelee/RF_ArcaneBattleAxes/RF_EmeraldBattleAxe</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/RF_EmeraldBattleAxe</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
         <drawSize>1.25</drawSize>
@@ -78,7 +78,7 @@
       <defName>RF_SapphireBattleAxe</defName>
       <label>sapphire battle axe</label>
       <graphicData>
-        <texPath>Things/Item/Equipment/WeaponMelee/RF_ArcaneBattleAxes/RF_SapphireBattleAxe</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/RF_SapphireBattleAxe</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
         <drawSize>1.25</drawSize>
@@ -149,7 +149,7 @@
       <defName>RF_RubyBattleAxe</defName>
       <label>ruby battle axe</label>
       <graphicData>
-        <texPath>Things/Item/Equipment/WeaponMelee/RF_ArcaneBattleAxes/RF_RubyBattleAxe</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/RF_RubyBattleAxe</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
         <drawSize>1.25</drawSize>

@@ -7,7 +7,7 @@
       <defName>RF_EmeraldStaff</defName>
       <label>emerald staff</label>
       <graphicData>
-        <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneStaffs/RF_EmeraldStaff</texPath>
+        <texPath>Things/Item/Equipment/WeaponRanged/RF_EmeraldStaff</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
         <drawSize>1.25</drawSize>
@@ -49,9 +49,6 @@
 					<li>RF_MinorHeal_Emerald</li>
 					<li>RF_Heal_Emerald</li>
 					<li>RF_MajorHeal_Emerald</li>
-					<li>RF_MinorDrain_Emerald</li>
-					<li>RF_Drain_Emerald</li>
-					<li>RF_MajorDrain_Emerald</li>
 					<li>RF_MinorSlow_Emerald</li>
 					<li>RF_Slow_Emerald</li>
 					<li>RF_MajorSlow_Emerald</li>
@@ -96,7 +93,7 @@
       <defName>RF_SapphireStaff</defName>
       <label>sapphire staff</label>
       <graphicData>
-        <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneStaffs/RF_SapphireStaff</texPath>
+        <texPath>Things/Item/Equipment/WeaponRanged/RF_SapphireStaff</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
         <drawSize>1.25</drawSize>
@@ -138,9 +135,6 @@
 					<li>RF_MinorHeal_Sapphire</li>
 					<li>RF_Heal_Sapphire</li>
 					<li>RF_MajorHeal_Sapphire</li>
-					<li>RF_MinorDrain_Sapphire</li>
-					<li>RF_Drain_Sapphire</li>
-					<li>RF_MajorDrain_Sapphire</li>
 					<li>RF_MinorSlow_Sapphire</li>
 					<li>RF_Slow_Sapphire</li>
 					<li>RF_MajorSlow_Sapphire</li>
@@ -185,7 +179,7 @@
       <defName>RF_RubyStaff</defName>
       <label>ruby staff</label>
       <graphicData>
-        <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneStaffs/RF_RubyStaff</texPath>
+        <texPath>Things/Item/Equipment/WeaponRanged/RF_RubyStaff</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
         <drawSize>1.25</drawSize>
@@ -227,9 +221,6 @@
 					<li>RF_MinorHeal_Ruby</li>
 					<li>RF_Heal_Ruby</li>
 					<li>RF_MajorHeal_Ruby</li>
-					<li>RF_MinorDrain_Ruby</li>
-					<li>RF_Drain_Ruby</li>
-					<li>RF_MajorDrain_Ruby</li>
 					<li>RF_MinorSlow_Ruby</li>
 					<li>RF_Slow_Ruby</li>
 					<li>RF_MajorSlow_Ruby</li>

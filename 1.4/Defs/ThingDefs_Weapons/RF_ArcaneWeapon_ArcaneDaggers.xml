@@ -7,7 +7,7 @@
       <defName>RF_EmeraldDagger</defName>
       <label>emerald dagger</label>
       <graphicData>
-        <texPath>Things/Item/Equipment/WeaponMelee/RF_ArcaneDaggers/RF_EmeraldDagger</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/RF_EmeraldDagger</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
         <drawSize>1.25</drawSize>
@@ -46,9 +46,6 @@
 					<li>RF_MinorShock_Emerald</li>
 					<li>RF_Shock_Emerald</li>
 					<li>RF_MajorShock_Emerald</li>
-					<li>RF_MinorDrain_Emerald</li>
-					<li>RF_Drain_Emerald</li>
-					<li>RF_MajorDrain_Emerald</li>
 					<li>RF_MinorWarriorsShield</li>
 					<li>RF_WarriorsShield</li>
 					<li>RF_MajorWarriorsShield</li>
@@ -78,7 +75,7 @@
       <defName>RF_SapphireDagger</defName>
       <label>sapphire dagger</label>
       <graphicData>
-        <texPath>Things/Item/Equipment/WeaponMelee/RF_ArcaneDaggers/RF_SapphireDagger</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/RF_SapphireDagger</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
         <drawSize>1.25</drawSize>
@@ -117,9 +114,6 @@
 					<li>RF_MinorShock_Sapphire</li>
 					<li>RF_Shock_Sapphire</li>
 					<li>RF_MajorShock_Sapphire</li>
-					<li>RF_MinorDrain_Sapphire</li>
-					<li>RF_Drain_Sapphire</li>
-					<li>RF_MajorDrain_Sapphire</li>
 					<li>RF_MinorWarriorsShield</li>
 					<li>RF_WarriorsShield</li>
 					<li>RF_MajorWarriorsShield</li>
@@ -149,7 +143,7 @@
       <defName>RF_RubyDagger</defName>
       <label>ruby dagger</label>
       <graphicData>
-        <texPath>Things/Item/Equipment/WeaponMelee/RF_ArcaneDaggers/RF_RubyDagger</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/RF_RubyDagger</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
         <drawSize>1.25</drawSize>
@@ -188,9 +182,6 @@
 					<li>RF_MinorShock_Ruby</li>
 					<li>RF_Shock_Ruby</li>
 					<li>RF_MajorShock_Ruby</li>
-					<li>RF_MinorDrain_Ruby</li>
-					<li>RF_Drain_Ruby</li>
-					<li>RF_MajorDrain_Ruby</li>
 					<li>RF_MinorWarriorsShield</li>
 					<li>RF_WarriorsShield</li>
 					<li>RF_MajorWarriorsShield</li>

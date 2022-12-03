@@ -8,7 +8,7 @@
 
   <ThingDef ParentName="BaseProjectileNeolithic">
     <defName>RF_MagicBolt_Staff_Emerald</defName>
-    <label>emerald wand effect</label>
+    <label>emerald staff effect</label>
     <graphicData>
       <texPath>Things/Projectile/RF_MagicBolt_Emerald</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -28,7 +28,7 @@
 
   <ThingDef ParentName="BaseProjectileNeolithic">
     <defName>RF_MagicBolt_Staff_Sapphire</defName>
-    <label>sapphire wand effect</label>
+    <label>sapphire staff effect</label>
     <graphicData>
       <texPath>Things/Projectile/RF_MagicBolt_Sapphire</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -48,7 +48,7 @@
 
   <ThingDef ParentName="BaseProjectileNeolithic">
     <defName>RF_MagicBolt_Staff_Ruby</defName>
-    <label>ruby wand effect</label>
+    <label>ruby staff effect</label>
     <graphicData>
       <texPath>Things/Projectile/RF_MagicBolt_Ruby</texPath>
       <graphicClass>Graphic_Single</graphicClass>

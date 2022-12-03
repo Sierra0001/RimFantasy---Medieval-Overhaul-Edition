@@ -27,7 +27,7 @@ Bug reports must come with HugsLogs, join the Discord if you don't know how to g
 
 ### Links
 
-- [Current Version](https://github.com/Sierra0001/RimFantasy---Medieval-Overhaul-Edition/releases/tag/v1.1)
+- [Current Version](https://github.com/Sierra0001/RimFantasy---Medieval-Overhaul-Edition/releases/tag/v1.2)
 - [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2836791007)
 - [GitHub](https://github.com/Sierra0001/RimFantasy---Medieval-Overhaul-Edition)
 
@@ -41,6 +41,6 @@ Steve for their contributions that helped to shape RimFantasy the mod it is toda
 
 ### Latest Changes
 
-- [RimWorld 1.4] RimWorld 1.4 Ready.
-- [Change] Arcane weapons will no longer automatically drop on the ground when pawns are downed or killed.
-- [New] Added new lines for weapon name diversification.
+- [DEV] Updated texPath for all Arcane Weapons.
+- [New] Added Arcane Halberds (Emerald/Sapphire/Ruby).
+- [Removed] Drain traits will no longer spawn on new Arcane Weapons. Existing weapons are unaffected.

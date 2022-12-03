@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--========== Emerald War Hammer ==========-->
+  <!--========== Emerald Halberd ==========-->
 
-  <ThingDef ParentName="RF_BaseWeapon_ArcaneWarHammers">
-      <defName>RF_EmeraldWarHammer</defName>
-      <label>emerald war hammer</label>
+  <ThingDef ParentName="RF_BaseWeapon_ArcaneHalberds">
+      <defName>RF_EmeraldHalberd</defName>
+      <label>emerald halberd</label>
       <graphicData>
-        <texPath>Things/Item/Equipment/WeaponMelee/RF_EmeraldWarHammer</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/RF_EmeraldHalberd</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
         <drawSize>1.25</drawSize>
@@ -36,28 +36,28 @@
           <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
         </li>
         <li Class="RimFantasy.CompProperties_ArcaneWeapon">
+				<biocodeOnEquip>false</biocodeOnEquip>
 				<minWeaponTraits>1</minWeaponTraits>
 				<maxWeaponTraits>2</maxWeaponTraits>
-				<biocodeOnEquip>false</biocodeOnEquip>
           <weaponTraitsPool>
-					  <li>RF_MinorShock_Emerald</li>
-            <li>RF_Shock_Emerald</li>
-					  <li>RF_MajorShock_Emerald</li>
-					  <li>RF_MinorSlash_Emerald</li>
-			      <li>RF_Slash_Emerald</li>
-	          <li>RF_MajorSlash_Emerald</li>
-					  <li>RF_MinorSlam_Emerald</li>
-		        <li>RF_Slam_Emerald</li>
-            <li>RF_MajorSlam_Emerald</li>
-			      <li>RF_MinorWarriorsShield</li>
-		        <li>RF_WarriorsShield</li>
-				    <li>RF_MajorWarriorsShield</li>
+					<li>RF_MinorBlaze_Emerald</li>
+					<li>RF_Blaze_Emerald</li>
+					<li>RF_MajorBlaze_Emerald</li>
+					<li>RF_MinorShock_Emerald</li>
+					<li>RF_Shock_Emerald</li>
+					<li>RF_MajorShock_Emerald</li>
+					<li>RF_MinorSlow_Emerald</li>
+					<li>RF_Slow_Emerald</li>
+					<li>RF_MajorSlow_Emerald</li>
+					<li>RF_MinorWarriorsShield</li>
+					<li>RF_WarriorsShield</li>
+					<li>RF_MajorWarriorsShield</li>
             <li>RF_MinorMagicBlast_Emerald</li>
             <li>RF_MagicBlast_Emerald</li>
             <li>RF_MajorMagicBlast_Emerald</li>
-  			    <li>RF_MinorBane</li>
-  				  <li>RF_Bane</li>
-  			    <li>RF_MajorBane</li>
+  					<li>RF_MinorBane</li>
+  					<li>RF_Bane</li>
+  					<li>RF_MajorBane</li>
           </weaponTraitsPool>
         </li>
       </comps>
@@ -72,19 +72,19 @@
       </modExtensions>
   </ThingDef>
 
-  <!--========== Sapphire War Hammer ==========-->
+  <!--========== Sapphire Halberd ==========-->
 
-  <ThingDef ParentName="RF_BaseWeapon_ArcaneWarHammers">
-      <defName>RF_SapphireWarHammer</defName>
-      <label>sapphire war hammer</label>
+  <ThingDef ParentName="RF_BaseWeapon_ArcaneHalberds">
+      <defName>RF_SapphireHalberd</defName>
+      <label>sapphire halberd</label>
       <graphicData>
-        <texPath>Things/Item/Equipment/WeaponMelee/RF_SapphireWarHammer</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/RF_SapphireHalberd</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
         <drawSize>1.25</drawSize>
       </graphicData>
       <costList>
-          <DankPyon_Sapphire>55</DankPyon_Sapphire>
+        <DankPyon_Sapphire>55</DankPyon_Sapphire>
       </costList>
       <comps>
         <li Class="RimFantasy.CompProperties_GlowerStuffable">
@@ -107,19 +107,19 @@
           <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
         </li>
         <li Class="RimFantasy.CompProperties_ArcaneWeapon">
+				<biocodeOnEquip>false</biocodeOnEquip>
 				<minWeaponTraits>1</minWeaponTraits>
 				<maxWeaponTraits>2</maxWeaponTraits>
-				<biocodeOnEquip>false</biocodeOnEquip>
           <weaponTraitsPool>
+					<li>RF_MinorBlaze_Sapphire</li>
+					<li>RF_Blaze_Sapphire</li>
+					<li>RF_MajorBlaze_Sapphire</li>
 					<li>RF_MinorShock_Sapphire</li>
 					<li>RF_Shock_Sapphire</li>
 					<li>RF_MajorShock_Sapphire</li>
-					<li>RF_MinorSlash_Sapphire</li>
-					<li>RF_Slash_Sapphire</li>
-					<li>RF_MajorSlash_Sapphire</li>
-					<li>RF_MinorSlam_Sapphire</li>
-					<li>RF_Slam_Sapphire</li>
-					<li>RF_MajorSlam_Sapphire</li>
+					<li>RF_MinorSlow_Sapphire</li>
+					<li>RF_Slow_Sapphire</li>
+					<li>RF_MajorSlow_Sapphire</li>
 					<li>RF_MinorWarriorsShield</li>
 					<li>RF_WarriorsShield</li>
 					<li>RF_MajorWarriorsShield</li>
@@ -143,19 +143,19 @@
       </modExtensions>
   </ThingDef>
 
-  <!--========== Ruby War Hammer ==========-->
+  <!--========== Ruby Halberd ==========-->
 
-  <ThingDef ParentName="RF_BaseWeapon_ArcaneWarHammers">
-      <defName>RF_RubyWarHammer</defName>
-      <label>ruby war hammer</label>
+  <ThingDef ParentName="RF_BaseWeapon_ArcaneHalberds">
+      <defName>RF_RubyHalberd</defName>
+      <label>ruby halberd</label>
       <graphicData>
-        <texPath>Things/Item/Equipment/WeaponMelee/RF_RubyWarHammer</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/RF_RubyHalberd</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
         <drawSize>1.25</drawSize>
       </graphicData>
       <costList>
-          <DankPyon_Ruby>55</DankPyon_Ruby>
+        <DankPyon_Ruby>55</DankPyon_Ruby>
       </costList>
       <comps>
         <li Class="RimFantasy.CompProperties_GlowerStuffable">
@@ -178,28 +178,28 @@
           <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
         </li>
         <li Class="RimFantasy.CompProperties_ArcaneWeapon">
+				<biocodeOnEquip>false</biocodeOnEquip>
 				<minWeaponTraits>1</minWeaponTraits>
 				<maxWeaponTraits>2</maxWeaponTraits>
-				<biocodeOnEquip>false</biocodeOnEquip>
           <weaponTraitsPool>
+					<li>RF_MinorBlaze_Ruby</li>
+					<li>RF_Blaze_Ruby</li>
+					<li>RF_MajorBlaze_Ruby</li>
 					<li>RF_MinorShock_Ruby</li>
 					<li>RF_Shock_Ruby</li>
 					<li>RF_MajorShock_Ruby</li>
-					<li>RF_MinorSlash_Ruby</li>
-					<li>RF_Slash_Ruby</li>
-					<li>RF_MajorSlash_Ruby</li>
-					<li>RF_MinorSlam_Ruby</li>
-					<li>RF_Slam_Ruby</li>
-					<li>RF_MajorSlam_Ruby</li>
+					<li>RF_MinorSlow_Ruby</li>
+					<li>RF_Slow_Ruby</li>
+					<li>RF_MajorSlow_Ruby</li>
 					<li>RF_MinorWarriorsShield</li>
 					<li>RF_WarriorsShield</li>
 					<li>RF_MajorWarriorsShield</li>
-          <li>RF_MinorMagicBlast_Ruby</li>
-          <li>RF_MagicBlast_Ruby</li>
-          <li>RF_MajorMagicBlast_Ruby</li>
-  				<li>RF_MinorScorch</li>
-  				<li>RF_Scorch</li>
-  				<li>RF_MajorScorch</li>
+            <li>RF_MinorMagicBlast_Ruby</li>
+            <li>RF_MagicBlast_Ruby</li>
+            <li>RF_MajorMagicBlast_Ruby</li>
+  					<li>RF_MinorScorch</li>
+  					<li>RF_Scorch</li>
+  					<li>RF_MajorScorch</li>
           </weaponTraitsPool>
         </li>
       </comps>

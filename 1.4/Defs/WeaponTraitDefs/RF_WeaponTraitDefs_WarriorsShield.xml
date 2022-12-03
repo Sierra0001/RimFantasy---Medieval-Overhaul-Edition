@@ -6,16 +6,6 @@
 		<label>minor warrior's shield</label>
 		<description>Enchanted with lower battle magic, this weapon projects a weak bubble of magical energy that can occasionally shield the user from danger.\n\nThis variant of the shield spell is more reliable against melee attacks.</description>
     <exclusionTags>
-			<li>RF_MinorParry</li>
-			<li>RF_Parry</li>
-			<li>RF_MajorParry</li>
-      <li>RF_MinorDeflect</li>
-	    <li>RF_Deflect</li>
-	    <li>RF_MajorDeflect</li>
-      <li>RF_MinorWard</li>
-	    <li>RF_Ward</li>
-	    <li>RF_MajorWard</li>
-      <li>RF_MinorWarriorsShield</li>
 	    <li>RF_WarriorsShield</li>
 	    <li>RF_MajorWarriorsShield</li>
 	    <li>RF_MinorMagiciansShield</li>
@@ -43,17 +33,7 @@
 		<label>warrior's shield</label>
 		<description>Enchanted with battle magic, this weapon projects a bubble of magical energy that can occasionally shield the user from danger.\n\nThis variant of the shield spell is more reliable against melee attacks.</description>
     <exclusionTags>
-			<li>RF_MinorParry</li>
-			<li>RF_Parry</li>
-			<li>RF_MajorParry</li>
-      <li>RF_MinorDeflect</li>
-	    <li>RF_Deflect</li>
-	    <li>RF_MajorDeflect</li>
-      <li>RF_MinorWard</li>
-	    <li>RF_Ward</li>
-	    <li>RF_MajorWard</li>
       <li>RF_MinorWarriorsShield</li>
-	    <li>RF_WarriorsShield</li>
 	    <li>RF_MajorWarriorsShield</li>
 	    <li>RF_MinorMagiciansShield</li>
 		  <li>RF_MagiciansShield</li>
@@ -80,18 +60,8 @@
 		<label>major warrior's shield</label>
 		<description>Enchanted with higher battle magic, this weapon projects a powerful bubble of magical energy that can occasionally shield the user from danger.\n\nThis variant of the shield spell is more reliable against melee attacks.</description>
     <exclusionTags>
-			<li>RF_MinorParry</li>
-			<li>RF_Parry</li>
-			<li>RF_MajorParry</li>
-      <li>RF_MinorDeflect</li>
-	    <li>RF_Deflect</li>
-	    <li>RF_MajorDeflect</li>
-      <li>RF_MinorWard</li>
-	    <li>RF_Ward</li>
-	    <li>RF_MajorWard</li>
       <li>RF_MinorWarriorsShield</li>
 	    <li>RF_WarriorsShield</li>
-	    <li>RF_MajorWarriorsShield</li>
 	    <li>RF_MinorMagiciansShield</li>
 		  <li>RF_MagiciansShield</li>
 		  <li>RF_MajorMagiciansShield</li>

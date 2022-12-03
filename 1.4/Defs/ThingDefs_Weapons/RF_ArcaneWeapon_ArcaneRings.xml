@@ -8,7 +8,7 @@
       <label>enchanted emerald ring</label>
       <thingClass>VFECore.ThingWithFloorGraphic</thingClass>
       <graphicData>
-        <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_EmeraldRing</texPath>
+        <texPath>Things/Item/Equipment/WeaponRanged/RF_EmeraldRing</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
         <drawSize>0.40</drawSize>
@@ -48,9 +48,6 @@
 					<li>RF_MinorHeal_Emerald</li>
 					<li>RF_Heal_Emerald</li>
 					<li>RF_MajorHeal_Emerald</li>
-					<li>RF_MinorDrain_Emerald</li>
-					<li>RF_Drain_Emerald</li>
-					<li>RF_MajorDrain_Emerald</li>
 					<li>RF_MinorDisplacement_Emerald</li>
 					<li>RF_Displacement_Emerald</li>
 					<li>RF_MajorDisplacement_Emerald</li>
@@ -94,7 +91,7 @@
           <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>TransparentPostLight</shaderType>
-            <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_EmeraldRing</texPath>
+            <texPath>Things/Item/Equipment/WeaponRanged/RF_EmeraldRing</texPath>
             <onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
             <drawSize>0.55</drawSize>
           </graphicData>
@@ -109,7 +106,7 @@
       <label>enchanted sapphire ring</label>
       <thingClass>VFECore.ThingWithFloorGraphic</thingClass>
       <graphicData>
-        <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_SapphireRing</texPath>
+        <texPath>Things/Item/Equipment/WeaponRanged/RF_SapphireRing</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
         <drawSize>0.40</drawSize>
@@ -149,9 +146,6 @@
 					<li>RF_MinorHeal_Sapphire</li>
 					<li>RF_Heal_Sapphire</li>
 					<li>RF_MajorHeal_Sapphire</li>
-					<li>RF_MinorDrain_Sapphire</li>
-					<li>RF_Drain_Sapphire</li>
-					<li>RF_MajorDrain_Sapphire</li>
 					<li>RF_MinorDisplacement_Sapphire</li>
 					<li>RF_Displacement_Sapphire</li>
 					<li>RF_MajorDisplacement_Sapphire</li>
@@ -195,7 +189,7 @@
           <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>TransparentPostLight</shaderType>
-            <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_SapphireRing</texPath>
+            <texPath>Things/Item/Equipment/WeaponRanged/RF_SapphireRing</texPath>
             <onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
             <drawSize>0.55</drawSize>
           </graphicData>
@@ -210,7 +204,7 @@
       <label>enchanted ruby ring</label>
       <thingClass>VFECore.ThingWithFloorGraphic</thingClass>
       <graphicData>
-        <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_RubyRing</texPath>
+        <texPath>Things/Item/Equipment/WeaponRanged/RF_RubyRing</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
         <drawSize>0.40</drawSize>
@@ -250,9 +244,6 @@
 					<li>RF_MinorHeal_Ruby</li>
 					<li>RF_Heal_Ruby</li>
 					<li>RF_MajorHeal_Ruby</li>
-					<li>RF_MinorDrain_Ruby</li>
-					<li>RF_Drain_Ruby</li>
-					<li>RF_MajorDrain_Ruby</li>
 					<li>RF_MinorDisplacement_Ruby</li>
 					<li>RF_Displacement_Ruby</li>
 					<li>RF_MajorDisplacement_Ruby</li>
@@ -296,7 +287,7 @@
           <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>TransparentPostLight</shaderType>
-            <texPath>Things/Item/Equipment/WeaponRanged/RF_ArcaneRings/RF_RubyRing</texPath>
+            <texPath>Things/Item/Equipment/WeaponRanged/RF_RubyRing</texPath>
             <onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
             <drawSize>0.55</drawSize>
           </graphicData>

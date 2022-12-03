@@ -7,7 +7,7 @@
       <defName>RF_EmeraldLongsword</defName>
       <label>emerald longsword</label>
       <graphicData>
-        <texPath>Things/Item/Equipment/WeaponMelee/RF_ArcaneLongswords/RF_EmeraldLongsword</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/RF_EmeraldLongsword</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
         <drawSize>1.25</drawSize>
@@ -78,7 +78,7 @@
       <defName>RF_SapphireLongsword</defName>
       <label>sapphire longsword</label>
       <graphicData>
-        <texPath>Things/Item/Equipment/WeaponMelee/RF_ArcaneLongswords/RF_SapphireLongsword</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/RF_SapphireLongsword</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
         <drawSize>1.25</drawSize>
@@ -149,7 +149,7 @@
       <defName>RF_RubyLongsword</defName>
       <label>ruby longsword</label>
       <graphicData>
-        <texPath>Things/Item/Equipment/WeaponMelee/RF_ArcaneLongswords/RF_RubyLongsword</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/RF_RubyLongsword</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
         <drawSize>1.25</drawSize>
