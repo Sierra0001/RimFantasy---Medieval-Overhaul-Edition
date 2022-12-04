@@ -10,7 +10,7 @@
         <texPath>Things/Item/Equipment/WeaponMelee/RF_EmeraldDagger</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
-        <drawSize>1.25</drawSize>
+        <drawSize>1</drawSize>
       </graphicData>
       <costList>
         <DankPyon_Emerald>55</DankPyon_Emerald>
@@ -78,7 +78,7 @@
         <texPath>Things/Item/Equipment/WeaponMelee/RF_SapphireDagger</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
-        <drawSize>1.25</drawSize>
+        <drawSize>1</drawSize>
       </graphicData>
       <costList>
         <DankPyon_Sapphire>55</DankPyon_Sapphire>
@@ -146,7 +146,7 @@
         <texPath>Things/Item/Equipment/WeaponMelee/RF_RubyDagger</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
-        <drawSize>1.25</drawSize>
+        <drawSize>1</drawSize>
       </graphicData>
       <costList>
         <DankPyon_Ruby>55</DankPyon_Ruby>

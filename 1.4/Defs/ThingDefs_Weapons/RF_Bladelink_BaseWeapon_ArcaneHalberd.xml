@@ -21,7 +21,7 @@
 				<WorkToMake>18000</WorkToMake>
 				<Mass>3</Mass>
 		</statBases>
-		<equippedAngleOffset>-65</equippedAngleOffset>
+		<!--<equippedAngleOffset>-65</equippedAngleOffset>-->
 		<soundInteract>Interact_BladelinkMonoSword</soundInteract>
 		<meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
     <tools>
@@ -85,7 +85,24 @@
 		</recipeMaker>
 		<modExtensions>
 			<li Class="VFECore.ThingDefExtension">
-				<usableWithShields>false</usableWithShields>
+				<weaponDraftedDrawOffsets>
+					<north> <!-- Facing North -->
+						<drawOffset>(0.34,0,0.30)</drawOffset>
+						<angleOffset>-100</angleOffset>
+					</north>
+					<east>
+					<drawOffset>(-0.34,0,0.30)</drawOffset>
+					<angleOffset>-80</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.34,0,0.30)</drawOffset>
+						<angleOffset>-100</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(0.34,0,0.30)</drawOffset>
+						<angleOffset>-190</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
 			</li>
 		</modExtensions>
 	</ThingDef>
