@@ -52,12 +52,12 @@
 					<li>RF_MinorWarriorsShield</li>
 					<li>RF_WarriorsShield</li>
 					<li>RF_MajorWarriorsShield</li>
-            <li>RF_MinorMagicBlast_Emerald</li>
-            <li>RF_MagicBlast_Emerald</li>
-            <li>RF_MajorMagicBlast_Emerald</li>
-  					<li>RF_MinorBane</li>
-  					<li>RF_Bane</li>
-  					<li>RF_MajorBane</li>
+          <li>RF_MinorMagicBlast_Emerald</li>
+          <li>RF_MagicBlast_Emerald</li>
+          <li>RF_MajorMagicBlast_Emerald</li>
+  				<li>RF_MinorBane</li>
+  				<li>RF_Bane</li>
+  				<li>RF_MajorBane</li>
           </weaponTraitsPool>
         </li>
       </comps>
