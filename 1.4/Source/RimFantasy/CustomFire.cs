@@ -6,26 +6,12 @@ using Verse.Sound;
 
 namespace RimFantasy
 {
-
+	public class FireExtension : DefModExtension
+	{
+		public float spreadRateMultiplier = 1f;
+	}
     public class CustomFire : Fire, ISizeReporter
 	{
-		private int ticksSinceSpawn;
-        
-		private int ticksSinceSpread;
-
-		private float flammabilityMax = 0.5f;
-
-		private int ticksUntilSmoke;
-
-		private Sustainer sustainer;
-
-		private static List<Thing> flammableList = new List<Thing>();
-
-		private static int fireCount;
-
-		private static int lastFireCountUpdateTick;
-
-		private static readonly IntRange SmokeIntervalRange = new IntRange(130, 200);
 		public override string Label
 		{
 			get
@@ -40,30 +26,24 @@ namespace RimFantasy
 
 		public override string InspectStringAddon => "Burning".Translate() + " (" + "FireSizeLower".Translate((fireSize * 100f).ToString("F0")) + ")";
 
-		private float SpreadInterval
+		private float SpreadIntervalOverride
 		{
 			get
 			{
-				float num = 150f - (fireSize - 1f) * 40f;
-				if (num < 75f)
+				float num = base.SpreadInterval;
+				var extension = this.def.GetModExtension<FireExtension>();
+				if (extension != null)
 				{
-					num = 75f;
+					num *= extension.spreadRateMultiplier;
 				}
 				return num;
 			}
 		}
 
-		public override void ExposeData()
-		{
-			base.ExposeData();
-			Scribe_Values.Look(ref ticksSinceSpawn, "ticksSinceSpawn", 0);
-			Scribe_Values.Look(ref fireSize, "fireSize", 0f);
-		}
-
 		public override void SpawnSetup(Map map, bool respawningAfterLoad)
 		{
 			base.SpawnSetup(map, respawningAfterLoad);
-			ticksSinceSpread = (int)(SpreadInterval * Rand.Value);
+			ticksSinceSpread = (int)(SpreadIntervalOverride * Rand.Value);
 			this.graphicInt = def.graphicData.GraphicColoredFor(this);
 		}
 
@@ -87,7 +67,7 @@ namespace RimFantasy
 			ticksUntilSmoke--;
 			if (ticksUntilSmoke <= 0)
 			{
-				SpawnSmokeParticles();
+				SpawnSmokeParticlesOverride();
 			}
 			if (fireCount < 15 && fireSize > 0.7f && Rand.Value < fireSize * 0.01f)
 			{
@@ -96,15 +76,15 @@ namespace RimFantasy
 			if (fireSize > 1f)
 			{
 				ticksSinceSpread++;
-				if ((float)ticksSinceSpread >= SpreadInterval)
+				if ((float)ticksSinceSpread >= SpreadIntervalOverride)
 				{
-					TrySpreadModified();
+					TrySpreadOverride();
 					ticksSinceSpread = 0;
 				}
 			}
 			if (this.IsHashIntervalTick(150))
 			{
-				DoComplexCalcs();
+				DoComplexCalcsOverride();
 			}
 			if (ticksSinceSpawn >= 7500)
 			{
@@ -112,27 +92,26 @@ namespace RimFantasy
 			}
 		}
 
-		private void SpawnSmokeParticles()
-		{
-			if (fireCount < 15)
-			{
-				FleckMaker.ThrowSmoke(DrawPos, base.Map, fireSize);
-			}
-			if (fireSize > 0.5f && parent == null)
-			{
-				var fireGlow = DefDatabase<FleckDef>.GetNamedSilentFail(this.def.defName + "Glow") ?? FleckDefOf.FireGlow;
-				ThrowFireGlow(fireGlow, base.Position.ToVector3Shifted(), base.Map, fireSize);
-			}
-			float num = fireSize / 2f;
-			if (num > 1f)
-			{
-				num = 1f;
-			}
-			num = 1f - num;
-			ticksUntilSmoke = SmokeIntervalRange.Lerped(num) + (int)(10f * Rand.Value);
-		}
-
-		public static void ThrowFireGlow(FleckDef fireGlow, Vector3 c, Map map, float size)
+        private void SpawnSmokeParticlesOverride()
+        {
+            if (fireCount < 15)
+            {
+                FleckMaker.ThrowSmoke(DrawPos, base.Map, fireSize);
+            }
+            if (fireSize > 0.5f && parent == null)
+            {
+                var fireGlow = DefDatabase<FleckDef>.GetNamedSilentFail(this.def.defName + "Glow") ?? FleckDefOf.FireGlow;
+                ThrowFireGlow(fireGlow, base.Position.ToVector3Shifted(), base.Map, fireSize);
+            }
+            float num = fireSize / 2f;
+            if (num > 1f)
+            {
+                num = 1f;
+            }
+            num = 1f - num;
+            ticksUntilSmoke = SmokeIntervalRange.Lerped(num) + (int)(10f * Rand.Value);
+        }
+        public static void ThrowFireGlow(FleckDef fireGlow, Vector3 c, Map map, float size)
 		{
 			Vector3 vector = c;
 			if (vector.ShouldSpawnMotesAt(map))
@@ -149,7 +128,7 @@ namespace RimFantasy
 			}
 		}
 
-		private void DoComplexCalcs()
+		private void DoComplexCalcsOverride()
 		{
 			bool flag = false;
 			flammableList.Clear();
@@ -200,7 +179,7 @@ namespace RimFantasy
 			Thing thing2 = ((parent != null) ? parent : ((flammableList.Count <= 0) ? null : flammableList.RandomElement()));
 			if (thing2 != null && (!(fireSize < 0.4f) || thing2 == parent || thing2.def.category != ThingCategory.Pawn))
 			{
-				DoFireDamage(thing2);
+				DoFireDamageOverride(thing2);
 			}
 			if (base.Spawned)
 			{
@@ -244,33 +223,7 @@ namespace RimFantasy
 			}
 		}
         
-		private void TryBurnFloor()
-		{
-			if (parent == null && base.Spawned && base.Position.TerrainFlammableNow(base.Map))
-			{
-				base.Map.terrainGrid.Notify_TerrainBurned(base.Position);
-			}
-		}
-
-		private bool VulnerableToRain()
-		{
-			if (!base.Spawned)
-			{
-				return false;
-			}
-			RoofDef roofDef = base.Map.roofGrid.RoofAt(base.Position);
-			if (roofDef == null)
-			{
-				return true;
-			}
-			if (roofDef.isThickRoof)
-			{
-				return false;
-			}
-			return base.Position.GetEdifice(base.Map)?.def.holdsRoof ?? false;
-		}
-
-		private void DoFireDamage(Thing targ)
+		private void DoFireDamageOverride(Thing targ)
 		{
 			int num = GenMath.RoundRandom(Mathf.Clamp(0.0125f + 0.0036f * fireSize, 0.0125f, 0.05f) * 150f);
 			if (num < 1)
@@ -296,7 +249,7 @@ namespace RimFantasy
 			}
 		}
 
-		private void TrySpreadModified()
+		private void TrySpreadOverride()
 		{
 			IntVec3 position = base.Position;
 			bool flag;

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Core\\1.4\\Source\\RimFantasy\\RimFantasy.csproj": {}
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Medieval-Overhaul-Edition\\1.4\\Source\\RimFantasy\\RimFantasy.csproj": {}
   },
   "projects": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Core\\1.4\\Source\\RimFantasy\\RimFantasy.csproj": {
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Medieval-Overhaul-Edition\\1.4\\Source\\RimFantasy\\RimFantasy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Core\\1.4\\Source\\RimFantasy\\RimFantasy.csproj",
+        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Medieval-Overhaul-Edition\\1.4\\Source\\RimFantasy\\RimFantasy.csproj",
         "projectName": "RimFantasy",
-        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Core\\1.4\\Source\\RimFantasy\\RimFantasy.csproj",
+        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Medieval-Overhaul-Edition\\1.4\\Source\\RimFantasy\\RimFantasy.csproj",
         "packagesPath": "C:\\Users\\Vova\\.nuget\\packages\\",
-        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Core\\1.4\\Source\\RimFantasy\\obj\\",
+        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Medieval-Overhaul-Edition\\1.4\\Source\\RimFantasy\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [

@@ -2,3 +2,7 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimFantasy---Core\1.
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimFantasy---Core\1.4\Source\RimFantasy\obj\Debug\RimFantasy.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimFantasy---Core\1.4\Assemblies\RimFantasy.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimFantasy---Core\1.4\Source\RimFantasy\obj\Debug\RimFantasy.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimFantasy---Medieval-Overhaul-Edition\1.4\Source\RimFantasy\obj\Debug\RimFantasy.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimFantasy---Medieval-Overhaul-Edition\1.4\Source\RimFantasy\obj\Debug\RimFantasy.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimFantasy---Medieval-Overhaul-Edition\1.4\Source\RimFantasy\obj\Debug\RimFantasy.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimFantasy---Medieval-Overhaul-Edition\1.4\Assemblies\RimFantasy.dll

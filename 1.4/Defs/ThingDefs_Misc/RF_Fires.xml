@@ -57,6 +57,11 @@
     </graphicData>
     <altitudeLayer>PawnState</altitudeLayer>
     <useHitPoints>false</useHitPoints>
+	<modExtensions>
+		<li Class="RimFantasy.FireExtension">
+			<spreadRateMultiplier>0.5</spreadRateMultiplier>
+		</li>
+	</modExtensions>
   </ThingDef>
 
   <FleckDef ParentName="FleckBase_Thrown">
