@@ -59,7 +59,7 @@
     <useHitPoints>false</useHitPoints>
 	  <modExtensions>
       <li Class="RimFantasy.FireExtension">
-        <spreadRateMultiplier>0.10</spreadRateMultiplier>
+        <spreadRateMultiplier>2.5</spreadRateMultiplier>
       </li>
     </modExtensions>
   </ThingDef>
@@ -91,7 +91,7 @@
     <useHitPoints>false</useHitPoints>
 	  <modExtensions>
       <li Class="RimFantasy.FireExtension">
-        <spreadRateMultiplier>3</spreadRateMultiplier>
+        <spreadRateMultiplier>2.5</spreadRateMultiplier>
       </li>
     </modExtensions>
   </ThingDef>
@@ -123,7 +123,7 @@
     <useHitPoints>false</useHitPoints>
 	  <modExtensions>
       <li Class="RimFantasy.FireExtension">
-        <spreadRateMultiplier>3</spreadRateMultiplier>
+        <spreadRateMultiplier>2.5</spreadRateMultiplier>
       </li>
     </modExtensions>
   </ThingDef>

@@ -43,5 +43,5 @@ Steve for their contributions that helped to shape RimFantasy the mod it is toda
 
 - [DEV] Updated texPath for all Arcane Weapons.
 - [New] Added Arcane Halberds (Emerald/Sapphire/Ruby).
-- [Changed] Magic fire will now spread 3x slower.
-- [Removed] Drain traits will no longer spawn on new Arcane Weapons. Existing weapons are unaffected.
+- [Changed] Magic fire will now spread 2.5x slower.
+- [Removed] Drain traits will no longer spawn on new Emerald/Sapphire/Ruby Arcane Weapons. Existing weapons are unaffected.
