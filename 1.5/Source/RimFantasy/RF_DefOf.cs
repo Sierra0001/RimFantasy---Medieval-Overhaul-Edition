@@ -8,5 +8,6 @@ namespace RimFantasy
     {
         public static DamageDef RF_FlameCustom;
         public static ThingDef RF_SparkCustom;
+        public static SoundDef EnergyShield_Broken;
     }
 }

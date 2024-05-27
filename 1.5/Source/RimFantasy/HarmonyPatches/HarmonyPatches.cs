@@ -284,40 +284,38 @@ namespace RimFantasy
         }
     }
 
-    [HarmonyPatch(typeof(PawnRenderer))]
-    [HarmonyPatch("DrawEquipment")]
+    [HarmonyPatch(typeof(PawnRenderUtility))]
+    [HarmonyPatch("DrawEquipmentAndApparelExtras")]
     public static class DrawEquipment_Patch
     {
         public const float drawSYSYPosition = 0.03904f;
-        public static void Postfix(Pawn ___pawn, Vector3 rootLoc, Rot4 pawnRotation, PawnRenderFlags flags)
+        public static void Postfix(Pawn pawn, Vector3 drawPos, Rot4 facing, PawnRenderFlags flags)
         {
-            Pawn pawn = ___pawn;
             if (pawn.Dead || !pawn.Spawned || pawn.equipment == null || pawn.equipment.Primary == null || (pawn.CurJob != null && pawn.CurJob.def.neverShowWeapon))
             {
                 return;
             }
-            if (pawn.equipment.Primary.TryGetCachedComp<CompWornWeapon>(out var comp) && comp != null && comp.ShouldShowWeapon(___pawn, flags))
+            if (pawn.equipment.Primary.TryGetCachedComp<CompWornWeapon>(out var comp) && comp != null && comp.ShouldShowWeapon(pawn, flags))
             {
-                DrawWornWeapon(comp, ___pawn, rootLoc, comp.FullGraphic);
+                DrawWornWeapon(comp, pawn, drawPos, comp.FullGraphic);
             }
             if (pawn.equipment.Primary.TryGetCachedComp<CompArcaneWeapon>(out var compArcaneWeapon))
             {
                 compArcaneWeapon.DrawWornExtras();
             }
         }
+
         private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator ilGen)
         {
-            var pawnInfo = AccessTools.Field(typeof(PawnRenderer), "pawn");
             var method = AccessTools.Method(typeof(DrawEquipment_Patch), "DrawSheathOnlyGraphic");
-            var carryWeaponOpenly = AccessTools.Method(typeof(PawnRenderer), "CarryWeaponOpenly");
+            var carryWeaponOpenly = AccessTools.Method(typeof(PawnRenderUtility), "CarryWeaponOpenly");
             var rotatedBy = AccessTools.Method(typeof(Vector3Utility), "RotatedBy", new Type[] { typeof(Vector3), typeof(float) });
             var codes = instructions.ToList();
             for (var i = 0; i < codes.Count; i++)
             {
-                if (i > 5 && (codes[i - 4].opcode == OpCodes.Ldloc_3 && codes[i - 3].Calls(rotatedBy) || codes[i - 2].Calls(carryWeaponOpenly)))
+                if (i > 5 && (codes[i - 3].Calls(rotatedBy) || codes[i - 2].Calls(carryWeaponOpenly)))
                 {
-                    yield return new CodeInstruction(OpCodes.Ldarg_0, null);
-                    yield return new CodeInstruction(OpCodes.Ldfld, pawnInfo);
+                    yield return new CodeInstruction(OpCodes.Ldarg_0);
                     yield return new CodeInstruction(OpCodes.Ldarg_1);
                     yield return new CodeInstruction(OpCodes.Call, method);
                 }

@@ -364,7 +364,7 @@ namespace RimFantasy
 
 		private void Break()
 		{
-			SoundDefOf.EnergyShield_Broken.PlayOneShot(new TargetInfo(this.Wearer.Position, this.Wearer.Map));
+			RF_DefOf.EnergyShield_Broken.PlayOneShot(new TargetInfo(this.Wearer.Position, this.Wearer.Map));
 			FleckMaker.Static(this.Wearer.TrueCenter(), this.Wearer.Map, FleckDefOf.ExplosionFlash, 12f);
 			for (int i = 0; i < 6; i++)
 			{

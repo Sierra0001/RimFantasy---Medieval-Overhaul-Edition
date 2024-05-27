@@ -146,7 +146,7 @@ namespace RimFantasy
                         overlightRadius = Props.overlightRadius
                     });
                     this.compGlower.parent = parent;
-                    base.parent.MapHeld.mapDrawer.MapMeshDirty(position, MapMeshFlag.Things);
+                    base.parent.MapHeld.mapDrawer.MapMeshDirty(position, MapMeshFlagDefOf.Things);
                     base.parent.MapHeld.glowGrid.RegisterGlower(this.compGlower);
                 }
             }
