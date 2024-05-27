@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RF_LancePylon</defName>
+    <label>lance pylon</label>
+    <description>A gemstone pylon, magically charged to provide medium to long range combat support in an area. Requires a fresh supply of onyx after extended deployment.  The magical energy the crystal shell is barely contained and will explode upon imminent destruction.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Security/RF_LancePylon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <allowFlip>true</allowFlip>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>275</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>1800</WorkToBuild>
+      <Mass>8</Mass>
+      <Beauty>1</Beauty>
+      <ShootingAccuracyTurret>0.95</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(50,150,50)</glowColor>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>180</wickTicks>
+        <explosiveRadius>4</explosiveRadius>
+        <explosiveDamageType>RF_Flame_MediumSquareRF_Emerald</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+        <postExplosionSpawnChance>0.1</postExplosionSpawnChance>
+        <postExplosionSpawnThingDef>RF_RubbleShardsRF_Emerald</postExplosionSpawnThingDef>
+        <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until energy exhaustion</fuelLabel>
+        <fuelGizmoLabel>Energy reserves</fuelGizmoLabel>
+        <outOfFuelMessage>Cannot fire: Insufficient energy</outOfFuelMessage>
+        <fuelFilter><thingDefs><li>DankPyon_Onyx</li></thingDefs></fuelFilter>
+        <fuelCapacity>100</fuelCapacity>       <!-- 50 bursts -->
+        <fuelMultiplier>10</fuelMultiplier> <!-- 1 onyx = 10 energy -->
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.5</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>45</costStuffCount>
+    <costList>
+      <DankPyon_Emerald>50</DankPyon_Emerald>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <building>
+      <combatPower>45</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>RF_LancePylonTurret_Invisible</turretGunDef>
+      <turretBurstCooldownTime>4.8</turretBurstCooldownTime>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>RF_ArcaneDefences</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>RF_LancePylon_MagicBolt</defName>
+    <label>Lance pylon magic bolt</label>
+    <graphicData>
+      <texPath>Things/Projectile/RF_LancePylon_MagicBolt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3.25,3.25)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>RF_LancePylon_MagicBolt</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <speed>38</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>RF_LancePylonTurret_Invisible</defName>
+    <label>Lance pylon turret</label>
+    <description>The core of a defence pylon that unleashes magical bolts.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/RF_PylonTurret</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.25</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>RF_LancePylon_MagicBolt</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>40</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+
+</Defs>

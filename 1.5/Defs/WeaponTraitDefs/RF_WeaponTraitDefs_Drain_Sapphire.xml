@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MinorDrain_Sapphire</defName>
+		<label>minor drain</label>
+		<description>Enchanted with lower shadow magic, this weapon can sometimes release a weak wave of vampiric energy upon the target.</description>
+    <exclusionTags>
+			<li>RF_Drain_Sapphire</li>
+			<li>RF_MajorDrain_Sapphire</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.15</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect_Drain">
+						<hpToDrain>1~2</hpToDrain> <!-- Was 2~4 -->
+						<drainDamage>RF_DrainDamage</drainDamage>
+						<fleckDefOnTarget>RF_Fleck_BlastSapphire_Round</fleckDefOnTarget>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_Heal">
+						<hpToHeal>1</hpToHeal>
+						<fleckDefOnSelf>RF_Fleck_BlastSapphire_Round</fleckDefOnSelf>
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>1.00</commonality>
+		<marketValueOffset>200</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_Drain_Sapphire</defName>
+		<label>drain</label>
+		<description>Enchanted with shadow magic, this weapon can sometimes release a wave of vampiric energy upon the target.</description>
+    <exclusionTags>
+			<li>RF_MinorDrain_Sapphire</li>
+			<li>RF_MajorDrain_Sapphire</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.20</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect_Drain">
+						<hpToDrain>2~3</hpToDrain>
+						<drainDamage>RF_DrainDamage</drainDamage>
+						<fleckDefOnTarget>RF_Fleck_BlastSapphire_Round</fleckDefOnTarget>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_Heal">
+						<hpToHeal>1~2</hpToHeal>
+						<fleckDefOnSelf>RF_Fleck_BlastSapphire_Round</fleckDefOnSelf>
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>0.75</commonality>
+		<marketValueOffset>400</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MajorDrain_Sapphire</defName>
+		<label>major drain</label>
+		<description>Enchanted with higher shadow magic, this weapon can sometimes release a powerful wave of vampiric energy upon the target.</description>
+    <exclusionTags>
+			<li>RF_MinorDrain_Sapphire</li>
+			<li>RF_Drain_Sapphire</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.25</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect_Drain">
+						<hpToDrain>3~4</hpToDrain>
+						<drainDamage>RF_DrainDamage</drainDamage>
+						<fleckDefOnTarget>RF_Fleck_BlastSapphire_Round</fleckDefOnTarget>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_Heal">
+						<hpToHeal>2~3</hpToHeal>
+						<fleckDefOnSelf>RF_Fleck_BlastSapphire_Round</fleckDefOnSelf>
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>0.25</commonality>
+		<marketValueOffset>600</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+</Defs>

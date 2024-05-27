@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RF_SunstonePedestal</defName>
+    <label>sunstone pedestal</label>
+    <description>A beautiful, magically charged diamond within a carefully crafted pedestal which lights up an area brightly enough to grow crops. The exordinary energy expenditure means that the gemstone within will only release its energy during the day.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/RF_SunstonePedestal/RF_SunstonePedestal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawOffset>(0,0,0.10)</drawOffset>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>14</pathCost>
+    <blockWind>true</blockWind>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>175</MaxHitPoints>
+      <Beauty>3</Beauty>
+      <WorkToBuild>540</WorkToBuild>
+      <Mass>4.5</Mass>
+    </statBases>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <costList>
+      <DankPyon_Emerald>10</DankPyon_Emerald>
+      <DankPyon_Sapphire>10</DankPyon_Sapphire>
+      <DankPyon_Ruby>10</DankPyon_Ruby>
+    </costList>
+    <building>
+    	<isEdifice>true</isEdifice>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0.15</resourcesFractionWhenDeconstructed>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>6.0</overlightRadius> <!--Sun lamp is 7.0-->
+        <glowRadius>10</glowRadius> <!--Sun lamp is 14-->
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Schedule"> <!-- Close to plant growing times with an extra half an hour -->
+        <compClass>RimFantasy.CompScheduleTickNormal</compClass>
+        <startTime>0.25</startTime> <!-- Roughly 0600 hours, Ref: 0.25 for Sun Lamp -->
+        <endTime>0.80</endTime> <!-- Roughly 1900 hours, Ref: 0.80 for Sun Lamp -->
+        <offMessage>Recovering energy for the next release period</offMessage>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>2</heatPerSecond>
+        <heatPushMaxTemperature>28</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>90</wickTicks>
+        <explosiveRadius>3</explosiveRadius>
+        <explosiveDamageType>RF_Flame_MediumSquareRF_Diamond</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+        <postExplosionSpawnChance>0.15</postExplosionSpawnChance>
+        <postExplosionSpawnThingDef>RF_RubbleShardsRF_Diamond</postExplosionSpawnThingDef>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      </li>
+    </comps>
+    <designationCategory>Furniture</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <specialDisplayRadius>4.8</specialDisplayRadius>
+    <researchPrerequisites>
+      <li>RF_ArcaneLighting</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

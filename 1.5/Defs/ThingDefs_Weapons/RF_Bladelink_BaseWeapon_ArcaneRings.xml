@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--========== Ref: Gun_IncendiaryLauncher ==========-->
+
+	<ThingDef Name="RF_BaseWeapon_ArcaneRings" ParentName="BaseWeapon" Abstract="True">
+		<description>An alluring glow gives away the fact that this is a magical ring. This ring allow its wearer to release destructive bolts of energy around their target.\n\nShields cannot be used along with this weapon as they interfere with the flow of magical energies around the caster.\n\nDoes not drop on down or death.</description>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>Bladelink</li>
+	    <li>NeolithicRangedHeavy</li>
+			<li>NeolithicRangedChief</li>
+		</weaponTags>
+		<tradeNeverStack>true</tradeNeverStack>
+		<relicChance>3</relicChance>
+		<tickerType>Normal</tickerType>
+    <costList>
+			<Steel>30</Steel>
+      <Gold>30</Gold>
+    </costList>
+		<statBases>
+				<WorkToMake>18000</WorkToMake>
+				<Mass>1.25</Mass>
+				<AccuracyTouch>0.85</AccuracyTouch>
+				<AccuracyShort>0.80</AccuracyShort>
+				<AccuracyMedium>0.50</AccuracyMedium>
+				<AccuracyLong>0.40</AccuracyLong>
+				<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>25</equippedAngleOffset>
+		<soundInteract>Interact_BladelinkMonoSword</soundInteract>
+		<meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+    <tools>
+      <li>
+        <label>band</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_GeneratedName">
+				<nameMaker>RF_Namer_ArcaneWeapons</nameMaker>
+			</li>
+		</comps>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<thingCategories>
+			<li>RF_ArcaneRings</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers>
+		   <li>RF_ArcaneCraftingBench</li>
+		  </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<researchPrerequisite>RF_ArcaneWeapons</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<modExtensions>
+			<li Class="RimFantasy.WeaponDropExtension">
+				<preventDroppingWhenDowned>true</preventDroppingWhenDowned>
+				<preventDroppingWhenDead>true</preventDroppingWhenDead>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

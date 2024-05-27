@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>RF_ArcaneCrafting</defName>
+    <label>arcane crafting</label>
+    <tab>RF_RimFantasy</tab>
+    <description>Creation of powerful equipment using magic infused gemstones.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

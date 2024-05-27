@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef>
+    <defName>RF_FlameCustom</defName>
+    <workerClass>RimFantasy.DamageWorker_CustomFlame</workerClass>
+    <label>flame</label>
+    <hasForcefulImpact>false</hasForcefulImpact>
+    <makesBlood>false</makesBlood>
+    <canInterruptJobs>false</canInterruptJobs>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has burned to death.</deathMessage>
+    <hediff>Burn</hediff>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>10</defaultDamage>
+    <defaultArmorPenetration>0</defaultArmorPenetration>
+    <explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastFlame</explosionCellFleck>
+    <explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter>
+    <explosionColorEdge>(1, 1, 0.7)</explosionColorEdge>
+    <soundExplosion>Explosion_Flame</soundExplosion>
+    <combatLogRules>Damage_Flame</combatLogRules>
+    <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+  </DamageDef>
+
+  <ThingDef>
+    <defName>RF_SparkCustom</defName>
+    <label>spark</label>
+    <category>Projectile</category>
+    <thingClass>RimFantasy.SparkCustom</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Spark</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <neverMultiSelect>true</neverMultiSelect>
+    <projectile>
+      <alwaysFreeIntercept>true</alwaysFreeIntercept>
+      <speed>1.5</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>RF_EmeraldFire</defName>
+    <label>emerald fire</label>
+    <thingClass>RimFantasy.CustomFire</thingClass>
+    <category>Attachment</category>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Special/RF_EmeraldFire</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>PawnState</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+	  <modExtensions>
+      <li Class="RimFantasy.FireExtension">
+        <spreadRateMultiplier>2.5</spreadRateMultiplier>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>RF_EmeraldFireGlow</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_FireGlow_Emerald</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.75</fadeInTime>
+    <solidTime>1.08</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+  </FleckDef>
+
+  <ThingDef>
+    <defName>RF_SapphireFire</defName>
+    <label>sapphire fire</label>
+    <thingClass>RimFantasy.CustomFire</thingClass>
+    <category>Attachment</category>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Special/RF_SapphireFire</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>PawnState</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+	  <modExtensions>
+      <li Class="RimFantasy.FireExtension">
+        <spreadRateMultiplier>2.5</spreadRateMultiplier>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>RF_SapphireFireGlow</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_FireGlow_Sapphire</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.75</fadeInTime>
+    <solidTime>1.08</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+  </FleckDef>
+
+  <ThingDef>
+    <defName>RF_RubyFire</defName>
+    <label>ruby fire</label>
+    <thingClass>RimFantasy.CustomFire</thingClass>
+    <category>Attachment</category>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Special/RF_RubyFire</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <altitudeLayer>PawnState</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+	  <modExtensions>
+      <li Class="RimFantasy.FireExtension">
+        <spreadRateMultiplier>2.5</spreadRateMultiplier>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>RF_RubyFireGlow</defName>
+    <graphicData>
+      <texPath>Things/Mote/RF_FireGlow_Ruby</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.75</fadeInTime>
+    <solidTime>1.08</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+  </FleckDef>
+
+</Defs>

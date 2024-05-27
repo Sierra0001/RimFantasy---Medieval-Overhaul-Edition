@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>RF_ArcaneLighting</defName>
+    <label>arcane lighting</label>
+    <tab>RF_RimFantasy</tab>
+    <description>Infuse rough gemstones with magic to create light.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>RF_ArcaneCrafting</li>
+    </prerequisites>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.75</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

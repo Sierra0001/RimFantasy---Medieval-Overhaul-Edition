@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--========== Ref: Bullet_Revolver ==========-->
+
+	<ThingDef Name="RF_BaseWeapon_ArcaneWands" ParentName="BaseWeapon" Abstract="True">
+		<description>Beautiful as it is deadly, this wand is charged with magical energy and is a choice weapon for its remarkable effectiveness in duels.\n\nShields cannot be used along with this weapon as they interfere with the flow of magical energies around the caster.</description>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>Bladelink</li>
+	    <li>NeolithicRangedHeavy</li>
+			<li>NeolithicRangedChief</li>
+		</weaponTags>
+		<tradeNeverStack>true</tradeNeverStack>
+		<relicChance>3</relicChance>
+		<tickerType>Normal</tickerType>
+    <costList>
+			<Steel>30</Steel>
+      <Gold>30</Gold>
+    </costList>
+		<statBases>
+				<WorkToMake>18000</WorkToMake>
+				<Mass>2</Mass>
+				<AccuracyTouch>0.90</AccuracyTouch>
+				<AccuracyShort>0.85</AccuracyShort>
+				<AccuracyMedium>0.55</AccuracyMedium>
+				<AccuracyLong>0.45</AccuracyLong>
+				<RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<soundInteract>Interact_BladelinkMonoSword</soundInteract>
+		<meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_GeneratedName">
+				<nameMaker>RF_Namer_ArcaneWeapons</nameMaker>
+			</li>
+		</comps>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<thingCategories>
+			<li>RF_ArcaneWands</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers>
+		   <li>RF_ArcaneCraftingBench</li>
+		  </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<researchPrerequisite>RF_ArcaneWeapons</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

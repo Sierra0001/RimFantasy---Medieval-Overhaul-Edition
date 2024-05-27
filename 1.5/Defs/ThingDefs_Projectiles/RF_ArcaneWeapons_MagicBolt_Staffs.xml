@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--========== Magic Bolt Projectiles  ==========-->
+  <!--========== Used for all staffs.  ==========-->
+
+  <!--========== Emerald Magic Bolt ==========-->
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>RF_MagicBolt_Staff_Emerald</defName>
+    <label>emerald staff effect</label>
+    <graphicData>
+      <texPath>Things/Projectile/RF_MagicBolt_Emerald</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>RF_MagicBolt</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+
+  <!--========== Sapphire Magic Bolt ==========-->
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>RF_MagicBolt_Staff_Sapphire</defName>
+    <label>sapphire staff effect</label>
+    <graphicData>
+      <texPath>Things/Projectile/RF_MagicBolt_Sapphire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>RF_MagicBolt</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+
+  <!--========== Ruby Magic Bolt ==========-->
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>RF_MagicBolt_Staff_Ruby</defName>
+    <label>ruby staff effect</label>
+    <graphicData>
+      <texPath>Things/Projectile/RF_MagicBolt_Ruby</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>RF_MagicBolt</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+
+
+</Defs>

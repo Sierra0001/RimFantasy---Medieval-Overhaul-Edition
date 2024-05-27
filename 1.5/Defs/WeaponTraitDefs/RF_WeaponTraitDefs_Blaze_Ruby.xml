@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MinorBlaze_Ruby</defName>
+		<label>minor blaze</label>
+		<description>Enchanted with lower fire magic, this weapon can sometimes unleash a weak wave of magical energy and may set a target on fire.</description>
+    <exclusionTags>
+			<li>RF_Blaze_Ruby</li>
+			<li>RF_MajorBlaze_Ruby</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_SetOnFire">
+				<effectChance>0.15</effectChance>
+				<effectDamage>Burn</effectDamage>
+				<baseDamageValue>2</baseDamageValue>
+				<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
+				<setsTargetOnFire>true</setsTargetOnFire>
+				<fireSize>0.2~0.5</fireSize>
+			</li>
+		</weaponEffects>
+		<commonality>4</commonality>
+		<marketValueOffset>200</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_Blaze_Ruby</defName>
+		<label>blaze</label>
+		<description>Enchanted with fire magic, this weapon can sometimes unleash a wave of magical energy and may set a target on fire.</description>
+    <exclusionTags>
+			<li>RF_MinorBlaze_Ruby</li>
+			<li>RF_MajorBlaze_Ruby</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_SetOnFire">
+				<effectChance>0.20</effectChance>
+				<effectDamage>Burn</effectDamage>
+				<baseDamageValue>4</baseDamageValue>
+				<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
+				<setsTargetOnFire>true</setsTargetOnFire>
+				<fireSize>0.4~0.7</fireSize>
+			</li>
+		</weaponEffects>
+		<commonality>2</commonality>
+		<marketValueOffset>400</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MajorBlaze_Ruby</defName>
+		<label>major blaze</label>
+		<description>Enchanted with higher fire magic, this weapon can sometimes unleash a powerful wave of magical energy and may set a target on fire.</description>
+    <exclusionTags>
+			<li>RF_MinorBlaze_Ruby</li>
+			<li>RF_Blaze_Ruby</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_SetOnFire">
+				<effectChance>0.25</effectChance>
+				<effectDamage>Burn</effectDamage>
+				<baseDamageValue>6</baseDamageValue>
+				<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
+				<setsTargetOnFire>true</setsTargetOnFire>
+				<fireSize>0.6~0.9</fireSize>
+			</li>
+		</weaponEffects>
+		<commonality>1</commonality>
+		<marketValueOffset>600</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+</Defs>
