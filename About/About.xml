@@ -38,7 +38,7 @@
 		<li>Sierra.RF.Gemstones</li>
 	</incompatibleWith>
 	<description>
-[h1]Mod Version: v1.2[/h1]
+[h1]Mod Version: v1.3[/h1]
 [h1][i]This version of RimFantasy has been reworked and rebalanced to adhere to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067]Medieval Overhaul[/url] standards. It is no longer modular and contains new/altered/removed content.[/i][/h1]
 
 
@@ -105,12 +105,9 @@ Join the Discord (link below) for troubleshooting and bug reports. Steam is a te
 
 
 [h1]Latest Changes:[/h1]
-[b]v1.2[/b]
+[b]v1.3[/b]
 [list]
-[*][DEV] Updated texPath for all Arcane Weapons.
-[*][New] Added Arcane Halberds (Emerald/Sapphire/Ruby).
-[*][Changed] Magic fire will now spread 2.5x slower.
-[*][Removed] Drain traits will no longer spawn on new Emerald/Sapphire/Ruby Arcane Weapons. Existing weapons are unaffected.
+[*][RimWorld 1.5] RimWorld 1.5 Ready.
 [/list]
 	</description>
 </ModMetaData>
