@@ -52,9 +52,9 @@
 					<li>RF_MinorWarriorsShield</li>
 					<li>RF_WarriorsShield</li>
 					<li>RF_MajorWarriorsShield</li>
-    				<li>RF_MinorBane</li>
-    				<li>RF_Bane</li>
-    				<li>RF_MajorBane</li>
+    			<li>RF_MinorBane</li>
+    			<li>RF_Bane</li>
+    			<li>RF_MajorBane</li>
           </weaponTraitsPool>
         </li>
       </comps>
@@ -114,25 +114,24 @@
           <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
         </li>
         <li Class="RimFantasy.CompProperties_ArcaneWeapon">
-				<biocodeOnEquip>false</biocodeOnEquip>
-				<minWeaponTraits>1</minWeaponTraits>
-				<maxWeaponTraits>2</maxWeaponTraits>
+          <biocodeOnEquip>false</biocodeOnEquip>
+          <minWeaponTraits>1</minWeaponTraits>
+          <maxWeaponTraits>2</maxWeaponTraits>
           <weaponTraitsPool>
-					<li>RF_MinorBlaze_Sapphire</li>
-					<li>RF_Blaze_Sapphire</li>
-					<li>RF_MajorBlaze_Sapphire</li>
-					<li>RF_MinorShock_Sapphire</li>
-					<li>RF_Shock_Sapphire</li>
-					<li>RF_MajorShock_Sapphire</li>
-					<li>RF_MinorDisplacement_Sapphire</li>
-					<li>RF_Displacement_Sapphire</li>
-					<li>RF_MajorDisplacement_Sapphire</li>
-					<li>RF_MinorWarriorsShield</li>
-					<li>RF_WarriorsShield</li>
-					<li>RF_MajorWarriorsShield</li>
-    				<li>RF_MinorFreeze</li>
-    				<li>RF_Freeze</li>
-    				<li>RF_MajorFreeze</li>
+            <li>RF_Blaze_Sapphire</li>
+					  <li>RF_MajorBlaze_Sapphire</li>
+            <li>RF_MinorShock_Sapphire</li>
+            <li>RF_Shock_Sapphire</li>
+            <li>RF_MajorShock_Sapphire</li>
+            <li>RF_MinorDisplacement_Sapphire</li>
+            <li>RF_Displacement_Sapphire</li>
+            <li>RF_MajorDisplacement_Sapphire</li>
+            <li>RF_MinorWarriorsShield</li>
+            <li>RF_WarriorsShield</li>
+            <li>RF_MajorWarriorsShield</li>
+            <li>RF_MinorFreeze</li>
+            <li>RF_Freeze</li>
+					  <li>RF_MajorFreeze</li>
           </weaponTraitsPool>
         </li>
       </comps>
