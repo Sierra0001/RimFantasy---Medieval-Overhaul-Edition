@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--  ===== Based on RE_PreFabWallLight ===== -->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RF_VE_SunstoneWallLamp</defName>
+    <label>sunstone wall lamp</label>
+    <description>A small, magically charged diamond sphere mounted on a wall. It lights up a small area brightly enough to grow crops. The exordinary energy expenditure means that the gemstone within will only release its energy during the day.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/RF_VE_SunstoneWallLamp/RF_VE_SunstoneWallLamp</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1,1</drawSize> <!-- Was 1.1 -->
+      <drawOffsetNorth>(0,0,0.383)</drawOffsetNorth>
+      <drawOffsetSouth>(0,0,-0.20)</drawOffsetSouth>
+      <drawOffsetEast>(0,0,0)</drawOffsetEast>
+      <drawOffsetWest>(0,0,0)</drawOffsetWest>
+      <!--<drawOffsetEast>(0.4,0,0.20)</drawOffsetEast>
+      <drawOffsetWest>(-0.4,0,0.20)</drawOffsetWest>-->
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <passability>Standable</passability>
+    <tickerType>Normal</tickerType>
+    <fillPercent>0.20</fillPercent>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <Beauty>1</Beauty>
+      <WorkToBuild>350</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Mass>2</Mass>
+    </statBases>
+    <size>(1, 1)</size>
+    <placeWorkers>
+      <li>Placeworker_AttachedToWall</li> <!-- Was VanillaFurnitureExpanded.PlaceWorker_OnWall in 1.5 -->
+    </placeWorkers>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>25</costStuffCount>
+    <costList>
+      <DankPyon_Emerald>5</DankPyon_Emerald>
+      <DankPyon_Sapphire>5</DankPyon_Sapphire>
+      <DankPyon_Ruby>5</DankPyon_Ruby>
+    </costList>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+    <designationCategory>Furniture</designationCategory>
+    <rotatable>true</rotatable>
+    <selectable>true</selectable>
+    <destroyable>true</destroyable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <canOverlapZones>true</canOverlapZones>
+    <comps>
+      <!-- <li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/> -->
+      <li Class="VEF.Buildings.CompProperties_GlowerExtended"> <!-- Was VanillaFurnitureExpanded.CompProperties_GlowerExtended in 1.5 -->
+        <spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
+        <colorOptions>
+          <li>
+            <overlightRadius>4.0</overlightRadius>
+            <glowRadius>7</glowRadius>
+            <glowColor>(370,370,370,0)</glowColor>
+          </li>
+        </colorOptions>
+      </li>
+      <li Class="CompProperties_Schedule"> <!-- Close to plant growing times with an extra half an hour -->
+        <compClass>RimFantasy.CompScheduleTickNormal</compClass>
+        <startTime>0.25</startTime> <!-- Roughly 0600 hours, Ref: 0.25 for Sun Lamp -->
+        <endTime>0.80</endTime> <!-- Roughly 1900 hours, Ref: 0.80 for Sun Lamp -->
+        <offMessage>Recovering energy for the next release period</offMessage>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>1</heatPerSecond>
+        <heatPushMaxTemperature>20</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>60</wickTicks>
+        <explosiveRadius>1</explosiveRadius>
+        <explosiveDamageType>RF_Flame_SmallSquareRF_Diamond</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+        <postExplosionSpawnChance>0.25</postExplosionSpawnChance>
+        <postExplosionSpawnThingDef>RF_RubbleShardsRF_Diamond</postExplosionSpawnThingDef>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>RF_ArcaneLighting</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

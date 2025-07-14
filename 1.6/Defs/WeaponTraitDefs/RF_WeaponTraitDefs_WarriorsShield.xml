@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MinorWarriorsShield</defName>
+		<label>minor warrior's shield</label>
+		<description>Enchanted with lower battle magic, this weapon projects a weak bubble of magical energy that can occasionally shield the user from danger.\n\nThis variant of the shield spell is more reliable against melee attacks.</description>
+    <exclusionTags>
+	    <li>RF_WarriorsShield</li>
+	    <li>RF_MajorWarriorsShield</li>
+	    <li>RF_MinorMagiciansShield</li>
+		  <li>RF_MagiciansShield</li>
+		  <li>RF_MajorMagiciansShield</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<isShield>true</isShield>
+		<shieldRechargeRate>0.04</shieldRechargeRate>
+		<shieldEnergyMax>1.75</shieldEnergyMax>
+		<shieldTexPath>Other/RF_ShieldBubble</shieldTexPath>
+		<shieldTexStuffPostfix>true</shieldTexStuffPostfix>
+		<shieldCombatRecovery>true</shieldCombatRecovery>
+		<ignoreRechargeDelay>false</ignoreRechargeDelay>
+		<deflectMeleeChance>0.90</deflectMeleeChance>
+		<deflectRangeChance>0.60</deflectRangeChance>
+		<!--<fleckDefOnDeflect>ElectricalSpark</fleckDefOnDeflect>-->
+		<!--<fleckDefOnDeflectScale>2.25</fleckDefOnDeflectScale>-->
+		<commonality>4</commonality>
+		<marketValueOffset>200</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_WarriorsShield</defName>
+		<label>warrior's shield</label>
+		<description>Enchanted with battle magic, this weapon projects a bubble of magical energy that can occasionally shield the user from danger.\n\nThis variant of the shield spell is more reliable against melee attacks.</description>
+    <exclusionTags>
+      <li>RF_MinorWarriorsShield</li>
+	    <li>RF_MajorWarriorsShield</li>
+	    <li>RF_MinorMagiciansShield</li>
+		  <li>RF_MagiciansShield</li>
+		  <li>RF_MajorMagiciansShield</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<isShield>true</isShield>
+		<shieldRechargeRate>0.05</shieldRechargeRate>
+		<shieldEnergyMax>2.25</shieldEnergyMax>
+		<shieldTexPath>Other/RF_ShieldBubble</shieldTexPath>
+		<shieldTexStuffPostfix>true</shieldTexStuffPostfix>
+		<shieldCombatRecovery>true</shieldCombatRecovery>
+		<ignoreRechargeDelay>false</ignoreRechargeDelay>
+		<deflectMeleeChance>0.90</deflectMeleeChance>
+		<deflectRangeChance>0.60</deflectRangeChance>
+		<!--<fleckDefOnDeflect>ElectricalSpark</fleckDefOnDeflect>-->
+		<!--<fleckDefOnDeflectScale>2.25</fleckDefOnDeflectScale>-->
+		<commonality>2</commonality>
+		<marketValueOffset>400</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MajorWarriorsShield</defName>
+		<label>major warrior's shield</label>
+		<description>Enchanted with higher battle magic, this weapon projects a powerful bubble of magical energy that can occasionally shield the user from danger.\n\nThis variant of the shield spell is more reliable against melee attacks.</description>
+    <exclusionTags>
+      <li>RF_MinorWarriorsShield</li>
+	    <li>RF_WarriorsShield</li>
+	    <li>RF_MinorMagiciansShield</li>
+		  <li>RF_MagiciansShield</li>
+		  <li>RF_MajorMagiciansShield</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<isShield>true</isShield>
+		<shieldRechargeRate>0.06</shieldRechargeRate>
+		<shieldEnergyMax>2.50</shieldEnergyMax>
+		<shieldTexPath>Other/RF_ShieldBubble</shieldTexPath>
+		<shieldTexStuffPostfix>true</shieldTexStuffPostfix>
+		<shieldCombatRecovery>true</shieldCombatRecovery>
+		<ignoreRechargeDelay>false</ignoreRechargeDelay>
+		<deflectMeleeChance>0.90</deflectMeleeChance>
+		<deflectRangeChance>0.60</deflectRangeChance>
+		<!--<fleckDefOnDeflect>ElectricalSpark</fleckDefOnDeflect>-->
+		<!--<fleckDefOnDeflectScale>2.25</fleckDefOnDeflectScale>-->
+		<commonality>1</commonality>
+		<marketValueOffset>600</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+</Defs>

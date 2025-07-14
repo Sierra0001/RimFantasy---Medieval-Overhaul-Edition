@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--========== Magic Bolt Projectiles  ==========-->
+  <!--========== Used for all rings.  ==========-->
+
+  <!--========== Emerald Magic Bolt ==========-->
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>RF_MagicBolt_Ring_Emerald</defName>
+    <label>enchanted emerald ring effect</label>
+    <graphicData>
+      <texPath>Things/Projectile/RF_LargeMagicBolt_Emerald</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>RF_MagicBolt_EmeraldRing</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>40</speed>
+      <explosionRadius>2</explosionRadius>
+      <preExplosionSpawnThingDef>RF_RubbleShardsRF_Emerald</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.05</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+    </projectile>
+  </ThingDef>
+
+  <!--========== Sapphire Magic Bolt ==========-->
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>RF_MagicBolt_Ring_Sapphire</defName>
+    <label>enchanted sapphire ring effect</label>
+    <graphicData>
+      <texPath>Things/Projectile/RF_LargeMagicBolt_Sapphire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>RF_MagicBolt_SapphireRing</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>40</speed>
+      <explosionRadius>2</explosionRadius>
+      <preExplosionSpawnThingDef>RF_RubbleShardsRF_Sapphire</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.05</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+    </projectile>
+  </ThingDef>
+
+  <!--========== Ruby Magic Bolt ==========-->
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>RF_MagicBolt_Ring_Ruby</defName>
+    <label>enchanted ruby ring effect</label>
+    <graphicData>
+      <texPath>Things/Projectile/RF_LargeMagicBolt_Ruby</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>RF_MagicBolt_RubyRing</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>40</speed>
+      <explosionRadius>2</explosionRadius>
+      <preExplosionSpawnThingDef>RF_RubbleShardsRF_Ruby</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.05</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+    </projectile>
+  </ThingDef>
+
+</Defs>

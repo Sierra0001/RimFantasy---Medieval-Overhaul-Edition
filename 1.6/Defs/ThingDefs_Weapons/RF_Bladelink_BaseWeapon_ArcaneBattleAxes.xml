@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--========== Ref: VWE_MeleeWeapon_BattleAxe ==========-->
+
+	<ThingDef Name="RF_BaseWeapon_ArcaneBattleAxes" ParentName="BaseWeapon" Abstract="True">
+		<description>Magical gemstone blades attached to shaft, capable of cutting through armored enemies with ease.\n\nUsable with shields.</description>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>Bladelink</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<tradeNeverStack>true</tradeNeverStack>
+		<relicChance>3</relicChance>
+		<tickerType>Normal</tickerType>
+    <costList>
+			<Steel>30</Steel>
+      <Gold>30</Gold>
+    </costList>
+		<statBases>
+				<WorkToMake>18000</WorkToMake>
+				<Mass>3</Mass>
+		</statBases>
+		<equippedAngleOffset>-70</equippedAngleOffset>
+		<soundInteract>Interact_BladelinkMonoSword</soundInteract>
+		<meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.55</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>22</power>
+				<armorPenetration>0.175</armorPenetration> <!-- Increased by 0.05 because it was shit -->
+        <cooldownTime>2.55</cooldownTime>
+      </li>
+    </tools>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_GeneratedName">
+				<nameMaker>RF_Namer_ArcaneWeapons</nameMaker>
+			</li>
+		</comps>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<thingCategories>
+			<li>RF_ArcaneBattleAxes</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers>
+		   <li>RF_ArcaneCraftingBench</li>
+		  </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<researchPrerequisite>RF_ArcaneWeapons</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension"> <!-- Was VFECore.ThingDefExtension in 1.5 -->
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

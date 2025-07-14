@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RF_DarkstoneLamp</defName>
+    <label>darkstone lamp</label>
+    <description>A carefully crafted, magical sapphire sphere set on a small base. Can be placed on top of tables to light up a room.\n\nPeople who prefer darklight work best with this light source.</description>
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/RF_DarkstoneLamp/RF_DarkstoneLamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawRotated>false</drawRotated>
+      <drawSize>(0.8,0.8)</drawSize>
+      <drawOffset>(0,0,0)</drawOffset>
+      <shadowData>
+        <volume>(0.1,0.1,0.1)</volume> <!--This requires testing. -->
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0,0.6,0.1)</rect> <!--This requires testing. -->
+      </damageData>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability> <!--Either Standable, PassThroughOnly or Impossable. -->
+    <!--<pathCost>30</pathCost>--> <!--Not necessary with Standable or Impossable. -->
+    <!--<constructEffect>ConstructMetal</constructEffect> Not applicable to stuffable items.-->
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>2</Beauty>
+      <Mass>1</Mass>
+      <WorkToBuild>450</WorkToBuild>
+    </statBases>
+    <selectable>true</selectable>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <costList>
+      <DankPyon_Citrine>5</DankPyon_Citrine>
+      <DankPyon_Sapphire>15</DankPyon_Sapphire>
+    </costList>
+    <building>
+    	<isEdifice>false</isEdifice>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0.15</resourcesFractionWhenDeconstructed>
+    <clearBuildingArea>false</clearBuildingArea>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(78, 226, 229, 0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>1</heatPerSecond>
+        <heatPushMaxTemperature>22</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>60</wickTicks>
+        <explosiveRadius>2</explosiveRadius>
+        <explosiveDamageType>RF_Flame_SmallSquareRF_Sapphire</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+        <postExplosionSpawnChance>0.25</postExplosionSpawnChance>
+        <postExplosionSpawnThingDef>RF_RubbleShardsRF_Sapphire</postExplosionSpawnThingDef>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      </li>
+    </comps>
+    <designationCategory>Furniture</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <researchPrerequisites>
+      <li>RF_ArcaneLighting</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

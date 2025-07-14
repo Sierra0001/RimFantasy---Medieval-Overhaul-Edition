@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MinorBane</defName>
+		<label>minor bane</label>
+		<description>Enchanted with lower nature magic, this weapon can sometimes unleash a weak wave of magical energy and may cause toxic buildup.</description>
+    <exclusionTags>
+			<li>RF_Bane</li>
+			<li>RF_MajorBane</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.25</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
+						<hediffDef>ChemicalBurn</hediffDef>
+						<baseDamageValue>2</baseDamageValue>
+						<severityOffset>0.5</severityOffset> <!-- Needs Testing -->
+						<fleckDefOnTarget>RF_Fleck_BlastEmerald_Round</fleckDefOnTarget>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
+						<hediffDef>ToxicBuildup</hediffDef>
+						<severityOffset>-0.25</severityOffset>
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>4</commonality>
+		<marketValueOffset>200</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_Bane</defName>
+		<label>bane</label>
+		<description>Enchanted with nature magic, this weapon can sometimes unleash a wave of magical energy and may cause toxic buildup.</description>
+    <exclusionTags>
+			<li>RF_MinorBane</li>
+			<li>RF_MajorBane</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.30</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
+						<hediffDef>ChemicalBurn</hediffDef>
+						<baseDamageValue>4</baseDamageValue>
+						<severityOffset>2.5</severityOffset> <!-- Needs Testing -->
+						<fleckDefOnTarget>RF_Fleck_BlastEmerald_Round</fleckDefOnTarget>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
+						<hediffDef>ToxicBuildup</hediffDef>
+						<severityOffset>-0.05</severityOffset>
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>2</commonality>
+		<marketValueOffset>400</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MajorBane</defName>
+		<label>major bane</label>
+		<description>Enchanted with higher nature magic, this weapon can sometimes unleash a powerful wave of magical energy and may cause toxic buildup.</description>
+    <exclusionTags>
+			<li>RF_MinorBane</li>
+			<li>RF_Bane</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.35</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
+						<hediffDef>ChemicalBurn</hediffDef>
+						<baseDamageValue>6</baseDamageValue>
+						<severityOffset>5.5</severityOffset> <!-- Needs Testing -->
+						<fleckDefOnTarget>RF_Fleck_BlastEmerald_Round</fleckDefOnTarget>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
+						<hediffDef>ToxicBuildup</hediffDef>
+						<severityOffset>0.15</severityOffset>
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>1</commonality>
+		<marketValueOffset>600</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+</Defs>

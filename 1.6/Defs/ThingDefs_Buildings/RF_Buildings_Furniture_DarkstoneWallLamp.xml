@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--  ===== Based on RE_PreFabWallLight ===== -->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RF_VE_DarkstoneWallLamp</defName>
+    <label>darkstone wall lamp</label>
+    <description>A small, magically charged sapphire sphere mounted on a wall. It lights up a small area, providing light in its surroundings.\n\nPeople who prefer darklight work best with this light source.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/RF_VE_DarkstoneWallLamp/RF_VE_DarkstoneWallLamp</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.1,1.1</drawSize>
+      <drawOffsetNorth>(0,0,0.383)</drawOffsetNorth>
+      <drawOffsetSouth>(0,0,-0.20)</drawOffsetSouth>
+      <drawOffsetEast>(0.4,0,0.20)</drawOffsetEast>
+      <drawOffsetWest>(-0.4,0,0.20)</drawOffsetWest>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <passability>Standable</passability>
+    <tickerType>Normal</tickerType>
+    <fillPercent>0.20</fillPercent>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <Beauty>1</Beauty>
+      <WorkToBuild>350</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Mass>2</Mass>
+    </statBases>
+    <size>(1, 1)</size>
+    <placeWorkers>
+      <li>Placeworker_AttachedToWall</li> <!-- Was VanillaFurnitureExpanded.PlaceWorker_OnWall in 1.5 -->
+    </placeWorkers>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>25</costStuffCount>
+    <costList>
+      <DankPyon_Citrine>5</DankPyon_Citrine>
+      <DankPyon_Sapphire>10</DankPyon_Sapphire>
+    </costList>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+    <designationCategory>Furniture</designationCategory>
+    <rotatable>true</rotatable>
+    <selectable>true</selectable>
+    <destroyable>true</destroyable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <canOverlapZones>true</canOverlapZones>
+    <comps>
+      <!-- <li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/> -->
+      <li Class="VEF.Buildings.CompProperties_GlowerExtended"> <!-- Was VanillaFurnitureExpanded.CompProperties_GlowerExtended in 1.5 -->
+        <spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
+        <colorOptions>
+          <li>
+            <glowRadius>4</glowRadius>
+            <glowColor>(78, 226, 229, 0)</glowColor>
+          </li>
+        </colorOptions>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>0.75</heatPerSecond>
+        <heatPushMaxTemperature>18</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>60</wickTicks>
+        <explosiveRadius>1</explosiveRadius>
+        <explosiveDamageType>RF_Flame_SmallSquareRF_Sapphire</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+        <postExplosionSpawnChance>0.25</postExplosionSpawnChance>
+        <postExplosionSpawnThingDef>RF_RubbleShardsRF_Sapphire</postExplosionSpawnThingDef>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>RF_ArcaneLighting</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

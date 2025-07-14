@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RF_FrostPylon</defName>
+    <label>frost pylon</label>
+    <description>A beautifully crafted magic crystal that drains energy from its surroundings. Lowers nearby temperature and may explode on damage.</description>
+    <category>Building</category>
+    <!--<thingClass>Building_Cooler</thingClass>-->
+    <graphicData>
+      <texPath>Things/Building/Temperature/RF_FrostPylon/RF_FrostPylon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawRotated>false</drawRotated>
+      <drawSize>(0.95,0.95)</drawSize>
+      <drawOffset>(0,0,0.10)</drawOffset>
+      <allowFlip>true</allowFlip>
+      <shadowData>
+        <volume>(0.3, 0.5, 0.3)</volume> <!--This requires testing. -->
+        <offset>(0,0,-0.23)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0,0.6,0.1)</rect> <!--This requires testing. -->
+      </damageData>
+    </graphicData>
+    <rotatable>true</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability> <!--Either PassThroughOnly or Impossable. -->
+    <pathCost>30</pathCost>
+    <!--<constructEffect>ConstructMetal</constructEffect> Not applicable to stuffable items.-->
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.4</fillPercent>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Beauty>5</Beauty>
+      <WorkToBuild>1530</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>45</costStuffCount>
+    <costList>
+      <DankPyon_Sapphire>50</DankPyon_Sapphire>
+    </costList>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0.15</resourcesFractionWhenDeconstructed>
+    <!--Are placeWorkers needed?-->
+    <placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusher</compClass>
+        <heatPerSecond>-22</heatPerSecond>
+        <heatPushMinTemperature>-26</heatPushMinTemperature> <!-- Was -24 -->
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(130,157,255,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>120</wickTicks>
+        <explosiveRadius>4</explosiveRadius>
+        <explosiveDamageType>RF_Flame_MediumSquareRF_Sapphire</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+        <postExplosionSpawnChance>0.1</postExplosionSpawnChance>
+        <postExplosionSpawnThingDef>RF_RubbleShardsRF_Sapphire</postExplosionSpawnThingDef>
+        <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+      </li>
+      <li Class="RimFantasy.CompProperties_Aura_Temperature">
+        <auraRadius>2</auraRadius>
+        <auraStrength>-11</auraStrength>
+        <locationMode>Both</locationMode>
+        <minTemperature>-24</minTemperature> <!-- Was -28 -->
+        <workThroughWalls>false</workThroughWalls>
+      </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <researchPrerequisites>
+      <li>RF_ArcaneTemperatureRegulation</li> <!--Insert custom research when available-->
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RF_FlamePylon</defName>
+    <label>flame pylon</label>
+    <description>A beautifully crafted magic crystal that radiates energy into its surroundings. Increases nearby temperature and may explode on damage.</description>
+    <category>Building</category>
+    <!--<thingClass>Building_Heater</thingClass>-->
+    <graphicData>
+      <texPath>Things/Building/Temperature/RF_FlamePylon/RF_FlamePylon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawRotated>false</drawRotated>
+      <drawSize>(0.95,0.95)</drawSize>
+      <drawOffset>(0,0,0.10)</drawOffset>
+      <allowFlip>true</allowFlip>
+      <shadowData>
+        <volume>(0.3, 0.5, 0.3)</volume> <!--This requires testing. -->
+        <offset>(0,0,-0.23)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0,0.6,0.1)</rect> <!--This requires testing. -->
+      </damageData>
+    </graphicData>
+    <rotatable>true</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability> <!--Either PassThroughOnly or Impossable. -->
+    <pathCost>30</pathCost>
+    <!--<constructEffect>ConstructMetal</constructEffect> Not applicable to stuffable items.-->
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.4</fillPercent>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Beauty>5</Beauty>
+      <WorkToBuild>1530</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>45</costStuffCount>
+    <costList>
+      <DankPyon_Ruby>50</DankPyon_Ruby>
+    </costList>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0.15</resourcesFractionWhenDeconstructed>
+    <!--Are placeWorkers needed?-->
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusher</compClass>
+        <heatPerSecond>22</heatPerSecond>
+        <heatPushMaxTemperature>38</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(189,25,60,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>120</wickTicks>
+        <explosiveRadius>4</explosiveRadius>
+        <explosiveDamageType>RF_Flame_MediumSquareRF_Ruby</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+        <postExplosionSpawnChance>0.1</postExplosionSpawnChance>
+        <postExplosionSpawnThingDef>RF_RubbleShardsRF_Ruby</postExplosionSpawnThingDef>
+        <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+      </li>
+      <li Class="RimFantasy.CompProperties_Aura_Temperature">
+        <auraRadius>2</auraRadius>
+        <auraStrength>11</auraStrength>
+        <locationMode>Both</locationMode>
+        <maxTemperature>36</maxTemperature>
+        <workThroughWalls>false</workThroughWalls>
+      </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <researchPrerequisites>
+      <li>RF_ArcaneTemperatureRegulation</li> <!--Insert custom research when available-->
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

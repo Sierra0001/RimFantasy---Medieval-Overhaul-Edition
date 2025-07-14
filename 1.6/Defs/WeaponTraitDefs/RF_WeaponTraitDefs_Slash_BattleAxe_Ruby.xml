@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MinorSlash_BattleAxe_Ruby</defName>
+		<label>minor slash</label>
+		<description>Enchanted with lower battle magic, this weapon can sometimes unleash a weak wave of magical energy around the target.</description>
+    <exclusionTags>
+			<li>RF_Slash_BattleAxe_Ruby</li>
+			<li>RF_MajorSlash_BattleAxe_Ruby</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Slash">
+				<effectChance>0.15</effectChance>
+				<baseDamageValue>3</baseDamageValue>
+				<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
+				<amountOfEnemies>1~2</amountOfEnemies>
+				<maxDistance>2.5</maxDistance>
+				<baseDamageFactor>0.75</baseDamageFactor>
+			</li>
+		</weaponEffects>
+		<commonality>1.00</commonality>
+		<marketValueOffset>200</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_Slash_BattleAxe_Ruby</defName>
+		<label>slash</label>
+		<description>Enchanted with battle magic, this weapon can sometimes unleash a wave of magical energy around the target.</description>
+    <exclusionTags>
+			<li>RF_MinorSlash_BattleAxe_Ruby</li>
+			<li>RF_MajorSlash_BattleAxe_Ruby</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Slash">
+				<effectChance>0.20</effectChance>
+				<baseDamageValue>7</baseDamageValue>
+				<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
+				<amountOfEnemies>2</amountOfEnemies>
+				<maxDistance>2.5</maxDistance>
+				<baseDamageFactor>0.75</baseDamageFactor>
+			</li>
+		</weaponEffects>
+		<commonality>0.75</commonality>
+		<marketValueOffset>400</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MajorSlash_BattleAxe_Ruby</defName>
+		<label>major slash</label>
+		<description>Enchanted with higher battle magic, this weapon can sometimes unleash a powerful wave of magical energy around the target.</description>
+    <exclusionTags>
+			<li>RF_MinorSlash_BattleAxe_Ruby</li>
+			<li>RF_Slash_BattleAxe_Ruby</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Slash">
+				<effectChance>0.25</effectChance>
+				<baseDamageValue>10</baseDamageValue>
+				<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
+				<amountOfEnemies>2~3</amountOfEnemies>
+				<maxDistance>2.5</maxDistance>
+				<baseDamageFactor>0.75</baseDamageFactor>
+			</li>
+		</weaponEffects>
+		<commonality>0.25</commonality>
+		<marketValueOffset>600</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+</Defs>

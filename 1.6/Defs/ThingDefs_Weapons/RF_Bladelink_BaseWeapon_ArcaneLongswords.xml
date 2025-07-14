@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--========== Ref: MeleeWeapon_LongSword ==========-->
+
+	<ThingDef Name="RF_BaseWeapon_ArcaneLongswords" ParentName="BaseWeapon" Abstract="True">
+		<description>A razor sharp blade with a deadly purpose, a choice weapon for those who strive for a balance between elegance and power.\n\nUsable with shields.</description>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>Bladelink</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<tradeNeverStack>true</tradeNeverStack>
+		<relicChance>3</relicChance>
+		<tickerType>Normal</tickerType>
+    <costList>
+			<Steel>30</Steel>
+      <Gold>30</Gold>
+    </costList>
+		<statBases>
+				<WorkToMake>18000</WorkToMake>
+				<Mass>3</Mass>
+		</statBases>
+		<equippedAngleOffset>-30</equippedAngleOffset> <!-- Was -25 -->
+		<soundInteract>Interact_BladelinkMonoSword</soundInteract>
+		<meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_GeneratedName">
+				<nameMaker>RF_Namer_ArcaneWeapons</nameMaker>
+			</li>
+		</comps>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<thingCategories>
+			<li>RF_ArcaneLongswords</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers>
+		   <li>RF_ArcaneCraftingBench</li>
+		  </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<researchPrerequisite>RF_ArcaneWeapons</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension"> <!-- Was VFECore.ThingDefExtension in 1.5 -->
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

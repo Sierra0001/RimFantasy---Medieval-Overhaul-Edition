@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MinorSlam_Ruby</defName>
+		<label>minor slam</label>
+		<description>Enchanted with lower battle magic, this weapon can sometimes unleash a weak wave of magical energy around the target and knock them back.</description>
+    <exclusionTags>
+			<li>RF_Slam_Ruby</li>
+			<li>RF_MajorSlam_Ruby</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.15</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect_Slam">
+						<baseDamageValue>2</baseDamageValue>
+						<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
+						<amountOfEnemies>1</amountOfEnemies>
+						<maxDistance>2.5</maxDistance>
+						<knockbackDistance>0.5</knockbackDistance>
+						<knockbackDistanceSecondaryTargets>0.5</knockbackDistanceSecondaryTargets>
+						<baseDamageFactor>0.75</baseDamageFactor>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_Stun">
+						<stunDuration>15</stunDuration>
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>1.00</commonality>
+		<marketValueOffset>200</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_Slam_Ruby</defName>
+		<label>slam</label>
+		<description>Enchanted with battle magic, this weapon can sometimes unleash a wave of magical energy around the target and knock them back.</description>
+    <exclusionTags>
+			<li>RF_MinorSlam_Ruby</li>
+			<li>RF_MajorSlam_Ruby</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.20</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect_Slam">
+						<baseDamageValue>4</baseDamageValue>
+						<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
+						<amountOfEnemies>1~2</amountOfEnemies>
+						<maxDistance>2.5</maxDistance>
+						<knockbackDistance>1.5</knockbackDistance>
+						<knockbackDistanceSecondaryTargets>1.5</knockbackDistanceSecondaryTargets>
+						<baseDamageFactor>0.75</baseDamageFactor>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_Stun">
+						<stunDuration>15</stunDuration>
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>0.75</commonality>
+		<marketValueOffset>400</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MajorSlam_Ruby</defName>
+		<label>major slam</label>
+		<description>Enchanted with higher battle magic, this weapon can sometimes unleash a powerful wave of magical energy around the target and knock them back.</description>
+    <exclusionTags>
+			<li>RF_MinorSlam_Ruby</li>
+			<li>RF_Slam_Ruby</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.25</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect_Slam">
+						<baseDamageValue>6</baseDamageValue>
+						<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
+						<amountOfEnemies>2</amountOfEnemies>
+						<maxDistance>2.5</maxDistance>
+						<knockbackDistance>1.5</knockbackDistance>
+						<knockbackDistanceSecondaryTargets>2.5</knockbackDistanceSecondaryTargets>
+						<baseDamageFactor>0.75</baseDamageFactor>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_Stun">
+						<stunDuration>15</stunDuration>
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>0.25</commonality>
+		<marketValueOffset>600</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+</Defs>

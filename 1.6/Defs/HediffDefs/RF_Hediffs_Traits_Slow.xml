@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <defName>RF_CooldownIncreaseMinor</defName>
+    <label>bradykinesia (Minor)</label>
+    <description>Combat reflexes slowed down by a magical force.</description>
+    <maxSeverity>1</maxSeverity>
+	  <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <!--<li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>45000~120000</disappearsAfterTicks>
+      </li>-->
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.25</severityPerDay>
+      </li>
+    </comps>
+	  <modExtensions>
+      <li Class="RimFantasy.HediffExtension">
+        <cooldownMultiplier>1.2</cooldownMultiplier>
+      </li>
+    </modExtensions>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>RF_CooldownIncreaseMajor</defName>
+    <label>bradykinesia (Major)</label>
+    <description>Combat reflexes slowed down by a magical force.</description>
+    <maxSeverity>1</maxSeverity>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <!--<li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>45000~120000</disappearsAfterTicks>
+      </li>-->
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.25</severityPerDay>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="RimFantasy.HediffExtension">
+        <cooldownMultiplier>1.5</cooldownMultiplier>
+      </li>
+    </modExtensions>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>RF_CooldownIncreaseSevere</defName>
+    <label>bradykinesia (Severe)</label>
+    <description>Combat reflexes slowed down by a magical force.</description>
+    <maxSeverity>1</maxSeverity>
+	<hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <!--<li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>45000~120000</disappearsAfterTicks>
+      </li>-->
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.25</severityPerDay>
+      </li>
+    </comps>
+  <modExtensions>
+    <li Class="RimFantasy.HediffExtension">
+      <cooldownMultiplier>2</cooldownMultiplier>
+    </li>
+  </modExtensions>
+  </HediffDef>
+
+</Defs>

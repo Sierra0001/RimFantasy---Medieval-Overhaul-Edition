@@ -7,6 +7,7 @@
 	<supportedVersions>
 		<li>1.4</li>
 		<li>1.5</li>
+		<li>1.6</li>
 	</supportedVersions>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
@@ -38,7 +39,7 @@
 		<li>Sierra.RF.Gemstones</li>
 	</incompatibleWith>
 	<description>
-[h1]Mod Version: v1.3[/h1]
+[h1]Mod Version: v1.4[/h1]
 [h1][i]This version of RimFantasy has been reworked and rebalanced to adhere to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067]Medieval Overhaul[/url] standards. It is no longer modular and contains new/altered/removed content.[/i][/h1]
 
 
@@ -107,7 +108,7 @@ Join the Discord (link below) for troubleshooting and bug reports. Steam is a te
 [h1]Latest Changes:[/h1]
 [b]v1.3[/b]
 [list]
-[*][RimWorld 1.5] RimWorld 1.5 Ready.
+[*][Update] RimWorld 1.6 Ready.
 [/list]
 	</description>
 </ModMetaData>

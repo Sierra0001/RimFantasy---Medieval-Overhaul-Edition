@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RF_ColdCrystalBowl</defName>
+    <label>cold crystal bowl</label>
+    <description>Infused with magic and put in a bowl, these small crystals lower the surrounding temperature to create a cooler environment.</description>
+    <category>Building</category>
+    <!--<thingClass>Building_Cooler</thingClass>-->
+    <graphicData>
+      <texPath>Things/Building/Temperature/RF_ColdCrystalBowl/RF_ColdCrystalBowl</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawRotated>false</drawRotated>
+      <drawSize>(0.7,0.7)</drawSize>
+      <drawOffset>(0,0,0.15)</drawOffset>
+      <allowFlip>true</allowFlip>
+      <shadowData>
+        <volume>(0.1,0.1,0.1)</volume> <!--This requires testing. -->
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0,0.6,0.1)</rect> <!--This requires testing. -->
+      </damageData>
+    </graphicData>
+    <rotatable>true</rotatable>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability> <!--Either Standable, PassThroughOnly or Impossable. -->
+    <!--<pathCost>30</pathCost>--> <!--Not necessary with Standable or Impossable. -->
+    <!--<constructEffect>ConstructMetal</constructEffect> Not applicable to stuffable items.-->
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>2</Beauty>
+      <Mass>1</Mass>
+      <WorkToBuild>450</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <costList>
+      <DankPyon_Citrine>5</DankPyon_Citrine>
+      <DankPyon_Sapphire>10</DankPyon_Sapphire>
+    </costList>
+    <building>
+    	<isEdifice>false</isEdifice>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0.15</resourcesFractionWhenDeconstructed>
+    <clearBuildingArea>false</clearBuildingArea>
+    <!--Are placeWorkers needed?-->
+    <!--<placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+    </placeWorkers>-->
+    <comps>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusher</compClass>
+        <heatPerSecond>-11</heatPerSecond> <!--14 degrees weaker than pylons-->
+        <heatPushMinTemperature>-6</heatPushMinTemperature> <!--18 degrees weaker than pylons-->
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(26,255,255,0)</glowColor> <!--20% reduction of original-->
+      </li>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>60</wickTicks>
+        <explosiveRadius>2</explosiveRadius>
+        <explosiveDamageType>RF_Flame_SmallSquareRF_Aquamarine</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+        <postExplosionSpawnChance>0.2</postExplosionSpawnChance>
+        <postExplosionSpawnThingDef>RF_RubbleShardsRF_Aquamarine</postExplosionSpawnThingDef>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <researchPrerequisites>
+      <li>RF_ArcaneTemperatureRegulation</li> <!--Insert custom research when available-->
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RF_HotCrystalBowl</defName>
+    <label>hot crystal bowl</label>
+    <description>Infused with magic and put in a bowl, these small crystals increases the surrounding temperature to create a warmer environment.</description>
+    <category>Building</category>
+    <!--<thingClass>Building_Cooler</thingClass>-->
+    <graphicData>
+      <texPath>Things/Building/Temperature/RF_HotCrystalBowl/RF_HotCrystalBowl</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawRotated>false</drawRotated>
+      <drawSize>(0.7,0.7)</drawSize>
+      <drawOffset>(0,0,0.15)</drawOffset>
+      <allowFlip>true</allowFlip>
+      <shadowData>
+        <volume>(0.1,0.1,0.1)</volume> <!--This requires testing. -->
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0,0.6,0.1)</rect> <!--This requires testing. -->
+      </damageData>
+    </graphicData>
+    <rotatable>true</rotatable>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability> <!--Either Standable, PassThroughOnly or Impossable. -->
+    <!--<pathCost>30</pathCost>--> <!--Not necessary with Standable or Impossable. -->
+    <!--<constructEffect>ConstructMetal</constructEffect> Not applicable to stuffable items.-->
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>2</Beauty>
+      <Mass>1</Mass>
+      <WorkToBuild>450</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <costList>
+      <DankPyon_Citrine>5</DankPyon_Citrine>
+      <DankPyon_Ruby>10</DankPyon_Ruby>
+    </costList>
+    <building>
+    	<isEdifice>false</isEdifice>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0.15</resourcesFractionWhenDeconstructed>
+    <clearBuildingArea>false</clearBuildingArea>
+    <!--Are placeWorkers needed?-->
+    <!--<placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+    </placeWorkers>-->
+    <comps>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusher</compClass>
+        <heatPerSecond>11</heatPerSecond> <!--14 degrees weaker than pylons-->
+        <heatPushMaxTemperature>12</heatPushMaxTemperature> <!--36 degrees weaker than pylons-->
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(255,153,106,0)</glowColor> <!--20% reduction of original-->
+      </li>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>60</wickTicks>
+        <explosiveRadius>2</explosiveRadius>
+        <explosiveDamageType>RF_Flame_SmallSquareRF_Carnelian</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+        <postExplosionSpawnChance>0.2</postExplosionSpawnChance>
+        <postExplosionSpawnThingDef>RF_RubbleShardsRF_Carnelian</postExplosionSpawnThingDef>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <researchPrerequisites>
+      <li>RF_ArcaneTemperatureRegulation</li> <!--Insert custom research when available-->
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

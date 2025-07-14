@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--========== Ref: DankPyon_MeleeWeapon_Halberd ==========-->
+
+	<ThingDef Name="RF_BaseWeapon_ArcaneHalberds" ParentName="BaseWeapon" Abstract="True">
+		<description>Regal looking polearm with large gemstone blades, capable of stopping all but the largest adversaries.</description>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>Bladelink</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<tradeNeverStack>true</tradeNeverStack>
+		<relicChance>3</relicChance>
+		<tickerType>Normal</tickerType>
+    <costList>
+			<Steel>30</Steel>
+      <Gold>30</Gold>
+    </costList>
+		<statBases>
+				<WorkToMake>18000</WorkToMake>
+				<Mass>3</Mass>
+		</statBases>
+		<!--<equippedAngleOffset>-65</equippedAngleOffset>-->
+		<soundInteract>Interact_BladelinkMonoSword</soundInteract>
+		<meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+    <tools>
+			<li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>26</power>
+        <armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2.8</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>28</power>
+        <armorPenetration>0.45</armorPenetration>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_GeneratedName">
+				<nameMaker>RF_Namer_ArcaneWeapons</nameMaker>
+			</li>
+		</comps>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<thingCategories>
+			<li>RF_ArcaneHalberds</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers>
+		   <li>RF_ArcaneCraftingBench</li>
+		  </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<researchPrerequisite>RF_ArcaneWeapons</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension"> <!-- Was VFECore.ThingDefExtension in 1.5 -->
+				<weaponDraftedDrawOffsets>
+					<north> <!-- Facing North -->
+						<drawOffset>(0.34,0,0.30)</drawOffset>
+						<angleOffset>-100</angleOffset>
+					</north>
+					<east>
+					<drawOffset>(-0.34,0,0.30)</drawOffset>
+					<angleOffset>-80</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.34,0,0.30)</drawOffset>
+						<angleOffset>-100</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(0.34,0,0.30)</drawOffset>
+						<angleOffset>-190</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

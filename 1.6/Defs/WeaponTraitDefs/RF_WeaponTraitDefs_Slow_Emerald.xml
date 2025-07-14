@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MinorSlow_Emerald</defName>
+		<label>minor slow</label>
+		<description>Enchanted with lower time magic, this weapon can sometimes unleash a weak wave of magical energy and make it slightly more difficult for the target to fight effectively.</description>
+    <exclusionTags>
+			<li>RF_Slow_Emerald</li>
+			<li>RF_MajorSlow_Emerald</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.15</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect">
+						<effectDamage>Burn</effectDamage>
+						<baseDamageValue>2</baseDamageValue>
+						<fleckDefOnTarget>RF_Fleck_BlastEmerald_Round</fleckDefOnTarget>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
+						<hediffDef>RF_CooldownIncreaseMinor</hediffDef>
+						<!--<partToApply>Brain</partToApply>--> <!-- can be omited -->
+						<!--<severityOffset>0.1</severityOffset>--> <!-- can be omited -->
+						<!--<baseDamageValue>3</baseDamageValue>-->
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>1.00</commonality>
+		<marketValueOffset>200</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_Slow_Emerald</defName>
+		<label>slow</label>
+		<description>Enchanted with time magic, this weapon can sometimes unleash a wave of magical energy and make it more difficult for the target to fight effectively.</description>
+    <exclusionTags>
+			<li>RF_MinorSlow_Emerald</li>
+			<li>RF_MajorSlow_Emerald</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.20</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect">
+						<effectDamage>Burn</effectDamage>
+						<baseDamageValue>4</baseDamageValue>
+						<fleckDefOnTarget>RF_Fleck_BlastEmerald_Round</fleckDefOnTarget>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
+						<hediffDef>RF_CooldownIncreaseMajor</hediffDef>
+						<!--<partToApply>Brain</partToApply>--> <!-- can be omited -->
+						<!--<severityOffset>0.1</severityOffset>--> <!-- can be omited -->
+						<!--<baseDamageValue>3</baseDamageValue>-->
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>0.75</commonality>
+		<marketValueOffset>400</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MajorSlow_Emerald</defName>
+		<label>major slow</label>
+		<description>Enchanted with higher time magic, this weapon can sometimes unleash a powerful wave of magical energy and make it much more difficult for the target to fight effectively.</description>
+    <exclusionTags>
+			<li>RF_MinorSlow_Emerald</li>
+			<li>RF_Slow_Emerald</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.25</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect">
+						<effectDamage>Burn</effectDamage>
+						<baseDamageValue>6</baseDamageValue>
+						<fleckDefOnTarget>RF_Fleck_BlastEmerald_Round</fleckDefOnTarget>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
+						<hediffDef>RF_CooldownIncreaseSevere</hediffDef>
+						<!--<partToApply>Brain</partToApply>--> <!-- can be omited -->
+						<!--<severityOffset>0.1</severityOffset>--> <!-- can be omited -->
+						<!--<baseDamageValue>3</baseDamageValue>-->
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>0.25</commonality>
+		<marketValueOffset>600</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+</Defs>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MinorHeal_Sapphire</defName>
+		<label>minor heal</label>
+		<description>Enchanted with lower healing magic, this weapon can sometimes release a weak wave of restorative energy upon the wielder.</description>
+    <exclusionTags>
+			<li>RF_Heal_Sapphire</li>
+			<li>RF_MajorHeal_Sapphire</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Heal">
+				<effectChance>0.15</effectChance>
+				<hpToHeal>1~2</hpToHeal>
+				<fleckDefOnSelf>RF_Fleck_BlastSapphire_Round</fleckDefOnSelf>
+			</li>
+		</weaponEffects>
+		<commonality>1.00</commonality>
+		<marketValueOffset>200</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_Heal_Sapphire</defName>
+		<label>heal</label>
+		<description>Enchanted with healing magic, this weapon can sometimes release a wave of restorative energy upon the wielder.</description>
+    <exclusionTags>
+			<li>RF_MinorHeal_Sapphire</li>
+			<li>RF_MajorHeal_Sapphire</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Heal">
+				<effectChance>0.20</effectChance>
+				<hpToHeal>3~4</hpToHeal>
+				<fleckDefOnSelf>RF_Fleck_BlastSapphire_Round</fleckDefOnSelf>
+			</li>
+		</weaponEffects>
+		<commonality>0.75</commonality>
+		<marketValueOffset>400</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MajorHeal_Sapphire</defName>
+		<label>major heal</label>
+		<description>Enchanted with higher healing magic, this weapon can sometimes release a powerful wave of restorative energy upon the wielder.</description>
+    <exclusionTags>
+			<li>RF_MinorHeal_Sapphire</li>
+			<li>RF_Heal_Sapphire</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Heal">
+				<effectChance>0.25</effectChance>
+				<hpToHeal>5~6</hpToHeal>
+				<fleckDefOnSelf>RF_Fleck_BlastSapphire_Round</fleckDefOnSelf>
+			</li>
+		</weaponEffects>
+		<commonality>0.25</commonality>
+		<marketValueOffset>600</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+</Defs>

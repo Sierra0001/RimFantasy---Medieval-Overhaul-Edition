@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MinorScorch</defName>
+		<label>minor scorch</label>
+		<description>Enchanted with lower fire magic, this weapon can sometimes unleash a weak wave of magical energy and may cause heatstrokes.</description>
+    <exclusionTags>
+			<li>RF_Scorch</li>
+			<li>RF_MajorScorch</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.25</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect">
+						<effectDamage>Burn</effectDamage>
+						<baseDamageValue>2</baseDamageValue>
+						<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
+						<hediffDef>Heatstroke</hediffDef>
+						<severityOffset>-0.25</severityOffset> <!--5% above Minor -->
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>4</commonality>
+		<marketValueOffset>200</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_Scorch</defName>
+		<label>scorch</label>
+		<description>Enchanted with fire magic, this weapon can sometimes unleash a wave of magical energy and may cause heatstrokes.</description>
+    <exclusionTags>
+			<li>RF_MinorScorch</li>
+			<li>RF_MajorScorch</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.30</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect">
+						<effectDamage>Burn</effectDamage>
+						<baseDamageValue>4</baseDamageValue>
+						<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
+						<hediffDef>Heatstroke</hediffDef>
+						<severityOffset>-0.10</severityOffset> <!--5% above Serious -->
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>2</commonality>
+		<marketValueOffset>400</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RF_MajorScorch</defName>
+		<label>major scorch</label>
+		<description>Enchanted with higher fire magic, this weapon can sometimes unleash a powerful wave of magical energy and may cause heatstrokes.</description>
+    <exclusionTags>
+			<li>RF_MinorScorch</li>
+			<li>RF_Scorch</li>
+    </exclusionTags>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.35</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect">
+						<effectDamage>Burn</effectDamage>
+						<baseDamageValue>6</baseDamageValue>
+						<fleckDefOnTarget>RF_Fleck_BlastRuby_Round</fleckDefOnTarget>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
+						<hediffDef>Heatstroke</hediffDef>
+						<severityOffset>0.15</severityOffset> <!--3% above Extreme -->
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>1</commonality>
+		<marketValueOffset>600</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+</Defs>

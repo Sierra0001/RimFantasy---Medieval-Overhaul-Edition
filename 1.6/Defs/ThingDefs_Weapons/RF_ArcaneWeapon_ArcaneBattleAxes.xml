@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--========== Emerald Battle Axe ==========-->
+
+  <ThingDef ParentName="RF_BaseWeapon_ArcaneBattleAxes">
+      <defName>RF_EmeraldBattleAxe</defName>
+      <label>emerald battle axe</label>
+      <graphicData>
+        <texPath>Things/Item/Equipment/WeaponMelee/RF_EmeraldBattleAxe</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>TransparentPostLight</shaderType>
+        <drawSize>1.05</drawSize>
+      </graphicData>
+      <costList>
+          <DankPyon_Emerald>55</DankPyon_Emerald>
+      </costList>
+      <comps>
+        <li Class="RimFantasy.CompProperties_GlowerStuffable">
+          <glowRadius>1</glowRadius>
+          <glowColor>(50,150,50)</glowColor>
+          <glowWhileOnGround>true</glowWhileOnGround>
+          <glowWhileStockpiled>true</glowWhileStockpiled>
+          <glowWhileEquipped>true</glowWhileEquipped>
+          <glowRadiusEquipped>1</glowRadiusEquipped>
+          <glowWhileDrawn>true</glowWhileDrawn>
+          <glowRadiusDrawn>1</glowRadiusDrawn>
+        </li>
+        <li Class="CompProperties_Explosive">
+          <wickTicks>90</wickTicks>
+          <explosiveRadius>2</explosiveRadius>
+          <explosiveDamageType>RF_Flame_SmallSquareRF_Emerald</explosiveDamageType>
+          <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+          <postExplosionSpawnChance>0.2</postExplosionSpawnChance>
+          <postExplosionSpawnThingDef>RF_RubbleShardsRF_Emerald</postExplosionSpawnThingDef>
+          <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        </li>
+        <li Class="RimFantasy.CompProperties_ArcaneWeapon">
+				<biocodeOnEquip>false</biocodeOnEquip>
+				<minWeaponTraits>1</minWeaponTraits>
+				<maxWeaponTraits>2</maxWeaponTraits>
+          <weaponTraitsPool>
+					<li>RF_MinorBlaze_Emerald</li>
+					<li>RF_Blaze_Emerald</li>
+					<li>RF_MajorBlaze_Emerald</li>
+					<li>RF_MinorShock_Emerald</li>
+					<li>RF_Shock_Emerald</li>
+					<li>RF_MajorShock_Emerald</li>
+					<li>RF_MinorSlash_BattleAxe_Emerald</li>
+					<li>RF_Slash_BattleAxe_Emerald</li>
+					<li>RF_MajorSlash_BattleAxe_Emerald</li>
+					<li>RF_MinorWarriorsShield</li>
+					<li>RF_WarriorsShield</li>
+					<li>RF_MajorWarriorsShield</li>
+            <li>RF_MinorMagicBlast_Emerald</li>
+            <li>RF_MagicBlast_Emerald</li>
+            <li>RF_MajorMagicBlast_Emerald</li>
+  					<li>RF_MinorBane</li>
+  					<li>RF_Bane</li>
+  					<li>RF_MajorBane</li>
+          </weaponTraitsPool>
+        </li>
+      </comps>
+      <modExtensions>
+        <li Class="RimFantasy.RimFantasyExtension">
+          <stuffKey>Emerald</stuffKey>
+        </li>
+        <li Class="RimFantasy.WeaponDropExtension">
+          <preventDroppingWhenDowned>true</preventDroppingWhenDowned>
+          <preventDroppingWhenDead>true</preventDroppingWhenDead>
+        </li>
+      </modExtensions>
+  </ThingDef>
+
+  <!--========== Sapphire Battle Axe ==========-->
+
+  <ThingDef ParentName="RF_BaseWeapon_ArcaneBattleAxes">
+      <defName>RF_SapphireBattleAxe</defName>
+      <label>sapphire battle axe</label>
+      <graphicData>
+        <texPath>Things/Item/Equipment/WeaponMelee/RF_SapphireBattleAxe</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>TransparentPostLight</shaderType>
+        <drawSize>1.05</drawSize>
+      </graphicData>
+      <costList>
+        <DankPyon_Sapphire>55</DankPyon_Sapphire>
+      </costList>
+      <comps>
+        <li Class="RimFantasy.CompProperties_GlowerStuffable">
+          <glowRadius>1</glowRadius>
+          <glowColor>(0,125,225)</glowColor>
+          <glowWhileOnGround>true</glowWhileOnGround>
+          <glowWhileStockpiled>true</glowWhileStockpiled>
+          <glowWhileEquipped>true</glowWhileEquipped>
+          <glowRadiusEquipped>1</glowRadiusEquipped>
+          <glowWhileDrawn>true</glowWhileDrawn>
+          <glowRadiusDrawn>1</glowRadiusDrawn>
+        </li>
+        <li Class="CompProperties_Explosive">
+          <wickTicks>90</wickTicks>
+          <explosiveRadius>2</explosiveRadius>
+          <explosiveDamageType>RF_Flame_SmallSquareRF_Sapphire</explosiveDamageType>
+          <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+          <postExplosionSpawnChance>0.2</postExplosionSpawnChance>
+          <postExplosionSpawnThingDef>RF_RubbleShardsRF_Sapphire</postExplosionSpawnThingDef>
+          <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        </li>
+        <li Class="RimFantasy.CompProperties_ArcaneWeapon">
+				<biocodeOnEquip>false</biocodeOnEquip>
+				<minWeaponTraits>1</minWeaponTraits>
+				<maxWeaponTraits>2</maxWeaponTraits>
+          <weaponTraitsPool>
+					<li>RF_MinorBlaze_Sapphire</li>
+					<li>RF_Blaze_Sapphire</li>
+					<li>RF_MajorBlaze_Sapphire</li>
+					<li>RF_MinorShock_Sapphire</li>
+					<li>RF_Shock_Sapphire</li>
+					<li>RF_MajorShock_Sapphire</li>
+					<li>RF_MinorSlash_BattleAxe_Sapphire</li>
+					<li>RF_Slash_BattleAxe_Sapphire</li>
+					<li>RF_MajorSlash_BattleAxe_Sapphire</li>
+					<li>RF_MinorWarriorsShield</li>
+					<li>RF_WarriorsShield</li>
+					<li>RF_MajorWarriorsShield</li>
+            <li>RF_MinorMagicBlast_Sapphire</li>
+            <li>RF_MagicBlast_Sapphire</li>
+            <li>RF_MajorMagicBlast_Sapphire</li>
+  					<li>RF_MinorFreeze</li>
+  					<li>RF_Freeze</li>
+  					<li>RF_MajorFreeze</li>
+          </weaponTraitsPool>
+        </li>
+      </comps>
+      <modExtensions>
+        <li Class="RimFantasy.RimFantasyExtension">
+          <stuffKey>Sapphire</stuffKey>
+        </li>
+        <li Class="RimFantasy.WeaponDropExtension">
+          <preventDroppingWhenDowned>true</preventDroppingWhenDowned>
+          <preventDroppingWhenDead>true</preventDroppingWhenDead>
+        </li>
+      </modExtensions>
+  </ThingDef>
+
+  <!--========== Ruby Battle Axe ==========-->
+
+  <ThingDef ParentName="RF_BaseWeapon_ArcaneBattleAxes">
+      <defName>RF_RubyBattleAxe</defName>
+      <label>ruby battle axe</label>
+      <graphicData>
+        <texPath>Things/Item/Equipment/WeaponMelee/RF_RubyBattleAxe</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>TransparentPostLight</shaderType>
+        <drawSize>1.05</drawSize>
+      </graphicData>
+      <costList>
+        <DankPyon_Ruby>55</DankPyon_Ruby>
+      </costList>
+      <comps>
+        <li Class="RimFantasy.CompProperties_GlowerStuffable">
+          <glowRadius>1</glowRadius>
+          <glowColor>(189,25,60)</glowColor>
+          <glowWhileOnGround>true</glowWhileOnGround>
+          <glowWhileStockpiled>true</glowWhileStockpiled>
+          <glowWhileEquipped>true</glowWhileEquipped>
+          <glowRadiusEquipped>1</glowRadiusEquipped>
+          <glowWhileDrawn>true</glowWhileDrawn>
+          <glowRadiusDrawn>1</glowRadiusDrawn>
+        </li>
+        <li Class="CompProperties_Explosive">
+          <wickTicks>90</wickTicks>
+          <explosiveRadius>2</explosiveRadius>
+          <explosiveDamageType>RF_Flame_SmallSquareRF_Ruby</explosiveDamageType>
+          <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+          <postExplosionSpawnChance>0.2</postExplosionSpawnChance>
+          <postExplosionSpawnThingDef>RF_RubbleShardsRF_Ruby</postExplosionSpawnThingDef>
+          <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        </li>
+        <li Class="RimFantasy.CompProperties_ArcaneWeapon">
+				<biocodeOnEquip>false</biocodeOnEquip>
+				<minWeaponTraits>1</minWeaponTraits>
+				<maxWeaponTraits>2</maxWeaponTraits>
+          <weaponTraitsPool>
+					<li>RF_MinorBlaze_Ruby</li>
+					<li>RF_Blaze_Ruby</li>
+					<li>RF_MajorBlaze_Ruby</li>
+					<li>RF_MinorShock_Ruby</li>
+					<li>RF_Shock_Ruby</li>
+					<li>RF_MajorShock_Ruby</li>
+					<li>RF_MinorSlash_BattleAxe_Ruby</li>
+					<li>RF_Slash_BattleAxe_Ruby</li>
+					<li>RF_MajorSlash_BattleAxe_Ruby</li>
+					<li>RF_MinorWarriorsShield</li>
+					<li>RF_WarriorsShield</li>
+					<li>RF_MajorWarriorsShield</li>
+            <li>RF_MinorMagicBlast_Ruby</li>
+            <li>RF_MagicBlast_Ruby</li>
+            <li>RF_MajorMagicBlast_Ruby</li>
+  					<li>RF_MinorScorch</li>
+  					<li>RF_Scorch</li>
+  					<li>RF_MajorScorch</li>
+          </weaponTraitsPool>
+        </li>
+      </comps>
+      <modExtensions>
+        <li Class="RimFantasy.RimFantasyExtension">
+          <stuffKey>Ruby</stuffKey>
+        </li>
+        <li Class="RimFantasy.WeaponDropExtension">
+          <preventDroppingWhenDowned>true</preventDroppingWhenDowned>
+          <preventDroppingWhenDead>true</preventDroppingWhenDead>
+        </li>
+      </modExtensions>
+  </ThingDef>
+
+</Defs>

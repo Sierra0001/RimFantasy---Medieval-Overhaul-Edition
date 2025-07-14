@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>RF_ArcaneWeapons</defName>
+    <label>arcane weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RF_ArcaneWands</defName>
+    <label>arcane wands</label>
+    <parent>RF_ArcaneWeapons</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RF_ArcaneStaffs</defName>
+    <label>arcane staffs</label>
+    <parent>RF_ArcaneWeapons</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RF_ArcaneBows</defName>
+    <label>arcane bows</label>
+    <parent>RF_ArcaneWeapons</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RF_ArcaneLongswords</defName>
+    <label>arcane longswords</label>
+    <parent>RF_ArcaneWeapons</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RF_ArcaneDaggers</defName>
+    <label>arcane daggers</label>
+    <parent>RF_ArcaneWeapons</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RF_ArcaneBattleAxes</defName>
+    <label>arcane battle axes</label>
+    <parent>RF_ArcaneWeapons</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RF_ArcaneWarHammers</defName>
+    <label>arcane war hammers</label>
+    <parent>RF_ArcaneWeapons</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RF_ArcaneSpears</defName>
+    <label>arcane spears</label>
+    <parent>RF_ArcaneWeapons</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RF_ArcaneHalberds</defName>
+    <label>arcane halberds</label>
+    <parent>RF_ArcaneWeapons</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RF_ArcaneRings</defName>
+    <label>arcane rings</label>
+    <parent>RF_ArcaneWeapons</parent>
+  </ThingCategoryDef>
+
+</Defs>
