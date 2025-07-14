@@ -106,9 +106,10 @@ Join the Discord (link below) for troubleshooting and bug reports. Steam is a te
 
 
 [h1]Latest Changes:[/h1]
-[b]v1.3[/b]
+[b]v1.4[/b]
 [list]
 [*][Update] RimWorld 1.6 Ready.
+[*][Change] Wall lamps are now based on vanilla code/XML instead of VEF code/XML.
 [/list]
 	</description>
 </ModMetaData>
