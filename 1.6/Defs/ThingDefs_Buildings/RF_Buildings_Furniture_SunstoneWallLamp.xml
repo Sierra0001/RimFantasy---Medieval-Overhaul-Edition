@@ -11,13 +11,11 @@
       <texPath>Things/Building/Furniture/RF_VE_SunstoneWallLamp/RF_VE_SunstoneWallLamp</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>1,1</drawSize> <!-- Was 1.1 -->
-      <drawOffsetNorth>(0,0,0.383)</drawOffsetNorth>
-      <drawOffsetSouth>(0,0,-0.20)</drawOffsetSouth>
-      <drawOffsetEast>(0,0,0)</drawOffsetEast>
-      <drawOffsetWest>(0,0,0)</drawOffsetWest>
-      <!--<drawOffsetEast>(0.4,0,0.20)</drawOffsetEast>
-      <drawOffsetWest>(-0.4,0,0.20)</drawOffsetWest>-->
+      <drawSize>1.1,1.1</drawSize> <!-- Was 1.1 -->
+      <drawOffsetNorth>(0,0,0.833)</drawOffsetNorth> <!-- Was 0,0,0.383 -->
+      <drawOffsetSouth>(0,0,-0.63)</drawOffsetSouth> <!-- Was 0,0,-0.20 -->
+      <drawOffsetEast>(0.80,0,-0.08)</drawOffsetEast> <!-- Was 0,0,0 -->
+      <drawOffsetWest>(-0.80,0,-0.08)</drawOffsetWest> <!-- Was 0,0,0 -->
     </graphicData>
     <altitudeLayer>MoteOverhead</altitudeLayer>
     <passability>Standable</passability>

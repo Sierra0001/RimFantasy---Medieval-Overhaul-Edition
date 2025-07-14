@@ -12,8 +12,8 @@
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.1,1.1</drawSize>
-      <drawOffsetNorth>(0,0,0.383)</drawOffsetNorth>
-      <drawOffsetSouth>(0,0,-0.20)</drawOffsetSouth>
+      <drawOffsetNorth>(0,0,0.833)</drawOffsetNorth> <!-- Was 0,0,0.383 -->
+      <drawOffsetSouth>(0,0,-0.63)</drawOffsetSouth> <!-- Was 0,0,-0.20 -->
       <drawOffsetEast>(0.4,0,0.20)</drawOffsetEast>
       <drawOffsetWest>(-0.4,0,0.20)</drawOffsetWest>
     </graphicData>
