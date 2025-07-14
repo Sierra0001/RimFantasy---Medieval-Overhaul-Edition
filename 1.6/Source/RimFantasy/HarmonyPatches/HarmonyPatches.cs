@@ -17,20 +17,20 @@ using static Verse.DamageWorker;
 namespace RimFantasy
 {
     [StaticConstructorOnStartup]
-	internal static class HarmonyPatches
-	{
-		public static Dictionary<Map, AuraManager> areaTemperatureManagers = new Dictionary<Map, AuraManager>();
-		static HarmonyPatches()
-		{
-			Harmony harmony = new Harmony("Sierra.RimFantasy");
-			CompTemperatureSource.gasCompType = AccessTools.TypeByName("GasNetwork.CompGasTrader");
-			if (CompTemperatureSource.gasCompType != null)
-			{
-				CompTemperatureSource.methodInfoGasOn = AccessTools.PropertyGetter(CompTemperatureSource.gasCompType, "GasOn");
-			}
-			harmony.PatchAll();
-		}
-	}
+    internal static class HarmonyPatches
+    {
+        public static Dictionary<Map, AuraManager> areaTemperatureManagers = new Dictionary<Map, AuraManager>();
+        static HarmonyPatches()
+        {
+            Harmony harmony = new Harmony("Sierra.RimFantasy");
+            CompTemperatureSource.gasCompType = AccessTools.TypeByName("GasNetwork.CompGasTrader");
+            if (CompTemperatureSource.gasCompType != null)
+            {
+                CompTemperatureSource.methodInfoGasOn = AccessTools.PropertyGetter(CompTemperatureSource.gasCompType, "GasOn");
+            }
+            harmony.PatchAll();
+        }
+    }
 
     [HarmonyPatch(typeof(Need_Food), "NeedInterval")]
     internal static class Patch_FoodNeedInterval
@@ -243,10 +243,11 @@ namespace RimFantasy
         }
     }
 
-    [HarmonyPatch(typeof(PlantUtility), nameof(PlantUtility.GrowthSeasonNow))]
+    [HarmonyPatch(typeof(PlantUtility), nameof(PlantUtility.GrowthSeasonNow),
+ new Type[] { typeof(IntVec3), typeof(Map), typeof(ThingDef) })]
     public static class Patch_GrowthSeasonNow
     {
-        private static bool Prefix(ref bool __result, IntVec3 c, Map map, bool forSowing = false)
+        private static bool Prefix(ref bool __result, IntVec3 c, Map map)
         {
             if (HarmonyPatches.areaTemperatureManagers.TryGetValue(map, out AuraManager auraManager))
             {
@@ -254,14 +255,7 @@ namespace RimFantasy
                 if (tempResult != 0)
                 {
                     float temperature = c.GetTemperature(map) + tempResult;
-                    if (temperature > 0f)
-                    {
-                        __result = temperature < 58f;
-                    }
-                    else
-                    {
-                        __result = false;
-                    }
+                    __result = temperature > 0f && temperature < 58f;
                     return false;
                 }
             }
@@ -749,59 +743,59 @@ namespace RimFantasy
     }
 
     [HarmonyPatch(typeof(Pawn), "DropAndForbidEverything")]
-	public static class Pawn_DropAndForbidEverything_Patch
+    public static class Pawn_DropAndForbidEverything_Patch
     {
-		public static bool shouldCheck;
-		public static void Prefix(Pawn __instance)
+        public static bool shouldCheck;
+        public static void Prefix(Pawn __instance)
         {
-			shouldCheck = true;
+            shouldCheck = true;
         }
 
-		public static void Postfix()
+        public static void Postfix()
         {
-			shouldCheck = false;
-		}
+            shouldCheck = false;
+        }
     }
 
-	public class WeaponDropExtension : DefModExtension
+    public class WeaponDropExtension : DefModExtension
     {
-		public bool preventDroppingWhenDowned;
-		public bool preventDroppingWhenDead;
+        public bool preventDroppingWhenDowned;
+        public bool preventDroppingWhenDead;
     }
 
     [HarmonyPatch(typeof(Pawn_EquipmentTracker), "TryDropEquipment")]
-	public static class Pawn_EquipmentTracker_TryDropEquipment_Patch
+    public static class Pawn_EquipmentTracker_TryDropEquipment_Patch
     {
-		public static bool Prefix(Pawn_EquipmentTracker __instance, ThingWithComps eq)
+        public static bool Prefix(Pawn_EquipmentTracker __instance, ThingWithComps eq)
         {
-			if (Pawn_DropAndForbidEverything_Patch.shouldCheck)
+            if (Pawn_DropAndForbidEverything_Patch.shouldCheck)
             {
-				var extension = eq.def.GetModExtension<WeaponDropExtension>();
-				if (extension != null)
-				{
-					if (extension.preventDroppingWhenDowned && __instance.pawn.Downed)
-					{
-						return false;
-					}
-					else if (extension.preventDroppingWhenDead && __instance.pawn.Dead)
-					{
-						return false;
-					}
-				}
-			}
-			return true;
+                var extension = eq.def.GetModExtension<WeaponDropExtension>();
+                if (extension != null)
+                {
+                    if (extension.preventDroppingWhenDowned && __instance.pawn.Downed)
+                    {
+                        return false;
+                    }
+                    else if (extension.preventDroppingWhenDead && __instance.pawn.Dead)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
         }
     }
 
-	[HarmonyPatch(typeof(CompBladelinkWeapon), "CanAddTrait")]
-	public static class CompBladelinkWeapon_CanAddTrait_Patch
-	{
-		public static void Postfix(ref bool __result, WeaponTraitDef trait)
-		{
-			if (__result && trait is ArcaneWeaponTraitDef) 
-			{
-				__result = false;
-			}
-		}
-	}
+    [HarmonyPatch(typeof(CompBladelinkWeapon), "CanAddTrait")]
+    public static class CompBladelinkWeapon_CanAddTrait_Patch
+    {
+        public static void Postfix(ref bool __result, WeaponTraitDef trait)
+        {
+            if (__result && trait is ArcaneWeaponTraitDef)
+            {
+                __result = false;
+            }
+        }
+    }
 }
