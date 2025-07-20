@@ -39,7 +39,7 @@
 		<li>Sierra.RF.Gemstones</li>
 	</incompatibleWith>
 	<description>
-[h1]Mod Version: v1.4[/h1]
+[h1]Mod Version: v1.4.1[/h1]
 [h1][i]This version of RimFantasy has been reworked and rebalanced to adhere to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067]Medieval Overhaul[/url] standards. It is no longer modular and contains new/altered/removed content.[/i][/h1]
 
 
@@ -110,6 +110,12 @@ Join the Discord (link below) for troubleshooting and bug reports. Steam is a te
 [list]
 [*][Update] RimWorld 1.6 Ready.
 [*][Change] Wall lamps are now based on vanilla code/XML instead of VEF code/XML.
+[/list]
+
+[b]v1.4.1[/b]
+[list]
+[*][Fix] Fixed error relating to explosives and projectiles not working as intended.
+[*][Fix] Fixed error relating to setting pawns on fire with an arcane weapon.
 [/list]
 	</description>
 </ModMetaData>

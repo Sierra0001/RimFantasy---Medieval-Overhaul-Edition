@@ -192,7 +192,7 @@ namespace RimFantasy
 				if (Rand.Value < 0.4f)
 				{
 					float radius = fireSize * 3f;
-					SnowUtility.AddSnowRadial(base.Position, base.Map, radius, 0f - fireSize * 0.1f);
+                    WeatherBuildupUtility.AddSnowRadial(base.Position, base.Map, radius, 0f - fireSize * 0.1f);
 				}
 				fireSize += 0.00055f * flammabilityMax * 150f;
 				if (fireSize > 1.75f)

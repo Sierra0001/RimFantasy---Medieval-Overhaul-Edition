@@ -52,7 +52,7 @@ namespace RimFantasy
             base.PostDestroy(mode, previousMap);
         }
 
-        public override void PostDeSpawn(Map map)
+        public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
         {
             this.RemoveGlower(map);
             base.PostDeSpawn(map);

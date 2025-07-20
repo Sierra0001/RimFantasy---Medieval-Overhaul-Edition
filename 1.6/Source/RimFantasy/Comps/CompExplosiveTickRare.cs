@@ -37,7 +37,7 @@ namespace RimFantasy
             }
             base.PostDestroy(mode, previousMap);
         }
-        public override void PostDeSpawn(Map map)
+        public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
         {
             base.PostDeSpawn(map);
             if (RimFantasyManager.Instance.compsToTickNormal.Contains(this))

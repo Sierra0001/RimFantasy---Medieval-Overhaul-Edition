@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Medieval-Overhaul-Edition\\1.5\\Source\\RimFantasy\\RimFantasy.csproj": {}
+    "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Medieval-Overhaul-Edition\\1.6\\Source\\RimFantasy\\RimFantasy.csproj": {}
   },
   "projects": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Medieval-Overhaul-Edition\\1.5\\Source\\RimFantasy\\RimFantasy.csproj": {
+    "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Medieval-Overhaul-Edition\\1.6\\Source\\RimFantasy\\RimFantasy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Medieval-Overhaul-Edition\\1.5\\Source\\RimFantasy\\RimFantasy.csproj",
+        "projectUniqueName": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Medieval-Overhaul-Edition\\1.6\\Source\\RimFantasy\\RimFantasy.csproj",
         "projectName": "RimFantasy",
-        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Medieval-Overhaul-Edition\\1.5\\Source\\RimFantasy\\RimFantasy.csproj",
-        "packagesPath": "C:\\Users\\Vova\\.nuget\\packages\\",
-        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Medieval-Overhaul-Edition\\1.5\\Source\\RimFantasy\\obj\\",
+        "projectPath": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Medieval-Overhaul-Edition\\1.6\\Source\\RimFantasy\\RimFantasy.csproj",
+        "packagesPath": "C:\\Users\\store\\.nuget\\packages\\",
+        "outputPath": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\RimFantasy---Medieval-Overhaul-Edition\\1.6\\Source\\RimFantasy\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Vova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\store\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,16 +48,16 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.1, )"
+              "version": "[2.3.0, )"
             },
             "Krafs.Rimworld.Ref": {
               "target": "Package",
-              "version": "[1.5.4104, )"
+              "version": "[1.6.4523, )"
             },
             "Lib.Harmony": {
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[2.3.3, )"
+              "version": "[2.3.6, )"
             }
           }
         }
